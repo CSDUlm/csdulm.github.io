@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Secure seminar administration for the Centre Sciences des Données at ENS Ulm."
+    />
+    <title>Seminar administration — CSD, ENS Ulm</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <link rel="stylesheet" href="../assets/css/manage.css" />
+    <script src="../assets/js/config.js" defer></script>
+    <script src="../assets/js/manage.js" defer></script>
+  </head>
+  <body class="manage-page" data-management="seminars">
+    <header class="manage-header">
+      <a class="manage-brand" href="../" aria-label="CSD home"
+        >CSD <span>ENS · Ulm</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="../seminars/" data-i18n="seminars">Seminars</a
+        ><a
+          class="manage-language"
+          href="?lang=fr"
+          lang="fr"
+          data-language-switch
+          >Français</a
+        >
+      </nav>
+    </header>
+    <main class="manage-main">
+      <div class="manage-intro">
+        <p class="manage-eyebrow" data-i18n="adminEyebrow">
+          For seminar organisers
+        </p>
+        <h1 data-i18n="adminTitle">Seminar administration</h1>
+        <p data-i18n="adminIntro">
+          Add a speaker and the details of their upcoming seminar. Changes
+          appear on the public seminar page and the homepage.
+        </p>
+      </div>
+      <section
+        class="manage-login-panel"
+        id="login-panel"
+        aria-labelledby="login-heading"
+      >
+        <div>
+          <h2 id="login-heading" data-i18n="signIn">Sign in</h2>
+          <p data-i18n="adminLoginHint">
+            Use the seminar organiser password to make changes.
+          </p>
+        </div>
+        <form id="login-form" class="manage-login-form">
+          <div class="manage-field">
+            <label for="password" data-i18n="password">Password</label
+            ><input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              maxlength="256"
+            />
+          </div>
+          <button
+            class="manage-button"
+            type="submit"
+            id="login-button"
+            data-i18n="signIn"
+          >
+            Sign in
+          </button>
+        </form>
+      </section>
+      <p
+        id="status-message"
+        class="manage-status"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></p>
+      <div id="authenticated-panel" hidden>
+        <div class="manage-session">
+          <p id="session-message"></p>
+          <button
+            id="logout-button"
+            class="manage-button manage-button-quiet"
+            type="button"
+            data-i18n="signOut"
+          >
+            Sign out
+          </button>
+        </div>
+        <section class="manage-card" aria-labelledby="seminar-form-heading">
+          <div class="manage-section-heading">
+            <h2 id="seminar-form-heading" data-i18n="newSeminar">
+              Add a seminar
+            </h2>
+            <span class="manage-small" data-i18n="parisTimes"
+              >All times are Paris local time.</span
+            >
+          </div>
+          <form id="seminar-form" class="manage-form-grid">
+            <div class="manage-field">
+              <label for="speaker" data-i18n="speaker">Speaker</label
+              ><input
+                id="speaker"
+                name="speaker"
+                required
+                maxlength="160"
+                autocomplete="name"
+              />
+            </div>
+            <div class="manage-field">
+              <label for="institution" data-i18n="institution"
+                >Institution</label
+              ><input
+                id="institution"
+                name="institution"
+                required
+                maxlength="240"
+                autocomplete="organization"
+              />
+            </div>
+            <div class="manage-field manage-full">
+              <label for="seminar-title" data-i18n="talkTitle">Talk title</label
+              ><input
+                id="seminar-title"
+                name="title"
+                required
+                maxlength="500"
+              />
+            </div>
+            <div class="manage-field">
+              <label for="seminar-date" data-i18n="dateTime"
+                >Date and time</label
+              ><input
+                id="seminar-date"
+                name="date"
+                type="datetime-local"
+                required
+              />
+            </div>
+            <div class="manage-field">
+              <label for="seminar-room" data-i18n="room">Room</label
+              ><input
+                id="seminar-room"
+                name="room"
+                value="Room W"
+                required
+                maxlength="120"
+              />
+            </div>
+            <div class="manage-field manage-full">
+              <label for="abstract" data-i18n="abstract"
+                >Abstract (optional)</label
+              ><textarea
+                id="abstract"
+                name="abstract"
+                rows="5"
+                maxlength="8000"
+              ></textarea>
+            </div>
+            <div class="manage-full manage-form-actions">
+              <button
+                class="manage-button"
+                id="seminar-submit"
+                type="submit"
+                data-i18n="publishSeminar"
+              >
+                Publish seminar</button
+              ><span class="manage-small" data-i18n="publishHint"
+                >Please check the details before publishing.</span
+              >
+            </div>
+          </form>
+        </section>
+        <section class="manage-card" aria-labelledby="seminar-list-heading">
+          <div class="manage-section-heading">
+            <h2 id="seminar-list-heading" data-i18n="seminarList">Seminars</h2>
+            <button
+              type="button"
+              id="refresh-seminars"
+              class="manage-button manage-button-quiet"
+              data-i18n="refresh"
+            >
+              Refresh
+            </button>
+          </div>
+          <div id="seminar-list" aria-live="polite"></div>
+        </section>
+      </div>
+      <noscript
+        ><p class="manage-status">
+          JavaScript is required to sign in and manage seminars.
+        </p></noscript
+      >
+    </main>
+    <footer class="manage-footer">
+      <a href="../" data-i18n="backToCsd">Back to CSD</a
+      ><span>Centre Sciences des Données · ENS Ulm</span>
+    </footer>
+  </body>
+</html>

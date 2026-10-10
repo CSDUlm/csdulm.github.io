@@ -1,0 +1,9 @@
+# Copy to .dev.vars for local work; .dev.vars is ignored by Git.
+# Only localhost origins are permitted over HTTP, and only in development.
+ENVIRONMENT="development"
+ALLOWED_ORIGINS="http://localhost:4175,http://127.0.0.1:4175"
+SEMINAR_PASSWORD_HASH="REPLACE_WITH_OUTPUT_OF_HASH_PASSWORD_TOOL"
+BOOKING_PASSWORD_HASH="REPLACE_WITH_ANOTHER_OUTPUT_OF_HASH_PASSWORD_TOOL"
+SESSION_SECRET="REPLACE_WITH_64_RANDOM_HEXADECIMAL_CHARACTERS"
+# A fine-grained token for this repository with Contents: read and write.
+GITHUB_TOKEN="REPLACE_WITH_SERVER_SIDE_GITHUB_TOKEN"

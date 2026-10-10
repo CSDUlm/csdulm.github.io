@@ -1,0 +1,33 @@
+name = "csd-private-api"
+main = "src/index.mjs"
+compatibility_date = "2026-10-10"
+workers_dev = true
+preview_urls = false
+
+[vars]
+ENVIRONMENT = "production"
+ALLOWED_ORIGINS = "https://csdulm.github.io"
+GITHUB_REPOSITORY = "CSDUlm/csdulm.github.io"
+GITHUB_BRANCH = "main"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "csd-private"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[triggers]
+crons = ["17 * * * *"]
+
+# PBKDF2 verification needs a Workers paid plan with an adequate CPU budget.
+[limits]
+cpu_ms = 1000
+
+# Add your real site origin to ALLOWED_ORIGINS before using a custom domain.
+# Optionally route the API through a custom domain:
+# [[routes]]
+# pattern = "api.your-domain.example"
+# custom_domain = true
+
+# Configure secrets with wrangler secret put, never in this file:
+# SEMINAR_PASSWORD_HASH, BOOKING_PASSWORD_HASH, SESSION_SECRET, GITHUB_TOKEN

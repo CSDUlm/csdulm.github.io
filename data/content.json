@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-10-10",
+  "name": {
+    "en": "Centre Sciences des Données",
+    "fr": "Centre Sciences des Données"
+  },
+  "mission": {
+    "en": [
+      "The Centre Sciences des Données (CSD) is an interdisciplinary centre that brings together data science and artificial intelligence research at École normale supérieure. It gives researchers from a wide range of backgrounds a place to share expertise, develop new approaches and connect theoretical and experimental advances.",
+      "The centre welcomes researchers in mathematics, computer science, cognitive science and physics, alongside colleagues from ENS, PSL and the PRAIRIE institute, external visitors and international guests.",
+      "Beyond research, CSD organises seminars, conferences and courses. These activities help students, the public and industrial partners understand data science methods and the questions they raise."
+    ],
+    "fr": [
+      "Le Centre Sciences des Données (CSD) est un centre interdisciplinaire qui rassemble les recherches en sciences des données et en intelligence artificielle à l’École normale supérieure. Il offre aux chercheurs de différents horizons un lieu pour partager leurs expertises, enrichir leurs approches et relier les avancées théoriques et expérimentales.",
+      "Le centre accueille des chercheurs en mathématiques, informatique, sciences cognitives et physique, ainsi que des collègues de l’ENS, de PSL et de l’institut PRAIRIE, des visiteurs extérieurs et des invités internationaux.",
+      "Au-delà de la recherche, le CSD organise des séminaires, des conférences et des formations. Ces activités permettent aux étudiants, au grand public et aux partenaires industriels de mieux comprendre les méthodes des sciences des données et leurs enjeux."
+    ]
+  },
+  "location": {
+    "address": "45 rue d’Ulm",
+    "postalCode": "75005",
+    "city": "Paris",
+    "country": "France",
+    "access": {
+      "en": "Third floor of the main ENS building, between staircases B and C.",
+      "fr": "Troisième étage du bâtiment principal de l’ENS, entre les escaliers B et C."
+    }
+  },
+  "supporters": [
+    {
+      "name": "ENS–PSL",
+      "url": "https://www.ens.psl.eu/"
+    },
+    {
+      "name": "PSL University",
+      "url": "https://psl.eu/"
+    },
+    {
+      "name": "PRAIRIE institute",
+      "url": "https://prairie-institute.fr/"
+    },
+    {
+      "name": "ENS–CFM chair",
+      "url": "https://data-ens.github.io/"
+    }
+  ],
+  "teams": [
+    {
+      "name": "Giulio Biroli",
+      "url": "https://www.lpens.ens.psl.eu/giulio-biroli/"
+    },
+    {
+      "name": "Olivier Cappé",
+      "url": "https://www.di.ens.fr/~cappe/"
+    },
+    {
+      "name": "Emmanuel Dupoux",
+      "url": "http://www.lscp.net/persons/dupoux/"
+    },
+    {
+      "name": "Marylou Gabrié",
+      "url": "https://marylou-gabrie.github.io/"
+    },
+    {
+      "name": "Bruno Loureiro",
+      "url": "https://brloureiro.github.io/"
+    },
+    {
+      "name": "Stéphane Mallat",
+      "url": "https://www.di.ens.fr/~mallat/mallat.html"
+    },
+    {
+      "name": "Kimia Nadjahi",
+      "url": "https://kimiandj.github.io/"
+    },
+    {
+      "name": "Gabriel Peyré",
+      "url": "http://www.gpeyre.com/"
+    }
+  ],
+  "steeringCommittee": [
+    {
+      "name": "Erwan Allys",
+      "url": "http://www.lra.ens.fr/~allys/index.html"
+    },
+    {
+      "name": "Freddy Bouchet",
+      "url": "https://www.phys.ens.fr/fr/annuaire/51/freddy-bouchet"
+    },
+    {
+      "name": "Rémi Monasson",
+      "url": "http://www.phys.ens.fr/~monasson/"
+    },
+    {
+      "name": "Thierry Mora",
+      "url": "http://www.phys.ens.fr/~tmora/"
+    },
+    {
+      "name": "Gabriel Peyré",
+      "url": "http://www.gpeyre.com/"
+    },
+    {
+      "name": "Aleksandra Walczak",
+      "url": "https://www.phys.ens.fr/~awalczak/"
+    }
+  ],
+  "invitedProfessors": [
+    {
+      "name": "Demba Ba",
+      "institution": "Harvard",
+      "year": 2024,
+      "url": "https://seas.harvard.edu/person/demba-ba"
+    },
+    {
+      "name": "Julia Kempe",
+      "institution": "NYU",
+      "year": 2023,
+      "url": "https://cims.nyu.edu/~kempe/"
+    },
+    {
+      "name": "Maarten de Hoop",
+      "institution": "Rice",
+      "year": 2023,
+      "url": "https://maartendehoop.rice.edu/"
+    },
+    {
+      "name": "Brice Ménard",
+      "institution": "Johns Hopkins University",
+      "year": 2022,
+      "url": "https://menard.pha.jhu.edu/"
+    },
+    {
+      "name": "Eric Vanden-Eijnden",
+      "institution": "NYU",
+      "year": 2022,
+      "url": "https://wp.nyu.edu/courantinstituteofmathematicalsciences-eve2/"
+    },
+    {
+      "name": "Naoki Saito",
+      "institution": "UC Davis",
+      "year": 2022,
+      "url": "https://www.math.ucdavis.edu/~saito/"
+    }
+  ],
+  "mailingList": {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfSuPd-zngJt9N_wJvjiz2V3oFc4uTsdWqwH5-RZC0yspByXQ/viewform"
+  },
+  "seminar": {
+    "description": {
+      "en": "The CSD seminar brings together researchers from across data science, from physics and mathematics to linguistics and cognitive science. Talks last about 45 minutes, followed by questions and discussion.",
+      "fr": "Le séminaire du CSD accueille des chercheurs de tous les domaines liés aux sciences des données, de la physique et des mathématiques à la linguistique et aux sciences cognitives. Les exposés durent environ 45 minutes et sont suivis de questions et de discussions."
+    },
+    "usualSchedule": {
+      "en": "For 2026–2027, seminars usually take place on Thursdays, 11:00–12:00. Tuesday colloquia usually take place at 11:00–12:00. Check each event for exceptions. All times are Paris local time.",
+      "fr": "Pour l’année 2026–2027, les séminaires ont habituellement lieu le jeudi de 11 h à 12 h. Les colloquiums du mardi ont habituellement lieu de 11 h à 12 h. Consultez chaque événement pour les exceptions. Tous les horaires sont à l’heure de Paris."
+    },
+    "scheduleSource": {
+      "kind": "document",
+      "name": "CSD – Séminaire, GT et colloquium",
+      "academicYear": "2026–2027"
+    }
+  },
+  "courses": {
+    "description": {
+      "en": "CSD hosts courses open to everyone, usually for undergraduate and graduate audiences, in its conference room.",
+      "fr": "Le CSD accueille dans sa salle de conférence des cours ouverts à tous, généralement destinés aux étudiants de licence et de master."
+    },
+    "archive": [
+      {
+        "speaker": "Eric Vanden-Eijnden",
+        "institution": "NYU",
+        "title": "Statistical learning and sampling",
+        "fellowship": "FSMP & PSL",
+        "sessions": [
+          {
+            "date": "2022-06-20",
+            "time": "14:00–15:30",
+            "topic": "Benefits of overparametrization in statistical learning"
+          },
+          {
+            "date": "2022-06-22",
+            "time": "14:00–15:50",
+            "topic": "Enhancing MCMC Sampling with Learning"
+          }
+        ],
+        "sourceNote": "The source omits the year for the June lectures; 2022 follows from the article publication and the matching weekdays."
+      },
+      {
+        "speaker": "Matthew Colbrook",
+        "institution": "ENS",
+        "title": "Data-driven numerical analysis of Koopman operators for dynamical systems",
+        "fellowship": "FSMP",
+        "sessions": [
+          {
+            "date": "2022-03-07",
+            "time": "15:30–17:00",
+            "topic": "Introduction to the Koopman approach"
+          },
+          {
+            "date": "2022-03-10",
+            "time": "15:30–17:00",
+            "topic": "Algorithms and challenges"
+          },
+          {
+            "date": "2022-03-29",
+            "time": "14:00–15:30",
+            "topic": "Computing spectra of infinite-dimensional operators"
+          },
+          {
+            "date": "2022-04-05",
+            "time": "14:00–15:30",
+            "topic": "Spectral measures and continuous spectra"
+          },
+          {
+            "date": "2022-04-12",
+            "time": "14:00–15:30",
+            "topic": "Dealing with high-dimensional state spaces"
+          }
+        ],
+        "sourceNote": "The year 2022 is explicit for the final lecture and applies to this series."
+      }
+    ]
+  },
+  "phdSeminar": {
+    "description": {
+      "en": "The PhD seminar brings students together for interactive paper presentations, classes and tutorials. Students from outside the centre are also welcome.",
+      "fr": "Le séminaire des doctorants rassemble les étudiants autour de présentations interactives d’articles, de cours et de tutoriels. Les étudiants extérieurs au centre sont également les bienvenus."
+    },
+    "legacyUrl": "https://csd.ens.psl.eu/?phd-seminar",
+    "legacySchedule": {
+      "en": "The legacy page lists Mondays, 12:00–13:00, in the CSD conference room. Consult the organisers for the current schedule.",
+      "fr": "L’ancienne page indique le lundi de 12 h à 13 h dans la salle de conférence du CSD. Consultez les organisateurs pour connaître le programme actuel."
+    }
+  },
+  "image": {
+    "path": "assets/images/ens-ulm.jpg",
+    "title": "ENS Ulm cour Ernests DSC00106.jpg",
+    "author": "David Monniaux",
+    "date": "2003-06-29",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg",
+    "license": "CC BY-SA 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0/",
+    "changes": "Wikimedia 1280-pixel thumbnail; displayed with CSS crops and opacity."
+  }
+}

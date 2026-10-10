@@ -1,0 +1,3305 @@
+{
+  "version": 1,
+  "timezone": "Europe/Paris",
+  "retrievedAt": "2026-10-10",
+  "source": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+  "seminars": [
+    {
+      "speaker": "Steven L. Brunton",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-12-08T14:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "tentative",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "Explicit event time in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-12-08, seminar, Steven L. Brunton (tentative)",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-12-08-steven-l-brunton"
+    },
+    {
+      "speaker": "Alexander Mathis",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-12-03T11:00:00+01:00",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-12-03, colloquium, Alexander Mathis",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-12-03-alexander-mathis"
+    },
+    {
+      "speaker": "Antonin de Courcel",
+      "institution": "",
+      "title": "Effective models in high dimensional unstable regimes: optimization dynamics at the edge of stability",
+      "titleKnown": true,
+      "date": "2026-11-12T11:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": false,
+      "status": "tentative",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-11-12, seminar, Antonin de Courcel, Effective models in high dimensional unstable regimes: optimization dynamics at the edge of stability (tentative)",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-11-12-antonin-de-courcel"
+    },
+    {
+      "speaker": "Pierre Gentine",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-11-10T11:00:00+01:00",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-11-10, colloquium, Pierre Gentine",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-11-10-pierre-gentine"
+    },
+    {
+      "speaker": "Xiaoming Yuan",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-11-05T11:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-11-05, seminar, Xiaoming Yuan",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-11-05-xiaoming-yuan"
+    },
+    {
+      "speaker": "Marc Lelarge",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-10-29T11:00:00+01:00",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-10-29, colloquium, Marc Lelarge",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-10-29-marc-lelarge"
+    },
+    {
+      "speaker": "Jerome Garnier Brun",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-10-22T11:00:00+02:00",
+      "type": "seminar",
+      "typeKnown": false,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-10-22, seminar, Jerome Garnier Brun",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-10-22-jerome-garnier-brun"
+    },
+    {
+      "speaker": "Nicolas Schreuder",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-10-15T11:00:00+02:00",
+      "type": "seminar",
+      "typeKnown": false,
+      "status": "tentative",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "roomSource": "CSD default room; not individually confirmed in the supplied document",
+      "sourceText": "2026-10-15, seminar, Nicolas Schreuder (tentative)",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-10-15-nicolas-schreuder"
+    },
+    {
+      "speaker": "Samuel Vaiter",
+      "institution": "",
+      "title": "(Trying to) Understand Steering in Language Models",
+      "titleKnown": true,
+      "date": "2026-10-01T11:00:00+02:00",
+      "type": "seminar",
+      "typeKnown": false,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": null,
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "sourceText": "2026-10-01, seminar, Samuel Vaiter, (Trying to) Understand Steering in Language Models",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-10-01-samuel-vaiter"
+    },
+    {
+      "speaker": "Vladimir Petrovic; Damien Rouchousse",
+      "institution": "",
+      "title": "Fast coresets for the Sinkhorn divergence / Discrete Diffusion Design: An Asymptotic Error Analysis Approach",
+      "titleKnown": true,
+      "date": "2026-09-24T11:00:00+02:00",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": null,
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "talks": [
+        {
+          "speaker": "Vladimir Petrovic",
+          "title": "Fast coresets for the Sinkhorn divergence"
+        },
+        {
+          "speaker": "Damien Rouchousse",
+          "title": "Discrete Diffusion Design: An Asymptotic Error Analysis Approach"
+        }
+      ],
+      "sourceText": "2026-09-24, working-group, Vladimir Petrovic; Damien Rouchousse, Fast coresets for the Sinkhorn divergence / Discrete Diffusion Design: An Asymptotic Error Analysis Approach",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-09-24-vladimir-petrovic-damien-rouchousse"
+    },
+    {
+      "speaker": "Guy Gilboa",
+      "institution": "",
+      "title": "How to Encode World Knowledge?",
+      "titleKnown": true,
+      "date": "2026-09-17T11:00:00+02:00",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": null,
+      "roomKnown": false,
+      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
+      "sourceText": "2026-09-17, working-group, Guy Gilboa, How to Encode World Knowledge?",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        }
+      ],
+      "id": "2026-09-17-guy-gilboa"
+    },
+    {
+      "speaker": "Florent Krzakala",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-06-25T12:00:00+02:00",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": null,
+      "roomKnown": false,
+      "timeSource": "Explicit event time in supplied planning document",
+      "sourceText": "2026-06-25, seminar, Florent Krzakala",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-06-25-florent-krzakala"
+    },
+    {
+      "speaker": "Emmanuel Sérié; Gabriel Peyré",
+      "institution": "",
+      "title": "LLM for coding tutorial",
+      "titleKnown": true,
+      "date": "2026-06-18T12:00:00+02:00",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": null,
+      "roomKnown": false,
+      "timeSource": "Explicit event time in supplied planning document",
+      "sourceNote": "The document marks Gabriel Peyré’s participation as provisional.",
+      "sourceText": "2026-06-18, seminar, Emmanuel Sérié; Gabriel Peyré, LLM for coding tutorial",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-06-18-emmanuel-serie-gabriel-peyre"
+    },
+    {
+      "speaker": "Constant Bourdrez; Hanna Benarroch",
+      "institution": "",
+      "title": "Learning To Sample From Diffusion Models Via Inverse Reinforcement Learning / Certified Per-instance Unlearning using Individual Sensitivity Bounds",
+      "titleKnown": true,
+      "date": "2026-06-11T12:00:00+02:00",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": null,
+      "roomKnown": false,
+      "timeSource": "Explicit event time in supplied planning document",
+      "talks": [
+        {
+          "speaker": "Constant Bourdrez",
+          "title": "Learning To Sample From Diffusion Models Via Inverse Reinforcement Learning"
+        },
+        {
+          "speaker": "Hanna Benarroch",
+          "title": "Certified Per-instance Unlearning using Individual Sensitivity Bounds"
+        }
+      ],
+      "sourceText": "2026-06-11, seminar, Constant Bourdrez; Hanna Benarroch, Learning To Sample From Diffusion Models Via Inverse Reinforcement Learning / Certified Per-instance Unlearning using Individual Sensitivity Bounds",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-06-11-constant-bourdrez-hanna-benarroch"
+    },
+    {
+      "speaker": "Théo Lacombe",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-06-04T12:00:00+02:00",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": null,
+      "roomKnown": false,
+      "timeSource": "Explicit event time in supplied planning document",
+      "sourceText": "2026-06-04, seminar, Théo Lacombe",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-06-04-theo-lacombe"
+    },
+    {
+      "speaker": "Rebecca Willet",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-06-02",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2026-06-02, colloquium, Rebecca Willet",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-06-02-rebecca-willet"
+    },
+    {
+      "speaker": "Fabian Schaipp",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-05-28",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2026-05-28, seminar, Fabian Schaipp",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-05-28-fabian-schaipp"
+    },
+    {
+      "speaker": "Jiayi Li",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-05-21",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2026-05-21, seminar, Jiayi Li",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-05-21-jiayi-li"
+    },
+    {
+      "speaker": "Valérie Castin; Gauthier Thurin",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-05-07",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2026-05-07, seminar, Valérie Castin; Gauthier Thurin",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-05-07-valerie-castin-gauthier-thurin"
+    },
+    {
+      "speaker": "Eugène Ndiaye",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-04-23",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "cancelled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2026-04-23, seminar, Eugène Ndiaye (cancelled)",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-04-23-eugene-ndiaye"
+    },
+    {
+      "speaker": "Batiste Le bars",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-04-16",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2026-04-16, seminar, Batiste Le bars",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-04-16-batiste-le-bars"
+    },
+    {
+      "speaker": "Michael Chertkov",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2026-04-09",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2026-04-09, colloquium, Michael Chertkov",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "id": "2026-04-09-michael-chertkov"
+    },
+    {
+      "id": "2026-04-02-tony-silveti-falls",
+      "speaker": "Tony Silveti-Falls",
+      "institution": "",
+      "title": "Training Neural Networks at Any Scale",
+      "date": "2026-04-02",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-04-02, seminar, Tony Silveti-Falls, Training Neural Networks at Any Scale",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/04/02, Tony Silveti-Falls, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-26-francois-malgouyres",
+      "speaker": "François Malgouyres",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-03-26",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-03-26, seminar, François Malgouyres",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/03/26, François Malgouyres, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-19-eugene-ndiaye",
+      "speaker": "Eugène Ndiaye",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-03-19",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-03-19, seminar, Eugène Ndiaye",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/03/19, Eugène Ndiaye, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-17-julien-mairal",
+      "speaker": "Julien Mairal",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-03-17",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-03-17, colloquium, Julien Mairal",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/03/17, Julien Mairal, Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-12-leonardo-defilippis-luigi-fogliani",
+      "speaker": "Leonardo Defilippis; Luigi Fogliani",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-03-12",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-03-12, working-group, Leonardo Defilippis; Luigi Fogliani",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/03/12, Leonardo Defilippis ; Luigi Fogliani, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-02-19-thibaut-germain",
+      "speaker": "Thibaut Germain",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-02-19",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-02-19, seminar, Thibaut Germain",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/02/19, Thibaut Germain, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-02-12-alessandro-laio",
+      "speaker": "Alessandro Laio",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-02-12",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-02-12, colloquium, Alessandro Laio",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/02/12, Alessandro Laio, Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-02-05-nina-vesseron-johannes-hertrich",
+      "speaker": "Nina Vesseron; Johannes Hertrich",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-02-05",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-02-05, working-group, Nina Vesseron; Johannes Hertrich",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/02/05, Nina Vesseron ; Johannes Hertrich, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-01-29-ashok-vardhan",
+      "speaker": "Ashok Vardhan",
+      "institution": "",
+      "title": "From Markov to Laplace: A Markovian Tale of Large Language Models",
+      "date": "2026-01-29",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-01-29, seminar, Ashok Vardhan, From Markov to Laplace: A Markovian Tale of Large Language Models",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/01/29, Ashok Vardhan, From Markov to Laplace : A Markovian Tale of Large Language Models",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ],
+      "abstract": "Large Language Models based on transformers and state-space models (Mamba) are at the forefront of recent breakthroughs in a variety of disciplines, including natural languages. Despite their remarkable empirical success, our theoretical understanding of how these models learn and represent sequential structure, and how in-context learning (ICL) capabilities emerge on such tasks, remains limited. This raises a fundamental question: How do modern sequence models learn from sequential data? To address this question, in this talk I will present our new framework for a principled theoretical and empirical analysis of LLMs via Markov chains. The key idea underpinning our approach is the modeling of sequential input data as a Markov process, inspired by the Markovianity of natural languages. We utilize this framework to systematically study the interplay between the Markov order and model depth,  revealing sharp contrasts between transformers and state-space models. In particular, our analysis reveals the curious phenomena that (i) even a single-layer Mamba efficiently learns the in-context Laplacian smoothing estimator, whereas transformers require two layers, and (ii) while a single layer transformer cannot efficiently represent a conditional $k$-gram model, a two layer transformer can represent it for any Markov order $k \\geq 1$. Together, our results provide the first formal connection between Mamba and optimal statistical estimators, and yield the tightest known characterization of the interplay between transformer depth and Markov order for ICL. Deepening our understanding of LLMs and their ICL capabilities, we believe our framework provides a new avenue for a principled study of LLMs with plenty of interesting open questions abound, which I will discuss in the end."
+    },
+    {
+      "id": "2026-01-22-eddie-aamari",
+      "speaker": "Eddie Aamari",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2026-01-22",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-01-22, working-group, Eddie Aamari",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/01/22, Eddie Aamari, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-01-15-marine-le-morvan",
+      "speaker": "Marine Le Morvan",
+      "institution": "",
+      "title": "A Tabular Foundation Model for In-Context Learning on Large Data",
+      "date": "2026-01-15",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-01-15, seminar, Marine Le Morvan",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/01/15, Marine Le Morvan, A Tabular Foundation Model for In-Context Learning on Large Data",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2026-01-08-nathan-srebro",
+      "speaker": "Nathan Srebro",
+      "institution": "",
+      "title": "Learning to Answer from Correct Demonstrations",
+      "date": "2026-01-08",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2026-01-08, colloquium, Nathan Srebro",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2026/01/08, Nathan Srebro, Colloquium, Learning to Answer from Correct Demonstrations",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-12-18-pierre-marion",
+      "speaker": "Pierre Marion",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-12-18",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-12-18, seminar, Pierre Marion",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/12/18, Pierre Marion, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-12-11-etienne-lempereur-raphael-urfin",
+      "speaker": "Etienne Lempereur; Raphaël Urfin",
+      "institution": "",
+      "title": "Moment Guided Diffusion for Maximum Entropy Generation / Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training",
+      "date": "2025-12-11",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-12-11, working-group, Etienne Lempereur; Raphaël Urfin, Moment Guided Diffusion for Maximum Entropy Generation / Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training",
+      "typeKnown": true,
+      "status": "scheduled",
+      "talks": [
+        {
+          "speaker": "Etienne Lempereur",
+          "title": "Moment Guided Diffusion for Maximum Entropy Generation"
+        },
+        {
+          "speaker": "Raphaël Urfin",
+          "title": "Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training"
+        }
+      ],
+      "legacySourceText": "2025/12/11, Etienne Lempereur, Raphaël Urfin, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-27-jerome-bolte",
+      "speaker": "Jérôme Bolte",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-11-27",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-11-27, seminar, Jérôme Bolte",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/11/27, Jérôme Bolte, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-20-stephen-zhang",
+      "speaker": "Stephen Zhang",
+      "institution": "",
+      "title": "Flow matching for (generalized) Schrödinger bridges and dynamical optimal transport",
+      "date": "2025-11-20",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-11-20, seminar, Stephen Zhang, Flow matching for (generalized) Schrödinger bridges and dynamical optimal transport",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/11/20, Stephen Zhang, Flow Matching for (Generalized) Schrödinger Bridges and Dynamical Optimal Transport",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-18-etienne-ollion",
+      "speaker": "Étienne Ollion",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-11-18",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-11-18, colloquium, Étienne Ollion",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/11/18, Étienne Ollion, Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-13-hugo-cui",
+      "speaker": "Hugo Cui",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-11-13",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-11-13, seminar, Hugo Cui",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/11/13, Hugo Cui, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-11-06-samuel-boite-lea-bohbot",
+      "speaker": "Samuel Boïté; Léa Bohbot",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-11-06",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-11-06, working-group, Samuel Boïté; Léa Bohbot",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/11/06, Samuel Boïté ; Léa Bohbot, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-30-arie-wortsman-benjamin-dupuis",
+      "speaker": "Arie Wortsman; Benjamin Dupuis",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-10-30",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-10-30, working-group, Arie Wortsman; Benjamin Dupuis",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/10/30, Arie Wortsman ; Benjamin Dupuis, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-21-eva-dyer",
+      "speaker": "Eva Dyer",
+      "institution": "",
+      "title": "Large-scale pretraining on neural data allows for transfer across individuals, tasks and species",
+      "date": "2025-10-21",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-10-21, colloquium, Eva Dyer",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/10/21, Eva Dyer, Colloquium, Large-scale pretraining on neural data allows for transfer across individuals, tasks and species",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-16-arthur-pellegrino-nikos-tsilivis",
+      "speaker": "Arthur Pellegrino; Nikos Tsilivis",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-10-16",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-10-16, working-group, Arthur Pellegrino; Nikos Tsilivis",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/10/16, Arthur Pellegrino ; Nikos Tsilivis, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-09-emile-pierret",
+      "speaker": "Emile Pierret",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-10-09",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-10-09, seminar, Emile Pierret",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/10/09, Emile Pierret, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-10-02-davide-carbone-nathanael-cuvelle-magar",
+      "speaker": "Davide Carbone; Nathanael Cuvelle-Magar",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-10-02",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-10-02, working-group, Davide Carbone; Nathanael Cuvelle-Magar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/10/02, Davide Carbone ; Nathanael Cuvelle-Magar, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-09-25-julie-delon",
+      "speaker": "Julie Delon",
+      "institution": "",
+      "title": "Computing Barycentres of Measures for Generic Transport Costs",
+      "date": "2025-09-25",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-09-25, seminar, Julie Delon, Computing Barycentres of Measures for Generic Transport Costs",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/09/25, Julie Delon, Computing Barycentres of Measures for Generic Transport Costs",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2025–2026"
+        }
+      ]
+    },
+    {
+      "id": "2025-06-26-luiz-chamon",
+      "speaker": "Luiz Chamon",
+      "institution": "",
+      "title": "Learning under requirements",
+      "date": "2025-06-26",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-06-26, seminar, Luiz Chamon, Learning under requirements",
+      "typeKnown": false,
+      "status": "scheduled",
+      "legacySourceText": "2025/06/26, Luiz Chamon, Learning Under Requirements",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-06-19-kruno-luca-del-bono",
+      "speaker": "Kruno; Luca del Bono",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-06-19",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-06-19, working-group, Kruno; Luca del Bono",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/06/19, Kruno ; Luca del Bono, GT théorie",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-06-12-david-louapre",
+      "speaker": "David Louapre",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-06-12",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-06-12, colloquium, David Louapre",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/06/12, David Louapre, CSD Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-05-22-eric-vanden-eijnden",
+      "speaker": "Eric Vanden-Eijnden",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-05-22",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-05-22, colloquium, Eric Vanden-Eijnden",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/05/22, Eric Vanden-Eijnden, CSD Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-05-15-grant-rotskoff",
+      "speaker": "Grant Rotskoff",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-05-15",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-05-15, seminar, Grant Rotskoff",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/05/15, Grant Rotskoff, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-04-24-loucas-pillaud-vivien",
+      "speaker": "Loucas-Pillaud Vivien",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-04-24",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-04-24, seminar, Loucas-Pillaud Vivien",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/04/24, Loucas-Pillaud Vivien, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-04-17-beatrice-achilli",
+      "speaker": "Beatrice Achilli",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-04-17",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-04-17, working-group, Beatrice Achilli",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/04/17, Beatrice Achilli, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-04-03-olivier-cappe-gabriel-peyre",
+      "speaker": "Olivier Cappé; Gabriel Peyré",
+      "institution": "",
+      "title": "Modern Transformers and GRPO",
+      "date": "2025-04-03",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-04-03, working-group, Olivier Cappé; Gabriel Peyré, Modern Transformers and GRPO",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/04/03, Olivier Cappé, Gabriel Peyré, GT Modern Transformers and GRPO",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-03-27-denny-wu",
+      "speaker": "Denny Wu",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-03-27",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-03-27, seminar, Denny Wu",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/03/27, Denny Wu, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-03-20-demba-ba",
+      "speaker": "Demba Ba",
+      "institution": "",
+      "title": "Ten years of playing in deep haystacks: a taxonomy of interpretability research",
+      "date": "2025-03-20",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-03-20, seminar, Demba Ba, Ten years of playing in deep haystacks: a taxonomy of interpretability research",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/03/20, Demba Ba, Ten Years of Playing in Deep Haystacks : A Taxonomy of Interpretability Research",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-03-13-alex-cayco-gajic",
+      "speaker": "Alex Cayco Gajic",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-03-13",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-03-13, seminar, Alex Cayco Gajic",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/03/13, Alex Cayco Gajic, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-03-06-yann-fleureau",
+      "speaker": "Yann Fleureau",
+      "institution": "",
+      "title": "Projet Numina: IA appliquée au raisonnement et à la formalisation mathématiques",
+      "date": "2025-03-06",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-03-06, seminar, Yann Fleureau, Projet Numina: IA appliquée au raisonnement et à la formalisation mathématiques",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/03/06, Yann Fleureau, Projet Numina : IA appliquée au raisonnement et à la formalisation mathématiques",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-02-27-antonio-ocello",
+      "speaker": "Antonio Ocello",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-02-27",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-02-27, seminar, Antonio Ocello",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/02/27, Antonio Ocello, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-02-20-clement-bonet",
+      "speaker": "Clément Bonet",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-02-20",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-02-20, seminar, Clément Bonet",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/02/20, Clément Bonet, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-02-13-fanny-yang",
+      "speaker": "Fanny Yang",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-02-13",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-02-13, colloquium, Fanny Yang",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/02/13, Fanny Yang, CSD Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-02-06-maxence-noble",
+      "speaker": "Maxence Noble",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-02-06",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-02-06, seminar, Maxence Noble",
+      "typeKnown": false,
+      "status": "scheduled",
+      "legacySourceText": "2025/02/06, Maxence Noble",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-01-30-alessandro-de-palma",
+      "speaker": "Alessandro de Palma",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-01-30",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-01-30, seminar, Alessandro de Palma",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/01/30, Alessandro de Palma, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-01-23-michele-ceriotti",
+      "speaker": "Michele Ceriotti",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-01-23",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-01-23, colloquium, Michele Ceriotti",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/01/23, Michele Ceriotti, CSD Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-01-16-antonin-brossollet-etienne-lempereur",
+      "speaker": "Antonin Brossollet; Etienne Lempereur",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-01-16",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-01-16, working-group, Antonin Brossollet; Etienne Lempereur",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/01/16, Antonin Brossollet ; Etienne Lempereur, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2025-01-09-gauthier-thurin-leonardo-defilippis",
+      "speaker": "Gauthier Thurin; Leonardo Defilippis",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2025-01-09",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2025-01-09, working-group, Gauthier Thurin; Leonardo Defilippis",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2025/01/09, Gauthier Thurin ; Leonardo Defilippis, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-12-19-olivier-cappe",
+      "speaker": "Olivier Cappé",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2024-12-19",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-12-19, working-group, Olivier Cappé",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/12/19, Olivier Cappé, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-12-12-emanuele-francazi-alexis-ayme",
+      "speaker": "Emanuele Francazi; Alexis Aymé",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2024-12-12",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-12-12, working-group, Emanuele Francazi; Alexis Aymé",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/12/12, Emanuele Francazi ; Alexis Aymé, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-12-05-jean-remi-king",
+      "speaker": "Jean-Remi King",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2024-12-05",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-12-05, colloquium, Jean-Remi King",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/12/05, Jean-Remi King, CSD Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-11-28-carl-allen",
+      "speaker": "Carl Allen",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2024-11-28",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-11-28, working-group, Carl Allen",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/11/28, Carl Allen, GT",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-11-21-elisabetta-cornacchia",
+      "speaker": "Elisabetta Cornacchia",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2024-11-21",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-11-21, seminar, Elisabetta Cornacchia",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/11/21, Elisabetta Cornacchia, Séminaire",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-11-14-luca-biferale",
+      "speaker": "Luca Biferale",
+      "institution": "",
+      "title": "Title not recorded",
+      "date": "2024-11-14",
+      "room": null,
+      "type": "colloquium",
+      "titleKnown": false,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-11-14, colloquium, Luca Biferale",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/11/14, Luca Biferale, CSD Colloquium",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-11-07-nicolas-schreuder",
+      "speaker": "Nicolas Schreuder",
+      "institution": "LIGM",
+      "title": "Fairness in machine learning : a study of the Demographic Parity constraint",
+      "date": "2024-11-07",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-11-07, seminar, Nicolas Schreuder",
+      "typeKnown": true,
+      "status": "scheduled",
+      "sourceNote": "The document’s “Nicolas Scwhreuder” spelling was reconciled with the matching date and full name in the old public archive.",
+      "legacySourceText": "2024/11/07, Nicolas Schreuder (LIGM), Fairness in machine learning : a study of the Demographic Parity constraint",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "speaker": "Louis Grenioux; Christoph Schönle",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-10-31",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-10-31, working-group, Louis Grenioux; Christoph Schönle",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ],
+      "id": "2024-10-31-louis-grenioux-christoph-schonle"
+    },
+    {
+      "speaker": "Alexandre Vérine; Jérémie Kalfon",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-10-17",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-10-17, working-group, Alexandre Vérine; Jérémie Kalfon",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ],
+      "id": "2024-10-17-alexandre-verine-jeremie-kalfon"
+    },
+    {
+      "id": "2024-10-10-gabriele-sicuro",
+      "speaker": "Gabriele Sicuro",
+      "institution": "Bologna",
+      "title": "The random assignment problem",
+      "date": "2024-10-10",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-10-10, seminar, Gabriele Sicuro",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/10/10, Gabriele Sicuro (Bologna), The random assignment problem",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "speaker": "Tony Bonnaire",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-10-03",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-10-03, working-group, Tony Bonnaire",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ],
+      "id": "2024-10-03-tony-bonnaire"
+    },
+    {
+      "id": "2024-09-26-vassilis-papadopoulos",
+      "speaker": "Vassilis Papadopoulos",
+      "institution": "EPFL",
+      "title": "Arrows of Time for Large Language Models",
+      "date": "2024-09-26",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-09-26, seminar, Vassilis Papadopoulos",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/09/26, Vassilis Papadopoulos (EPFL), Arrows of Time for Large Language Models",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-09-17-matthieu-wyart",
+      "speaker": "Matthieu Wyart",
+      "institution": "EPFL",
+      "title": "Learning hierarchical representations with deep nets and large language models",
+      "date": "2024-09-17",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-09-17, seminar, Matthieu Wyart",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/09/17, Matthieu Wyart (EPFL), Learning hierarchical representations with deep nets and large language models",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2024–2025"
+        }
+      ]
+    },
+    {
+      "id": "2024-07-11-carl-allen",
+      "speaker": "Carl Allen",
+      "institution": "ENS",
+      "title": "Variational Classification",
+      "date": "2024-07-11",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-07-11, seminar, Carl Allen, Variational Classification",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/07/11, Carl Allen (ENS), Variational Classification",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Maarten de Hoop",
+      "institution": "",
+      "title": "Lecture on neural operators",
+      "titleKnown": true,
+      "date": "2024-07-02",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceNote": "The planning document records two lectures, 20 June and 2 July. The speaker’s “Martin” spelling is reconciled with the document’s Maarten de Hoop entry and the CSD visiting-professor list.",
+      "sourceText": "2024-07-02, working-group, Maarten de Hoop, Lecture on neural operators",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-07-02-maarten-de-hoop"
+    },
+    {
+      "speaker": "Andrea Montanari",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-06-27",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-06-27, colloquium, Andrea Montanari",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-06-27-andrea-montanari"
+    },
+    {
+      "id": "2024-06-20-martin-de-hoop",
+      "speaker": "Maarten de Hoop",
+      "institution": "RICE",
+      "title": "Lecture on neural operators",
+      "date": "2024-06-20",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-06-20, working-group, Maarten de Hoop, Lecture on neural operators",
+      "typeKnown": true,
+      "status": "scheduled",
+      "sourceNote": "The planning document records two lectures, 20 June and 2 July. The speaker’s “Martin” spelling is reconciled with the document’s Maarten de Hoop entry and the CSD visiting-professor list.",
+      "legacySourceText": "2024/06/20, Martin de Hoop (RICE), Lecture on neural operators",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "id": "2024-06-13-raphael-berthier",
+      "speaker": "Raphael Berthier",
+      "institution": "Sorbonne",
+      "title": "The two timescale regime for the analysis of neural networks",
+      "date": "2024-06-13",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-06-13, seminar, Raphael Berthier",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/06/13, Raphael Berthier (Sorbonne), The two timescale regime for the analysis of neural networks",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "id": "2024-06-06-ehsan-elhamifar",
+      "speaker": "Ehsan Elhamifar",
+      "institution": "Northeastern",
+      "title": "Understanding Complex Procedural Videos",
+      "date": "2024-06-06",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-06-06, seminar, Ehsan Elhamifar, Understanding Complex Procedural Videos",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/06/06, Ehsan Elhamifar (Northeastern), Understanding Complex Procedural Videos",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Nina Vesseron; Francisco Andrade",
+      "institution": "",
+      "title": "On a Neural Implementation of Brenier's Polar Factorization / Sparsistency for Inverse Optimal Transport",
+      "titleKnown": true,
+      "date": "2024-05-23",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "talks": [
+        {
+          "speaker": "Nina Vesseron",
+          "title": "On a Neural Implementation of Brenier's Polar Factorization"
+        },
+        {
+          "speaker": "Francisco Andrade",
+          "title": "Sparsistency for Inverse Optimal Transport"
+        }
+      ],
+      "sourceText": "2024-05-23, working-group, Nina Vesseron; Francisco Andrade, On a Neural Implementation of Brenier's Polar Factorization / Sparsistency for Inverse Optimal Transport",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-05-23-nina-vesseron-francisco-andrade"
+    },
+    {
+      "id": "2024-05-16-kimia-nadjahi",
+      "speaker": "Kimia Nadjahi",
+      "institution": "ENS",
+      "title": "Slicing Mutual Information Generalization Bounds for Neural Networks",
+      "date": "2024-05-16",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-05-16, seminar, Kimia Nadjahi, Slicing Mutual Information Generalization Bounds for Neural Networks",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/05/16, Kimia Nadjahi (ENS), Slicing Mutual Information Generalization Bounds for Neural Networks",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "M. Jordan",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-05-02",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceNote": "The document records the speaker as “M Jordan”; the name has not been expanded.",
+      "sourceText": "2024-05-02, colloquium, M. Jordan",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-05-02-m-jordan"
+    },
+    {
+      "speaker": "Kimia Nadjahi; Samuel Hurault",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-04-25",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-04-25, working-group, Kimia Nadjahi; Samuel Hurault",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-04-25-kimia-nadjahi-samuel-hurault"
+    },
+    {
+      "speaker": "Malick",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-04-11",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceNote": "Only the speaker’s surname or first name “Malick” is recorded in the document.",
+      "sourceText": "2024-04-11, seminar, Malick",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-04-11-malick"
+    },
+    {
+      "speaker": "Lenaic Chizat",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-04-04",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-04-04, colloquium, Lenaic Chizat",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-04-04-lenaic-chizat"
+    },
+    {
+      "id": "2024-03-28-ulugbek-kamilov",
+      "speaker": "Ulugbek Kamilov",
+      "institution": "",
+      "title": "Computational Imaging: Restoration Deep Networks as Image Priors",
+      "date": "2024-03-28",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-03-28, seminar, Ulugbek Kamilov, Computational Imaging: Restoration Deep Networks as Image Priors",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/03/28, Ulugbek Kamilov, Computational Imaging : Restoration Deep Networks as Image Priors",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Antoine Georges",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-03-21",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-03-21, colloquium, Antoine Georges",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-03-21-antoine-georges"
+    },
+    {
+      "id": "2024-03-14-florent-krzakala",
+      "speaker": "Florent Krzakala",
+      "institution": "",
+      "title": "How do neural nets learn?",
+      "date": "2024-03-14T12:00:00+01:00",
+      "room": null,
+      "type": "working-group",
+      "titleKnown": true,
+      "timeKnown": true,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-03-14, working-group, Florent Krzakala, How do neural nets learn?",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeSource": "Explicit event time in supplied planning document",
+      "legacySourceText": "2024/03/14, Florent Krzakala, How do neural nets learn ?",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Aymeric Dieuleveut",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-03-07",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-03-07, seminar, Aymeric Dieuleveut",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-03-07-aymeric-dieuleveut"
+    },
+    {
+      "speaker": "Noah Smith",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-02-29",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-02-29, colloquium, Noah Smith",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-02-29-noah-smith"
+    },
+    {
+      "id": "2024-02-08-cyril-letrouit",
+      "speaker": "Cyril Letrouit",
+      "institution": "Orsay",
+      "title": "Two mathematical perspectives on Transformers",
+      "date": "2024-02-08",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-02-08, seminar, Cyril Letrouit, Two mathematical perspectives on Transformers",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/02/08, Cyril Letrouit (Orsay), Two mathematical perspectives on Transformers",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Maarten de Hoop",
+      "institution": "Rice",
+      "title": "Advances in the design and analysis of neural operators",
+      "titleKnown": true,
+      "date": "2024-02-01",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-02-01, working-group, Maarten de Hoop, Advances in the design and analysis of neural operators",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-02-01-maarten-de-hoop"
+    },
+    {
+      "id": "2024-01-25-francis-bach",
+      "speaker": "Francis Bach",
+      "institution": "INRIA",
+      "title": "An alternative view of denoising diffusion models",
+      "date": "2024-01-25",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024-01-25, seminar, Francis Bach, An alternative view of denoising diffusion models",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2024/01/25, Francis Bach (INRIA), An alternative view of denoising diffusion models",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "id": "2024-01-18-lenka-zdeborova",
+      "speaker": "Lenka Zdeborová",
+      "institution": "EPFL",
+      "title": "Backtracking Dynamical Cavity method",
+      "date": "2024-01-18",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2024/01/18, Lenka Zdeborová (EPFL), Backtracking Dynamical Cavity method"
+    },
+    {
+      "speaker": "Lenka Zdeborová (EPFL); Backtracking Dynamical Cavity method",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2024-01-18",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2024-01-18, working-group, Lenka Zdeborová (EPFL); Backtracking Dynamical Cavity method",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2024-01-18-lenka-zdeborova-epfl-backtracking-dynamical-cavity-method"
+    },
+    {
+      "speaker": "Gabriel",
+      "institution": "",
+      "title": "Tutorial on Autodiff",
+      "titleKnown": true,
+      "date": "2023-12-21",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceNote": "Only the speaker’s first name is recorded in the document.",
+      "sourceText": "2023-12-21, working-group, Gabriel, Tutorial on Autodiff",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2023-12-21-gabriel"
+    },
+    {
+      "id": "2023-12-14-mathieu-desbrun",
+      "speaker": "Mathieu Desbrun",
+      "institution": "",
+      "title": "Blue Noise Sampling",
+      "date": "2023-12-14",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023-12-14, seminar, Mathieu Desbrun",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2023/12/14, Mathieu Desbrun, Blue Noise Sampling",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "id": "2023-11-30-pierre-alexandre-mattei",
+      "speaker": "Pierre-Alexandre Mattei",
+      "institution": "",
+      "title": "Are ensembles getting better All the time ?",
+      "date": "2023-11-30",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023-11-30, seminar, Pierre-Alexandre Mattei",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2023/11/30, Pierre-Alexandre Mattei, Are ensembles getting better All the time ?",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Leonardo Defilippis",
+      "institution": "",
+      "title": "High-dimensional estimation under heavy-tails, with applications to robust regression",
+      "titleKnown": true,
+      "date": "2023-11-23",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceNote": "The document’s “Leonardo Defillipis” spelling was reconciled with its other entries and the public archive.",
+      "sourceText": "2023-11-23, working-group, Leonardo Defilippis, High-dimensional estimation under heavy-tails, with applications to robust regression",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2023-11-23-leonardo-defilippis"
+    },
+    {
+      "id": "2023-11-14-antoine-maillard",
+      "speaker": "Antoine Maillard",
+      "institution": "",
+      "title": "Fitting ellipsoids to random points",
+      "date": "2023-11-14",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023-11-14, seminar, Antoine Maillard",
+      "typeKnown": true,
+      "status": "scheduled",
+      "legacySourceText": "2023/11/14, Antoine Maillard, Fitting ellipsoids to random points",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Etienne Lempereur; Edwige Cyffers",
+      "institution": "",
+      "title": "Learning Physics with Wavelet Renormalisation Group / Differential Privacy in Decentralized Learning",
+      "titleKnown": true,
+      "date": "2023-11-09",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "talks": [
+        {
+          "speaker": "Etienne Lempereur",
+          "title": "Learning Physics with Wavelet Renormalisation Group"
+        },
+        {
+          "speaker": "Edwige Cyffers",
+          "title": "Differential Privacy in Decentralized Learning"
+        }
+      ],
+      "sourceText": "2023-11-09, working-group, Etienne Lempereur; Edwige Cyffers, Learning Physics with Wavelet Renormalisation Group / Differential Privacy in Decentralized Learning",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2023-11-09-etienne-lempereur-edwige-cyffers"
+    },
+    {
+      "speaker": "Nathanael Cuvelle-Magar; Raja Giryes",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2023-10-26",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2023-10-26, working-group, Nathanael Cuvelle-Magar; Raja Giryes",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2023-10-26-nathanael-cuvelle-magar-raja-giryes"
+    },
+    {
+      "id": "2023-10-17-andrea-montanari",
+      "speaker": "Andrea Montanari",
+      "institution": "",
+      "title": "Sampling via diffusion processes : rigorous guarantees, hardness, disorder chaos",
+      "date": "2023-10-17T12:30:00+02:00",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": true,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023-10-17, seminar, Andrea Montanari",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeSource": "Explicit event time in supplied planning document",
+      "legacySourceText": "2023/10/17, Andrea Montanari, Sampling via diffusion processes : rigorous guarantees, hardness, disorder chaos",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ]
+    },
+    {
+      "speaker": "Michael Sander",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2023-10-12",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2023-10-12, working-group, Michael Sander",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2023-10-12-michael-sander"
+    },
+    {
+      "speaker": "Julia Kempe",
+      "institution": "",
+      "title": "Title not recorded",
+      "titleKnown": false,
+      "date": "2023-10-05",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2023-10-05, colloquium, Julia Kempe",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2023-10-05-julia-kempe"
+    },
+    {
+      "speaker": "Valérie Castin",
+      "institution": "",
+      "title": "Theory of ML journal club",
+      "titleKnown": true,
+      "date": "2023-09-28",
+      "type": "working-group",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": false,
+      "room": null,
+      "roomKnown": false,
+      "sourceText": "2023-09-28, working-group, Valérie Castin, Theory of ML journal club",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2023–2024"
+        }
+      ],
+      "id": "2023-09-28-valerie-castin"
+    },
+    {
+      "id": "2023-06-22-soledad-villar",
+      "speaker": "Soledad Villar",
+      "institution": "",
+      "title": "Machine learning and invariant theory",
+      "date": "2023-06-22",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/06/22, Soledad Villar, Machine learning and invariant theory"
+    },
+    {
+      "id": "2023-06-08-antonio-silveti-falls",
+      "speaker": "Antonio Silveti-Falls",
+      "institution": "",
+      "title": "Differentiating Nonsmooth Solutions to Parametric Monotone Inclusion Problems",
+      "date": "2023-06-08",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/06/08, Antonio Silveti-Falls, Differentiating Nonsmooth Solutions to Parametric Monotone Inclusion Problems"
+    },
+    {
+      "id": "2023-05-11-francois-lanusse",
+      "speaker": "Francois Lanusse",
+      "institution": "",
+      "title": "Deep Generative Models for Hybrid Physical/Data-Driven Bayesian Inference",
+      "date": "2023-05-11",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/05/11, Francois Lanusse, Deep Generative Models for Hybrid Physical/Data-Driven Bayesian Inference"
+    },
+    {
+      "id": "2023-04-27-pierre-ablin",
+      "speaker": "Pierre Ablin",
+      "institution": "",
+      "title": "Training neural networks with orthogonal weights",
+      "date": "2023-04-27",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/04/27, Pierre Ablin, Training neural networks with orthogonal weights"
+    },
+    {
+      "id": "2023-04-13-arthur-mensch",
+      "speaker": "Arthur Mensch",
+      "institution": "",
+      "title": "Flamingo : a Visual Language Model for Few-Shot Learning",
+      "date": "2023-04-13",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/04/13, Arthur Mensch, Flamingo : a Visual Language Model for Few-Shot Learning"
+    },
+    {
+      "id": "2023-03-16-stephanie-allassonniere",
+      "speaker": "Stéphanie Allassonnière",
+      "institution": "",
+      "title": "Data-Augmentation in High Dimensional Low Sample Size Setting Using a Geometry-Based Variational Autoencoder",
+      "date": "2023-03-16",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/03/16, Stéphanie Allassonnière, Data-Augmentation in High Dimensional Low Sample Size Setting Using a Geometry-Based Variational Autoencoder"
+    },
+    {
+      "id": "2023-03-02-james-thornton",
+      "speaker": "James Thornton",
+      "institution": "",
+      "title": "Diffusion / Field based Reconstruction and Generation for 3D Shapes",
+      "date": "2023-03-02",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/03/02, James Thornton, Diffusion / Field based Reconstruction and Generation for 3D Shapes"
+    },
+    {
+      "id": "2023-02-16-gael-varoquaux",
+      "speaker": "Gaël Varoquaux",
+      "institution": "",
+      "title": "Embeddings to learn on messy relational data",
+      "date": "2023-02-16",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/02/16, Gaël Varoquaux, Embeddings to learn on messy relational data"
+    },
+    {
+      "id": "2023-01-19-herve-jegou",
+      "speaker": "Hervé Jégou",
+      "institution": "",
+      "title": "Learning image representations with coarse, instance-level and image-level supervision",
+      "date": "2023-01-19",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2023/01/19, Hervé Jégou, Learning image representations with coarse, instance-level and image-level supervision"
+    },
+    {
+      "id": "2022-12-09-francois-charton",
+      "speaker": "François Charton",
+      "institution": "",
+      "title": "Deep learning for symbolic maths",
+      "date": "2022-12-09",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/12/9, François Charton - Deep learning for symbolic maths",
+      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification."
+    },
+    {
+      "id": "2022-11-26-mathieu-wyart",
+      "speaker": "Mathieu Wyart",
+      "institution": "",
+      "title": "What makes data learnable by deep learning",
+      "date": "2022-11-26",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/11/26, Mathieu Wyart - What makes data learnable by deep learning",
+      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification."
+    },
+    {
+      "id": "2022-11-18-remi-monasson",
+      "speaker": "Rémi Monasson",
+      "institution": "",
+      "title": "Restricted Boltzmann Machines revisited : from sampling to design",
+      "date": "2022-11-18",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/11/18, Rémi Monasson - Restricted Boltzmann Machines revisited : from sampling to design",
+      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification."
+    },
+    {
+      "id": "2022-10-20-bruno-loureiro",
+      "speaker": "Bruno Loureiro",
+      "institution": "",
+      "title": "Phase diagram of Stochastic Gradient Descent in high-dimensional two-layer neural networks",
+      "date": "2022-10-20",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/10/20 Bruno Loureiro, Phase diagram of Stochastic Gradient Descent in high-dimensional two-layer neural networks"
+    },
+    {
+      "id": "2022-10-13-raja-giryes",
+      "speaker": "Raja Giryes",
+      "institution": "",
+      "title": "Sampling based analysis of neural network generalization and extrapolation",
+      "date": "2022-10-13",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/10/13, Raja Giryes, Sampling based analysis of neural network generalization and extrapolation"
+    },
+    {
+      "id": "2022-06-16-francis-bach",
+      "speaker": "Francis Bach",
+      "institution": "",
+      "title": "The quest for adaptivity",
+      "date": "2022-06-16",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/6/16, Francis Bach, The quest for adaptivity"
+    },
+    {
+      "id": "2022-06-09-rachel-bawden",
+      "speaker": "Rachel Bawden",
+      "institution": "",
+      "title": "Low-resource MT : few-shot learning and historical language normalisation",
+      "date": "2022-06-09",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/6/9, Rachel Bawden, Low-resource MT : few-shot learning and historical language normalisation"
+    },
+    {
+      "id": "2022-06-02-thomas-moreau",
+      "speaker": "Thomas Moreau",
+      "institution": "",
+      "title": "Convolutional Sparse Coding for Electromagnetic Brain Signals",
+      "date": "2022-06-02",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/6/2, Thomas Moreau, Convolutional Sparse Coding for Electromagnetic Brain Signals"
+    },
+    {
+      "id": "2022-04-21-marylou-gabrie",
+      "speaker": "Marylou Gabrié",
+      "institution": "",
+      "title": "Enhancing Sampling with Learning",
+      "date": "2022-04-21",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/4/21, Marylou Gabrié, Enhancing Sampling with Learning"
+    },
+    {
+      "id": "2022-03-24-charles-martin",
+      "speaker": "Charles Martin",
+      "institution": "",
+      "title": "A Semi-Empirical Model for the Generalization Capacity of Deep Neural Networks",
+      "date": "2022-03-24",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/3/24, Charles Martin - A Semi-Empirical Model for the Generalization Capacity of Deep Neural Networks"
+    },
+    {
+      "id": "2022-02-03-marc-lelarge",
+      "speaker": "Marc Lelarge",
+      "institution": "",
+      "title": "Exploiting Graph Invariants in Deep Learning",
+      "date": "2022-02-03",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/2/3, Marc Lelarge - Exploiting Graph Invariants in Deep Learning"
+    },
+    {
+      "id": "2022-01-27-sebastian-goldt",
+      "speaker": "Sebastian Goldt",
+      "institution": "",
+      "title": "The interplay of data structure and learning dynamics in simple neural networks",
+      "date": "2022-01-27",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2022/1/27, Sebastian Goldt - The interplay of data structure and learning dynamics in simple neural networks"
+    },
+    {
+      "id": "2021-12-16-dieuwke-hupkes-on-locality",
+      "speaker": "Dieuwke Hupkes - On locality",
+      "institution": "",
+      "title": "globality, consistency and compositionality in neural machine translation",
+      "date": "2021-12-16",
+      "room": null,
+      "type": "seminar",
+      "titleKnown": true,
+      "timeKnown": false,
+      "roomKnown": false,
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
+      "sourceText": "2021/12/16, Dieuwke Hupkes - On locality, globality, consistency and compositionality in neural machine translation"
+    }
+  ],
+  "sources": [
+    {
+      "kind": "website",
+      "url": "https://csd.ens.psl.eu/?csd-seminar-webpage"
+    },
+    {
+      "kind": "document",
+      "name": "CSD – Séminaire, GT et colloquium",
+      "academicYears": [
+        "2023–2024",
+        "2024–2025",
+        "2025–2026",
+        "2026–2027"
+      ]
+    }
+  ]
+}

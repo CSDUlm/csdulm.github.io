@@ -4,6 +4,7 @@ import {
   safeURL,
   dateLabel,
   timeLabel,
+  titleLabel,
   upcomingSeminars,
   sortSeminars,
 } from "../assets/js/seminars.mjs";
@@ -20,28 +21,21 @@ const roomLabel = (s, t) =>
     : "";
 const ext = (url, text, cls = "", label = "") =>
   `<a href="${e(safeURL(url))}"${cls ? ` class="${cls}"` : ""}${label ? ` aria-label="${e(label)}"` : ""}>${e(text)} ${arrow}</a>`;
+const speakerHeading = (s, t) =>
+  `<h3>${e(s.speaker || t.unknownSpeaker)}${s.institution ? `<span class="seminar-institution"> · ${e(s.institution)}</span>` : ""}</h3>`;
 export function seminarRow(s, lang = "en", now = Date.now()) {
   const t = strings[lang],
     upcoming = upcomingSeminars([s], now).length > 0;
-  const title =
-    s.titleKnown === false ? s.speaker || t.unknownSpeaker : s.title;
-  const speakerLine =
-    s.titleKnown === false
-      ? upcoming
-        ? t.titlePending
-        : t.unknownTitle
-      : s.speaker || t.unknownSpeaker;
   const clock = timeLabel(s, lang),
     room = roomLabel(s, t);
-  return `<article class="seminar-row" id="${e(s.id)}"><div class="seminar-meta"><time datetime="${e(s.date)}">${e(dateLabel(s, lang))}</time><div class="time-room">${e([clock, room].filter(Boolean).join(" · "))}</div>${upcoming ? `<span class="pill green">${e(t.upcomingLabel)}</span>` : ""}${s.status === "tentative" ? `<span class="pill">${e(t.tentative)}</span>` : ""}${s.status === "cancelled" ? `<span class="pill">${e(t.cancelled)}</span>` : ""}${s.type && t.eventTypes[s.type] ? `<span class="small-label">${e(t.eventTypes[s.type])}</span>` : ""}</div><div><h3>${e(title)}</h3><p><span class="speaker">${e(speakerLine)}</span>${s.institution ? ` · ${e(s.institution)}` : ""}</p>${s.talks?.length > 1 ? `<details><summary>${e(t.sessionTalks)}</summary>${s.talks.map((talk) => `<p><strong>${e(talk.speaker)}</strong> · ${e(talk.title)}</p>`).join("")}</details>` : ""}${s.abstract ? `<details><summary>${e(t.abstract)}</summary><p>${e(s.abstract)}</p></details>` : ""}${s.sourceNote ? `<details><summary>${e(t.sourceNote)}</summary><p>${e(s.sourceNote)}</p></details>` : ""}${safeURL(s.url) ? ext(s.url, t.original, "text-link") : ""}</div></article>`;
+  return `<article class="seminar-row" id="${e(s.id)}"><div class="seminar-meta"><time datetime="${e(s.date)}">${e(dateLabel(s, lang))}</time><div class="time-room">${e([clock, room].filter(Boolean).join(" · "))}</div>${upcoming ? `<span class="pill green">${e(t.upcomingLabel)}</span>` : ""}${s.status === "tentative" ? `<span class="pill">${e(t.tentative)}</span>` : ""}${s.status === "cancelled" ? `<span class="pill">${e(t.cancelled)}</span>` : ""}${s.type && t.eventTypes[s.type] ? `<span class="small-label">${e(t.eventTypes[s.type])}</span>` : ""}</div><div>${speakerHeading(s, t)}<p class="seminar-title">${e(titleLabel(s))}</p>${s.talks?.length > 1 ? `<details><summary>${e(t.sessionTalks)}</summary>${s.talks.map((talk) => `<p><strong>${e(talk.speaker)}</strong> · ${e(titleLabel(talk))}</p>`).join("")}</details>` : ""}${s.abstract ? `<details><summary>${e(t.abstract)}</summary><p>${e(s.abstract)}</p></details>` : ""}${s.sourceNote ? `<details><summary>${e(t.sourceNote)}</summary><p>${e(s.sourceNote)}</p></details>` : ""}${safeURL(s.url) ? ext(s.url, t.original, "text-link") : ""}</div></article>`;
 }
 export function nextFeature(seminars, lang = "en") {
   const t = strings[lang],
     s = upcomingSeminars(seminars)[0];
   if (!s)
     return `<div class="seminar-feature empty"><div class="empty-seminar"><div><h3>${e(t.noneTitle)}</h3><p>${e(t.noneBody)}</p></div><a class="text-link" href="${route("seminars", lang)}">${e(t.archiveLink)} ${right}</a></div></div>`;
-  const pending = s.titleKnown === false;
-  return `<div class="seminar-feature"><div class="seminar-date">${e(dateLabel(s, lang, { year: undefined }))}<span>${e([timeLabel(s, lang), roomLabel(s, t)].filter(Boolean).join(" · "))}</span></div><div><div class="eyebrow">${e(t.nextLabel)}${s.status === "tentative" ? ` · ${e(t.tentative)}` : ""}</div><h3>${e(pending ? s.speaker : s.title)}</h3><p>${e(pending ? [s.institution, t.titlePending].filter(Boolean).join(" · ") : [s.speaker, s.institution].filter(Boolean).join(" · "))}</p><div class="seminar-actions"><a class="text-link" href="${route("seminars", lang)}#${e(s.id)}">${e(t.seminarLink)} ${right}</a></div></div></div>`;
+  return `<div class="seminar-feature"><div class="seminar-date">${e(dateLabel(s, lang, { year: undefined }))}<span>${e([timeLabel(s, lang), roomLabel(s, t)].filter(Boolean).join(" · "))}</span></div><div><div class="eyebrow">${e(t.nextLabel)}${s.status === "tentative" ? ` · ${e(t.tentative)}` : ""}</div>${speakerHeading(s, t)}<p class="seminar-title">${e(titleLabel(s))}</p><div class="seminar-actions"><a class="text-link" href="${route("seminars", lang)}#${e(s.id)}">${e(t.seminarLink)} ${right}</a></div></div></div>`;
 }
 function masthead(page, lang) {
   const t = strings[lang];
@@ -83,7 +77,7 @@ function portraitCredit(p, lang) {
 function personCard(p, lang) {
   const t = strings[lang];
   const portrait = p.portrait;
-  return `<article class="person-card"><a class="person-portrait" href="${e(safeURL(p.url))}" aria-label="${e(`${p.name} · ${t.profileLabel}`)}"><img src="${e(portrait.src)}" alt="${e(p.name)}" loading="lazy" decoding="async" width="480" height="600"${portrait.position ? ` style="object-position:${e(portrait.position)}"` : ""}></a><div class="person-info"><h3><a href="${e(safeURL(p.url))}">${e(p.name)}</a></h3>${p.research?.[lang] ? `<p class="person-research">${e(p.research[lang])}</p>` : ""}<div class="person-links">${ext(p.url, t.profileLabel, "", `${t.profileLabel} · ${p.name}`)}${p.email ? `<a href="mailto:${e(p.email)}" aria-label="${e(`${t.emailLabel} · ${p.name}`)}">${e(t.emailLabel)} ${arrow}</a>` : ""}</div>${portraitCredit(p, lang)}</div></article>`;
+  return `<article class="person-card"><a class="person-portrait" href="${e(safeURL(p.url))}" aria-label="${e(`${p.name} · ${t.profileLabel}`)}"><img src="${e(portrait.src)}" alt="${e(p.name)}" loading="lazy" decoding="async" width="480" height="600"${portrait.position ? ` style="object-position:${e(portrait.position)}"` : ""}></a><div class="person-info"><h3><a href="${e(safeURL(p.url))}">${e(p.name)}</a></h3>${p.research?.[lang] ? `<p class="person-research">${e(p.research[lang])}</p>` : ""}<div class="person-links">${ext(p.url, t.profileLabel, "", `${t.profileLabel} · ${p.name}`)}</div>${portraitCredit(p, lang)}</div></article>`;
 }
 function teams(lang, c) {
   const t = strings[lang];

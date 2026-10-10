@@ -53,6 +53,11 @@ export function timeLabel(seminar, lang = "en") {
     hour12: false,
   }).format(new Date(seminar.date));
 }
+export function titleLabel(seminar) {
+  return seminar.titleKnown === false || !seminar.title?.trim()
+    ? "-"
+    : seminar.title;
+}
 export function safeURL(value) {
   try {
     const url = new URL(value);

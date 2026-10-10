@@ -152,7 +152,7 @@ def public_rows(tables):
             explicit_time = override.get('time')
             if not explicit_time and '12h à 13h' in type_text: explicit_time='12:00'
             for event_date in dates:
-                record={'speaker':speaker,'institution':institution,'title':title or 'Title not recorded','titleKnown':bool(title),'date':event_date,'type':kind,'typeKnown':bool(normalized_type or override.get('type')),'status':status,'timeKnown':False,'room':None,'roomKnown':False}
+                record={'speaker':speaker,'institution':institution,'title':title or '-','titleKnown':bool(title),'date':event_date,'type':kind,'typeKnown':bool(normalized_type or override.get('type')),'status':status,'timeKnown':False,'room':None,'roomKnown':False}
                 if explicit_time or table_index==0:
                     time = explicit_time or '11:00'
                     record['date']=datetime.fromisoformat(event_date+'T'+time+':00').replace(tzinfo=TZ).isoformat()

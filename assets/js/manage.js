@@ -62,8 +62,6 @@
       "No seminars have been added yet.",
       "Aucun séminaire n’a encore été ajouté.",
     ],
-    titleNotRecorded: ["Title not recorded", "Titre non renseigné"],
-    titleToBeAnnounced: ["Title to be announced", "Titre à venir"],
     detailsNotRecorded: [
       "Time and room not recorded",
       "Horaire et salle non renseignés",
@@ -410,21 +408,13 @@
           ),
         );
         const detail = make("div");
-        const upcoming = dateOnly
-          ? seminar.date >= dateKey(Date.now())
-          : Date.parse(seminar.date) >= Date.now();
-        const title =
-          seminar.titleKnown === false
-            ? t(upcoming ? "titleToBeAnnounced" : "titleNotRecorded")
-            : seminar.title;
-        detail.append(
-          make("h3", "", title),
-          make(
-            "p",
-            "",
-            [seminar.speaker, seminar.institution].filter(Boolean).join(" · "),
-          ),
-        );
+        const title = seminar.titleKnown === false ? "-" : seminar.title || "-";
+        const heading = make("h3", "", seminar.speaker);
+        if (seminar.institution)
+          heading.append(
+            make("span", "seminar-institution", ` · ${seminar.institution}`),
+          );
+        detail.append(heading, make("p", "seminar-title", title));
         if (seminar.status === "tentative")
           detail.append(make("p", "manage-small", t("statusTentative")));
         if (seminar.status === "cancelled")

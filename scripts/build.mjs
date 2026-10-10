@@ -22,7 +22,6 @@ for (const person of content.teams) {
     ) ||
     !person.research?.en ||
     !person.research?.fr ||
-    (person.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(person.email)) ||
     (person.portrait.position &&
       !/^\d{1,3}% \d{1,3}%$/.test(person.portrait.position))
   )

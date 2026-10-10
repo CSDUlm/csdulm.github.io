@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { renderPage, nextFeature } from "../site/render.mjs";
+import { renderPage, nextFeature, seminarRow } from "../site/render.mjs";
 import {
   upcomingSeminars,
   timeLabel,
@@ -26,6 +26,7 @@ test("seminar archive has unique stable records and preserves missing historical
     if (s.timeKnown === false) assert.equal(s.date.length, 10, s.id);
     if (s.roomKnown === false)
       assert.ok(s.room === null || s.room === "Room W", s.id);
+    if (s.titleKnown === false) assert.equal(s.title, "-", s.id);
   }
 });
 test("upcoming selection handles Paris date-only records and timestamp offsets correctly", () => {
@@ -67,6 +68,23 @@ test("English and French public pages expose translated navigation and safely es
     assert.ok(html.includes("&lt;script&gt;"));
     assert.ok(!html.includes("<script>bad()"));
     assert.ok(!html.includes('href="/rooms/'));
+    assert.ok(
+      html.indexOf(escapeHTML(malicious.speaker)) <
+        html.indexOf(escapeHTML(malicious.title)),
+    );
+    for (const record of [malicious, { ...malicious, date: "2000-10-15" }]) {
+      const row = seminarRow(record, lang);
+      assert.ok(
+        row.indexOf(escapeHTML(record.speaker)) <
+          row.indexOf(escapeHTML(record.title)),
+      );
+      const missing = seminarRow(
+        { ...record, titleKnown: false, title: "Title not recorded" },
+        lang,
+      );
+      assert.ok(missing.includes('<p class="seminar-title">-</p>'));
+      assert.ok(!missing.includes("Title not recorded"));
+    }
   }
   const html = renderPage("seminars", "fr", content, [
     malicious,
@@ -130,7 +148,8 @@ test("tentative events remain labelled and cancelled events never become the nex
   );
   const html = renderPage("home", "en", content, [talk]);
   assert.ok(html.includes("To be confirmed"));
-  assert.ok(html.includes("Title to be announced"));
+  assert.ok(html.includes('<p class="seminar-title">-</p>'));
+  assert.ok(!html.includes("Title not recorded"));
   assert.ok(html.includes("Room W (default room)"));
   const calendar = calendarFile(talk);
   assert.ok(calendar.includes("SUMMARY:CSD seminar — Nicolas Schreuder"));
@@ -138,29 +157,17 @@ test("tentative events remain labelled and cancelled events never become the nex
   assert.ok(!calendar.includes("SUMMARY:Title not recorded"));
 });
 
-test("member gallery renders bilingual profiles, portraits and supplied contact addresses", () => {
+test("member gallery renders bilingual profiles and portraits without email addresses", () => {
   assert.equal(content.teams.length, 13);
-  const contacts = new Map([
-    ["Eddie Aamari", "eddie.aamari@ens.fr"],
-    ["Julie Delon", "julie.delon@math.cnrs.fr"],
-    ["Irène Waldspurger", "Irene.Waldspurger@ens.fr"],
-    ["Nicolas Schreuder", "nicolas.schreuder@cnrs.fr"],
-    ["Yann Ollivier", "yann@yann-ollivier.org"],
-  ]);
-  for (const [name, email] of contacts) {
-    assert.equal(
-      content.teams.find((person) => person.name === name)?.email,
-      email,
-    );
-  }
   for (const lang of ["en", "fr"]) {
     const html = renderPage("teams", lang, content, []);
     assert.equal((html.match(/class="person-card"/g) || []).length, 13);
+    assert.ok(!html.includes("mailto:"));
     for (const person of content.teams) {
       assert.ok(html.includes(`alt="${escapeHTML(person.name)}"`));
       assert.ok(html.includes(`src="${person.portrait.src}"`));
       assert.ok(html.includes(escapeHTML(person.research[lang])));
-      if (person.email) assert.ok(html.includes(`mailto:${person.email}`));
+      assert.ok(!Object.hasOwn(person, "email"));
     }
   }
 });

@@ -4,6 +4,7 @@ import {
   upcomingSeminars,
   dateLabel,
   timeLabel,
+  titleLabel,
   safeURL,
   calendarFile,
 } from "./seminars.mjs";
@@ -40,6 +41,12 @@ const roomLabel = (s) =>
       ? `${s.room} (${t.defaultRoom})`
       : s.room
     : "";
+const speakerHeading = (s) => {
+  const heading = node("h3", "", s.speaker || t.unknownSpeaker);
+  if (s.institution)
+    heading.append(node("span", "seminar-institution", ` · ${s.institution}`));
+  return heading;
+};
 let programme = [],
   limit = 30,
   revealInitialHash = true;
@@ -81,17 +88,8 @@ function renderNext() {
         "eyebrow",
         `${t.nextLabel}${s.status === "tentative" ? ` · ${t.tentative}` : ""}`,
       ),
-      node("h3", "", s.titleKnown === false ? s.speaker : s.title),
-      node(
-        "p",
-        "",
-        (s.titleKnown === false
-          ? [s.institution, t.titlePending]
-          : [s.speaker, s.institution]
-        )
-          .filter(Boolean)
-          .join(" · "),
-      ),
+      speakerHeading(s),
+      node("p", "seminar-title", titleLabel(s)),
     );
     const actions = node("div", "seminar-actions");
     const a = node("a", "text-link", `${t.seminarLink} →`);
@@ -141,26 +139,9 @@ function renderRow(s) {
     meta.append(node("span", "small-label", t.eventTypes[s.type]));
   const content = node("div");
   content.append(
-    node(
-      "h3",
-      "",
-      s.titleKnown === false ? s.speaker || t.unknownSpeaker : s.title,
-    ),
+    speakerHeading(s),
+    node("p", "seminar-title", titleLabel(s)),
   );
-  const speaker = node("p"),
-    name = node(
-      "span",
-      "speaker",
-      s.titleKnown === false
-        ? coming
-          ? t.titlePending
-          : t.unknownTitle
-        : s.speaker || t.unknownSpeaker,
-    );
-  speaker.append(name);
-  if (s.institution)
-    speaker.append(document.createTextNode(` · ${s.institution}`));
-  content.append(speaker);
   for (const [key, label] of [
     ["abstract", t.abstract],
     ["sourceNote", t.sourceNote],
@@ -177,7 +158,7 @@ function renderRow(s) {
       const p = node("p");
       p.append(
         node("strong", "", talk.speaker),
-        document.createTextNode(` · ${talk.title}`),
+        document.createTextNode(` · ${titleLabel(talk)}`),
       );
       details.append(p);
     }

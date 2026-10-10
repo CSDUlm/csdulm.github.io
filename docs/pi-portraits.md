@@ -1,6 +1,6 @@
 # PI portraits and research sources
 
-Verified on 10 October 2026; Eddie Aamari added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Their four email addresses come directly from that request. Eddie Aamari was subsequently added at the site owner’s request, with eddie.aamari@ens.fr matching his official page. All 13 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
+Verified on 10 October 2026; Eddie Aamari added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Eddie Aamari was subsequently added at the site owner’s request. Email addresses are omitted from the gallery and public data at the owner's request. All 13 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
 
 The local assets are WebP conversions of the original photographs, limited to a maximum of 600 pixels in either dimension without enlargement. The original framing and aspect ratio are preserved in the files; the gallery applies a CSS crop with a face-sensitive `object-position`. WebP conversion removes source metadata. The gallery links to each photograph's source, and displays named photographer credits where verified.
 

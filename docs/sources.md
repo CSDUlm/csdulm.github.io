@@ -1,6 +1,6 @@
 # Content provenance and image credit
 
-Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below. The user added Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier as principal investigators on 10 October 2026, and subsequently Eddie Aamari, with their public contact addresses. Their profiles and the portrait gallery are documented in [portrait sources](pi-portraits.md).
+Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below. The user added Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier as principal investigators on 10 October 2026, and subsequently Eddie Aamari. Their profiles and the portrait gallery are documented in [portrait sources](pi-portraits.md). PI email addresses are omitted from the gallery and public data at the site owner's request.
 
 ## CSD information
 
@@ -23,7 +23,7 @@ Historical precision is preserved:
 
 - The original website dates were day-only values (`YYYY-MM-DD`) with `timeKnown: false`. The old page’s “usually Thursdays, 14:00–15:00” schedule is historical and has been superseded for academic year 2026–2027 by the supplied document’s Thursday 11:00–12:00 schedule. Only events explicitly covered by that current schedule, and individual events with an explicit time, receive a full ISO timestamp. `timeSource` records whether a time comes from the general schedule or an event-specific exception.
 - Institutions appear only where supplied in either source. Empty strings represent missing affiliations.
-- Entries labelled only “Séminaire”, “GT”, “GT théorie” or “Colloquium” have `titleKnown: false` and the display value “Title not recorded”. Their event type is retained separately.
+- Entries labelled only “Séminaire”, “GT”, “GT théorie” or “Colloquium” have `titleKnown: false` and the display value “-”. Their event type is retained separately. Seminar displays place the speaker before the title in both languages.
 - The old page identifies the usual venue as the centre's conference room but does not give each event's room. Historical records use `room: null` with `roomKnown: false`. Upcoming events use the user-requested default “Room W” with `roomKnown: false` and `roomSource` explicitly stating that the room was not individually confirmed in the document.
 - The old public archive supplied no abstracts. The supplied document includes Ashok Vardhan’s abstract, which is imported without its accompanying private email address. No abstract was generated.
 - Three final entries have potentially erroneous years: François Charton is dated **2022/12/9**, Mathieu Wyart **2022/11/26** and Rémi Monasson **2022/11/18**, despite appearing after the December 2021 entries. Those dates are retained exactly as published, with a `sourceNote` flag for future archival verification.

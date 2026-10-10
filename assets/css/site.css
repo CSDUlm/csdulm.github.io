@@ -693,9 +693,15 @@ textarea {
   color: var(--muted);
   margin-bottom: 9px;
 }
-.seminar-row .speaker {
-  color: var(--ink);
-  font-weight: 500;
+.seminar-row .seminar-title {
+  font-size: 1rem;
+}
+.seminar-institution {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--muted);
 }
 .seminar-row details {
   font-size: 0.88rem;

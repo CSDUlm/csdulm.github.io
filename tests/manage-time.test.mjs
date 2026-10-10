@@ -249,11 +249,14 @@ test("Administration preserves unknown seminar details and displays upcoming eve
     ...element.children.flatMap(allText),
   ];
   const rendered = allText(elements["seminar-list"]).join(" ");
-  assert.match(rendered, /Title not recorded/);
-  assert.match(rendered, /Title to be announced/);
+  assert.match(rendered, /Historical speaker -/);
+  assert.match(rendered, /Upcoming speaker -/);
   assert.match(rendered, /Tentative/);
   assert.match(rendered, /Cancelled/);
   assert.match(rendered, /Time and room not recorded/);
-  assert.doesNotMatch(rendered, /Room W|00:00|Generic imported title/);
+  assert.doesNotMatch(
+    rendered,
+    /Room W|00:00|Generic imported title|Title not recorded|Title to be announced/,
+  );
   assert.equal(elements.password.value, "");
 });

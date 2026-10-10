@@ -1,6 +1,5 @@
 export const strings = {
   en: {
-    titlePending: "Title to be announced",
     tentative: "To be confirmed",
     cancelled: "Cancelled",
     upcomingLabel: "Upcoming",
@@ -102,7 +101,6 @@ export const strings = {
     visitorsBody:
       "The centre also welcomes visiting researchers. The previous website records the following invited professors:",
     galleryCount: "principal investigators",
-    emailLabel: "Email",
     portraitSource: "Portrait source",
     seminarEyebrow: "Seminars & scientific exchange",
     seminarTitle: "Seminars",
@@ -121,7 +119,6 @@ export const strings = {
     loading: "Loading seminars…",
     failed:
       "The latest programme is unavailable. The archived programme is shown below.",
-    unknownTitle: "Title not recorded",
     unknownSpeaker: "Speaker not recorded",
     unknownInstitution: "",
     unknownTime: "Time not recorded",
@@ -157,7 +154,6 @@ export const strings = {
       "Return to the centre’s homepage to explore its research, teams, and seminars.",
   },
   fr: {
-    titlePending: "Titre à venir",
     tentative: "À confirmer",
     cancelled: "Annulé",
     upcomingLabel: "À venir",
@@ -259,7 +255,6 @@ export const strings = {
     visitorsBody:
       "Le centre accueille également des chercheurs invités. Le précédent site mentionne les professeurs invités suivants :",
     galleryCount: "responsables de recherche",
-    emailLabel: "Courriel",
     portraitSource: "Source du portrait",
     seminarEyebrow: "Séminaires et échanges scientifiques",
     seminarTitle: "Séminaires",
@@ -278,7 +273,6 @@ export const strings = {
     loading: "Chargement des séminaires…",
     failed:
       "Le programme à jour est indisponible. Les archives sont affichées ci-dessous.",
-    unknownTitle: "Titre non renseigné",
     unknownSpeaker: "Intervenant non renseigné",
     unknownInstitution: "",
     unknownTime: "Horaire non renseigné",

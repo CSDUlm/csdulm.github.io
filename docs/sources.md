@@ -19,6 +19,8 @@ The source's steering-committee profile link for Gabriel Peyré accidentally poi
 
 Each record has a stable identifier, speaker, institution, title, ISO date, room and event type. The original entry is retained in `sourceText`, and `url` links to its source. A UTF-8 JSON file keeps the data easy to edit, review in Git and validate before publication.
 
+On 11 October 2026, the site owner supplied 20 missing talk titles for 17 sessions between 27 November 2025 and 25 June 2026. These corrections are recorded in each updated entry's `sources`. The three joint sessions retain separate speaker/title pairs in `talks`. The missing initial letters in Fabian Schaipp's “The Surprising Agreement…” and Jérôme Bolte's “Optimization Perspectives…” were restored. Dates, affiliations, original source text and event statuses are unchanged. The supplied list places Eugène Ndiaye's title on the cancelled 23 April entry; the separate 19 March entry remains without a confirmed title. Original-announcement links are omitted from the seminar pages in both languages, while source URLs remain in the database for provenance.
+
 Historical precision is preserved:
 
 - The original website dates were day-only values (`YYYY-MM-DD`) with `timeKnown: false`. The old page’s “usually Thursdays, 14:00–15:00” schedule is historical and has been superseded for academic year 2026–2027 by the supplied document’s Thursday 11:00–12:00 schedule. Only events explicitly covered by that current schedule, and individual events with an explicit time, receive a full ISO timestamp. `timeSource` records whether a time comes from the general schedule or an event-specific exception.

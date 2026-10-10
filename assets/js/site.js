@@ -5,7 +5,6 @@ import {
   dateLabel,
   timeLabel,
   titleLabel,
-  safeURL,
   calendarFile,
 } from "./seminars.mjs";
 const lang = document.documentElement.lang === "fr" ? "fr" : "en",
@@ -163,11 +162,6 @@ function renderRow(s) {
       details.append(p);
     }
     content.append(details);
-  }
-  if (safeURL(s.url)) {
-    const a = node("a", "text-link", `${t.original} ↗`);
-    a.href = safeURL(s.url);
-    content.append(a);
   }
   article.append(meta, content);
   return article;

@@ -278,8 +278,8 @@
     {
       "speaker": "Florent Krzakala",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "Deep Learning as Neural Low-Degree Filtering: A Spectral Theory of Hierarchical Feature Learning",
+      "titleKnown": true,
       "date": "2026-06-25T12:00:00+02:00",
       "type": "seminar",
       "typeKnown": true,
@@ -294,6 +294,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-06-25-florent-krzakala"
@@ -358,8 +363,8 @@
     {
       "speaker": "Théo Lacombe",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "Learning Monge Maps with Constrained Drifting Models",
+      "titleKnown": true,
       "date": "2026-06-04T12:00:00+02:00",
       "type": "seminar",
       "typeKnown": true,
@@ -374,6 +379,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-06-04-theo-lacombe"
@@ -381,8 +391,8 @@
     {
       "speaker": "Rebecca Willet",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "How do simple rotations affect the implicit bias of Adam?",
+      "titleKnown": true,
       "date": "2026-06-02",
       "type": "colloquium",
       "typeKnown": true,
@@ -396,6 +406,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-06-02-rebecca-willet"
@@ -403,8 +418,8 @@
     {
       "speaker": "Fabian Schaipp",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "The Surprising Agreement Between Convex Optimization Theory and Learning-Rate Scheduling for Large Model Training",
+      "titleKnown": true,
       "date": "2026-05-28",
       "type": "seminar",
       "typeKnown": true,
@@ -418,6 +433,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-05-28-fabian-schaipp"
@@ -425,8 +445,8 @@
     {
       "speaker": "Jiayi Li",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "A Basin-Selection Perspective on Grokking via Singular Learning Theory",
+      "titleKnown": true,
       "date": "2026-05-21",
       "type": "seminar",
       "typeKnown": true,
@@ -440,6 +460,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-05-21-jiayi-li"
@@ -447,8 +472,8 @@
     {
       "speaker": "Valérie Castin; Gauthier Thurin",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "Balanced Low-Rank Adaptation: Removing Parameter Invariance to Accelerate Convergence / Convergence Rates for Distribution Matching with Sliced Optimal Transport",
+      "titleKnown": true,
       "date": "2026-05-07",
       "type": "seminar",
       "typeKnown": true,
@@ -462,15 +487,30 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
-      "id": "2026-05-07-valerie-castin-gauthier-thurin"
+      "id": "2026-05-07-valerie-castin-gauthier-thurin",
+      "talks": [
+        {
+          "speaker": "Valérie Castin",
+          "title": "Balanced Low-Rank Adaptation: Removing Parameter Invariance to Accelerate Convergence"
+        },
+        {
+          "speaker": "Gauthier Thurin",
+          "title": "Convergence Rates for Distribution Matching with Sliced Optimal Transport"
+        }
+      ]
     },
     {
       "speaker": "Eugène Ndiaye",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "Beyond Uncertainty Sets: Leveraging Optimal Transport to Extend Conformal Predictive Distribution to Multivariate Settings",
+      "titleKnown": true,
       "date": "2026-04-23",
       "type": "seminar",
       "typeKnown": true,
@@ -484,6 +524,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-04-23-eugene-ndiaye"
@@ -491,8 +536,8 @@
     {
       "speaker": "Batiste Le bars",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "Conformal Prediction for Uncertainty Quantification in Machine Learning: Recent Advances",
+      "titleKnown": true,
       "date": "2026-04-16",
       "type": "seminar",
       "typeKnown": true,
@@ -506,6 +551,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-04-16-batiste-le-bars"
@@ -513,8 +563,8 @@
     {
       "speaker": "Michael Chertkov",
       "institution": "",
-      "title": "-",
-      "titleKnown": false,
+      "title": "Samples That Cooperate, Samples That Remember: Two Exactly Solvable Bridge Diffusions",
+      "titleKnown": true,
       "date": "2026-04-09",
       "type": "colloquium",
       "typeKnown": true,
@@ -528,6 +578,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ],
       "id": "2026-04-09-michael-chertkov"
@@ -564,11 +619,11 @@
       "id": "2026-03-26-francois-malgouyres",
       "speaker": "François Malgouyres",
       "institution": "",
-      "title": "-",
+      "title": "Geometry-induced regularization and identifiability of deep ReLU networks",
       "date": "2026-03-26",
       "room": null,
       "type": "seminar",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -585,6 +640,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ]
     },
@@ -620,11 +680,11 @@
       "id": "2026-03-17-julien-mairal",
       "speaker": "Julien Mairal",
       "institution": "",
-      "title": "-",
+      "title": "Physical Models and Machine Learning for Scientific Imaging",
       "date": "2026-03-17",
       "room": null,
       "type": "colloquium",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -641,6 +701,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ]
     },
@@ -648,11 +713,11 @@
       "id": "2026-03-12-leonardo-defilippis-luigi-fogliani",
       "speaker": "Leonardo Defilippis; Luigi Fogliani",
       "institution": "",
-      "title": "-",
+      "title": "Scaling Laws and Spectra of Shallow Neural Networks in the Feature Learning Regime / Annealing in variational inference mitigates mode collapse: A theoretical study on Gaussian mixtures",
       "date": "2026-03-12",
       "room": null,
       "type": "working-group",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -669,6 +734,21 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
+        }
+      ],
+      "talks": [
+        {
+          "speaker": "Leonardo Defilippis",
+          "title": "Scaling Laws and Spectra of Shallow Neural Networks in the Feature Learning Regime"
+        },
+        {
+          "speaker": "Luigi Fogliani",
+          "title": "Annealing in variational inference mitigates mode collapse: A theoretical study on Gaussian mixtures"
         }
       ]
     },
@@ -676,11 +756,11 @@
       "id": "2026-02-19-thibaut-germain",
       "speaker": "Thibaut Germain",
       "institution": "",
-      "title": "-",
+      "title": "A Spectral-Grassmann Wasserstein metric for operator representations of dynamical systems",
       "date": "2026-02-19",
       "room": null,
       "type": "seminar",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -697,6 +777,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ]
     },
@@ -704,11 +789,11 @@
       "id": "2026-02-12-alessandro-laio",
       "speaker": "Alessandro Laio",
       "institution": "",
-      "title": "-",
+      "title": "Identifying informative distance measures in high-dimensional feature spaces",
       "date": "2026-02-12",
       "room": null,
       "type": "colloquium",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -725,6 +810,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ]
     },
@@ -732,11 +822,11 @@
       "id": "2026-02-05-nina-vesseron-johannes-hertrich",
       "speaker": "Nina Vesseron; Johannes Hertrich",
       "institution": "",
-      "title": "-",
+      "title": "On a Neural Implementation of Brenier's Polar Factorization / On the Relation between Rectified Flows and Optimal Transport",
       "date": "2026-02-05",
       "room": null,
       "type": "working-group",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -753,6 +843,21 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
+        }
+      ],
+      "talks": [
+        {
+          "speaker": "Nina Vesseron",
+          "title": "On a Neural Implementation of Brenier's Polar Factorization"
+        },
+        {
+          "speaker": "Johannes Hertrich",
+          "title": "On the Relation between Rectified Flows and Optimal Transport"
         }
       ]
     },
@@ -873,11 +978,11 @@
       "id": "2025-12-18-pierre-marion",
       "speaker": "Pierre Marion",
       "institution": "",
-      "title": "-",
+      "title": "Phase Diagram of Dropout for Two-Layer Neural Networks in the Mean-Field Regime",
       "date": "2025-12-18",
       "room": null,
       "type": "seminar",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -894,6 +999,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ]
     },
@@ -939,11 +1049,11 @@
       "id": "2025-11-27-jerome-bolte",
       "speaker": "Jérôme Bolte",
       "institution": "",
-      "title": "-",
+      "title": "Optimization Perspectives on the Differentiation of Programs",
       "date": "2025-11-27",
       "room": null,
       "type": "seminar",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
@@ -960,6 +1070,11 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "site-owner",
+          "name": "Seminar title corrections",
+          "date": "2026-10-11"
         }
       ]
     },

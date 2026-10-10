@@ -47,6 +47,20 @@
   ],
   "teams": [
     {
+      "name": "Eddie Aamari",
+      "url": "https://www.math.ens.psl.eu/~eaamari/",
+      "research": {
+        "en": "High-dimensional statistics, generative models and geometric inference.",
+        "fr": "Statistique en grande dimension, modèles génératifs et inférence géométrique."
+      },
+      "portrait": {
+        "src": "/assets/images/people/eddie-aamari.webp",
+        "sourceUrl": "https://nuit.ens.psl.eu/intervenants/6a4643d8ea37e2f1c1d972ef",
+        "position": "50% 35%"
+      },
+      "email": "eddie.aamari@ens.fr"
+    },
+    {
       "name": "Giulio Biroli",
       "url": "https://www.lpens.ens.psl.eu/giulio-biroli/",
       "research": {

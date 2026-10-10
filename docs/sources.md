@@ -1,6 +1,6 @@
 # Content provenance and image credit
 
-Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below. The user added Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier as principal investigators on 10 October 2026, with their public contact addresses. Their profiles and the portrait gallery are documented in [portrait sources](pi-portraits.md).
+Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below. The user added Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier as principal investigators on 10 October 2026, and subsequently Eddie Aamari, with their public contact addresses. Their profiles and the portrait gallery are documented in [portrait sources](pi-portraits.md).
 
 ## CSD information
 

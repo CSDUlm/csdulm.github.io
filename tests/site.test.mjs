@@ -139,8 +139,9 @@ test("tentative events remain labelled and cancelled events never become the nex
 });
 
 test("member gallery renders bilingual profiles, portraits and supplied contact addresses", () => {
-  assert.equal(content.teams.length, 12);
+  assert.equal(content.teams.length, 13);
   const contacts = new Map([
+    ["Eddie Aamari", "eddie.aamari@ens.fr"],
     ["Julie Delon", "julie.delon@math.cnrs.fr"],
     ["Irène Waldspurger", "Irene.Waldspurger@ens.fr"],
     ["Nicolas Schreuder", "nicolas.schreuder@cnrs.fr"],
@@ -154,7 +155,7 @@ test("member gallery renders bilingual profiles, portraits and supplied contact 
   }
   for (const lang of ["en", "fr"]) {
     const html = renderPage("teams", lang, content, []);
-    assert.equal((html.match(/class="person-card"/g) || []).length, 12);
+    assert.equal((html.match(/class="person-card"/g) || []).length, 13);
     for (const person of content.teams) {
       assert.ok(html.includes(`alt="${escapeHTML(person.name)}"`));
       assert.ok(html.includes(`src="${person.portrait.src}"`));

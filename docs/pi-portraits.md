@@ -1,6 +1,6 @@
 # PI portraits and research sources
 
-Verified on 10 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Their four email addresses come directly from that request. All 12 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
+Verified on 10 October 2026; Eddie Aamari added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Their four email addresses come directly from that request. Eddie Aamari was subsequently added at the site owner’s request, with eddie.aamari@ens.fr matching his official page. All 13 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
 
 The local assets are WebP conversions of the original photographs, limited to a maximum of 600 pixels in either dimension without enlargement. The original framing and aspect ratio are preserved in the files; the gallery applies a CSS crop with a face-sensitive `object-position`. WebP conversion removes source metadata. The gallery links to each photograph's source, and displays named photographer credits where verified.
 
@@ -10,6 +10,7 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 
 | PI | Local asset | Verified portrait source | Photographer / explicit rights |
 | --- | --- | --- | --- |
+| Eddie Aamari | `assets/images/people/eddie-aamari.webp` | [Official La Nuit de l’ENS 2026 speaker profile](https://nuit.ens.psl.eu/intervenants/6a4643d8ea37e2f1c1d972ef) | Photographer and photo-specific reuse license not stated in the profile. |
 | Giulio Biroli | `assets/images/people/giulio-biroli.webp` | [ENS Physics faculty profile](https://www.phys.ens.psl.eu/en/annuaire/200/giulio-biroli) | Photographer and photo-specific reuse license not stated in the profile. |
 | Olivier Cappé | `assets/images/people/olivier-cappe.webp` | [Personal ENS page](https://www.di.ens.fr/~cappe/) | Photographer and photo-specific reuse license not stated. |
 | Julie Delon | `assets/images/people/julie-delon.webp` | [ENS interview, 24 February 2026](https://www.ens.psl.eu/actualites/je-suis-persuadee-qu-fait-de-la-meilleure-science-lorsqu-ne-vient-pas-tous-du-meme-moule) | **© Julien Campet – Département de mathématiques et applications ENS–PSL**, explicitly stated in the image caption. No open license stated. |
@@ -25,6 +26,7 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 
 ## Original image URLs
 
+- Eddie Aamari: the [official ENS event profile](https://nuit.ens.psl.eu/intervenants/6a4643d8ea37e2f1c1d972ef) supplies the public image download URL for resource `uploads/events/6a325c50d96e9be30c5bc998/guests/avatars/medium_IJNXQ8B_Eddie_Aamari.jpg` on `mobicheckin-assets.eventmaker.io`. Its temporary CDN signature is omitted here; use the source page to retrieve the current link. The downloaded original is a 350 × 350-pixel photograph.
 - Giulio Biroli: <https://www.phys.ens.psl.eu/sites/default/files/2023-11/redim_Giulion_Biroli_recent2-2.jpeg>
 - Olivier Cappé: <https://www.di.ens.fr/~cappe/files/p2025-p2020085_4x3_small.jpg>
 - Julie Delon: <https://www.ens.psl.eu/sites/default/files/2026-02/julie_delon_-2_.jpg>
@@ -42,6 +44,7 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 
 The short English and French descriptions are concise paraphrases, not quotations. They describe research interests rather than infer current job titles or affiliations from older biographies.
 
+- **Eddie Aamari:** [Personal DMA ENS page](https://www.math.ens.psl.eu/~eaamari/), explicitly listing high-dimensional statistics, generative models, geometric inference, and singular and stratified data. His affiliation and research interests are corroborated by the [official ENS event biography](https://nuit.ens.psl.eu/intervenants/6a4643d8ea37e2f1c1d972ef).
 - **Giulio Biroli:** [LPENS personal research profile](https://www.lpens.ens.psl.eu/giulio-biroli/), explicitly covering statistical physics of disordered classical/quantum systems, machine learning and theoretical ecology.
 - **Olivier Cappé:** [Personal ENS page](https://www.di.ens.fr/~cappe/), describing statistics, machine learning, signal processing, recent online learning and privacy work.
 - **Julie Delon:** [Personal page](https://judelo.github.io/), listing optimal transport, image processing, inverse problems and machine learning, corroborated by the [2026 ENS interview](https://www.ens.psl.eu/actualites/je-suis-persuadee-qu-fait-de-la-meilleure-science-lorsqu-ne-vient-pas-tous-du-meme-moule).
@@ -57,4 +60,4 @@ The short English and French descriptions are concise paraphrases, not quotation
 
 ## Verification
 
-All 12 originals were opened and inspected before conversion. Unrelated namesakes were excluded. Drawings found on Bruno Loureiro's homepage and Nicolas Schreuder's current site, and illustrated GitHub avatars, were excluded. Only the 12 optimized `.webp` assets are kept in the repository; source originals are not duplicated there.
+All 13 originals were opened and inspected before conversion. Unrelated namesakes were excluded. Drawings found on Bruno Loureiro's homepage and Nicolas Schreuder's current site, and illustrated GitHub avatars, were excluded. Only the 13 optimized `.webp` assets are kept in the repository; source originals are not duplicated there.

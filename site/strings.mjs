@@ -28,7 +28,6 @@ export const strings = {
       "The Center for Data Science brings together research in mathematics, computer science, physics, and cognitive science at the École normale supérieure.",
     discover: "Discover the centre",
     seminarLink: "Explore the seminars",
-    courtyard: "The courtyard at 45 rue d’Ulm, Paris",
     disciplinesLabel: "Research disciplines",
     disciplines: [
       "Mathematics",
@@ -68,8 +67,7 @@ export const strings = {
     footerENS: "École normale supérieure – PSL",
     footerAdmin: "Seminar organisers",
     footerSource: "Source code",
-    photo: "Courtyard photograph: David Monniaux",
-    photoLicense: "CC BY-SA 1.0",
+    photoChanges: "Resized and cropped",
     aboutEyebrow: "The centre",
     aboutTitle: "About the centre",
     aboutLead:
@@ -182,7 +180,6 @@ export const strings = {
       "Le Centre Sciences des Données réunit les recherches en mathématiques, informatique, physique et sciences cognitives à l’École normale supérieure.",
     discover: "Découvrir le centre",
     seminarLink: "Explorer les séminaires",
-    courtyard: "La cour du 45 rue d’Ulm, Paris",
     disciplinesLabel: "Disciplines de recherche",
     disciplines: [
       "Mathématiques",
@@ -222,8 +219,7 @@ export const strings = {
     footerENS: "École normale supérieure – PSL",
     footerAdmin: "Organisation des séminaires",
     footerSource: "Code source",
-    photo: "Photographie de la cour : David Monniaux",
-    photoLicense: "CC BY-SA 1.0",
+    photoChanges: "Redimensionnée et recadrée",
     aboutEyebrow: "Le centre",
     aboutTitle: "Présentation du centre",
     aboutLead:

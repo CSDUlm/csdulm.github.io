@@ -375,14 +375,96 @@
       "fr": "L’ancienne page indique le lundi de 12 h à 13 h dans la salle de conférence du CSD. Consultez les organisateurs pour connaître le programme actuel."
     }
   },
-  "image": {
-    "path": "assets/images/ens-ulm.jpg",
-    "title": "ENS Ulm cour Ernests DSC00106.jpg",
-    "author": "David Monniaux",
-    "date": "2003-06-29",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg",
-    "license": "CC BY-SA 1.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0/",
-    "changes": "Wikimedia 1280-pixel thumbnail; displayed with CSS crops and opacity."
+  "images": {
+    "home": {
+      "src": "/assets/images/ens-ulm.webp",
+      "shareSrc": "/assets/images/ens-ulm.jpg",
+      "width": 1024,
+      "height": 768,
+      "position": "50% 50%",
+      "title": "ENS Ulm cour Ernests DSC00106.jpg",
+      "author": "David Monniaux",
+      "date": "2003-06-29",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg",
+      "license": "CC BY-SA 1.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0/",
+      "caption": {
+        "en": "The courtyard at 45 rue d’Ulm, Paris",
+        "fr": "La cour du 45 rue d’Ulm, Paris"
+      },
+      "changes": "Resized and converted to WebP; cropped and displayed with reduced opacity in the layout."
+    },
+    "about": {
+      "src": "/assets/images/ens-courtyard-summer.webp",
+      "width": 1280,
+      "height": 960,
+      "position": "50% 48%",
+      "title": "ENS dvur.JPG",
+      "author": "Jan Sokol",
+      "date": "2005-07-16",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ENS_dvur.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/ENS_dvur.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "caption": {
+        "en": "The ENS courtyard in summer",
+        "fr": "La cour de l’ENS en été"
+      },
+      "changes": "Resized and converted to WebP; cropped and displayed with reduced opacity in the layout."
+    },
+    "teams": {
+      "src": "/assets/images/ens-courtyard-winter.webp",
+      "width": 1280,
+      "height": 853,
+      "position": "50% 58%",
+      "title": "Cour aux Ernests sous la neige.jpg",
+      "author": "Evarin",
+      "date": "2013-01-19",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cour_aux_Ernests_sous_la_neige.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Cour_aux_Ernests_sous_la_neige.jpg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "caption": {
+        "en": "Cour aux Ernests in winter",
+        "fr": "La cour aux Ernests en hiver"
+      },
+      "changes": "Resized and converted to WebP; cropped and displayed with reduced opacity in the layout."
+    },
+    "seminars": {
+      "src": "/assets/images/ens-salle-dussane.webp",
+      "width": 1280,
+      "height": 960,
+      "position": "50% 58%",
+      "title": "Salle Dussane École Normale Supérieure - Paris V (FR75) - 2025-11-17 - 1.jpg",
+      "author": "Chabe01",
+      "date": "2025-11-17",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salle_Dussane_%C3%89cole_Normale_Sup%C3%A9rieure_-_Paris_V_(FR75)_-_2025-11-17_-_1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Salle_Dussane_%C3%89cole_Normale_Sup%C3%A9rieure_-_Paris_V_%28FR75%29_-_2025-11-17_-_1.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "caption": {
+        "en": "Salle Dussane at ENS, Paris",
+        "fr": "La salle Dussane à l’ENS, Paris"
+      },
+      "changes": "Resized and converted to WebP; cropped and displayed with reduced opacity in the layout."
+    },
+    "visit": {
+      "src": "/assets/images/ens-entrance.webp",
+      "width": 1280,
+      "height": 960,
+      "position": "50% 48%",
+      "title": "Entrée ENS 45 rue d'ulm.JPG",
+      "author": "LPLT",
+      "date": "2011-05-11",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_ENS_45_rue_d%27ulm.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Entr%C3%A9e_ENS_45_rue_d%27ulm.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "caption": {
+        "en": "Entrance at 45 rue d’Ulm, Paris",
+        "fr": "L’entrée du 45 rue d’Ulm, Paris"
+      },
+      "changes": "Resized and converted to WebP; cropped and displayed with reduced opacity in the layout."
+    }
   }
 }

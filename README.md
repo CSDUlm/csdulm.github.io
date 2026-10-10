@@ -1,6 +1,6 @@
 # Centre Sciences des Données · ENS–PSL
 
-A static, responsive English website with complete French translations at `/fr/`. It includes the centre’s mission, a portrait gallery of the principal investigators, visitor information, a searchable seminar archive, and an automatically selected next-seminar announcement. The licensed ENS courtyard photograph appears with subdued opacity.
+A static, responsive English website with complete French translations at `/fr/`. It includes the centre’s mission, a portrait gallery of the principal investigators, visitor information, a searchable seminar archive, and an automatically selected next-seminar announcement. Each main page has a different openly licensed ENS photograph, displayed with subdued opacity.
 
 ## Run locally
 
@@ -70,6 +70,6 @@ There is no room-reservation page or API. The seminar venue field is retained, w
 
 Tests cover authentication, revocation, expiry, malformed input, origin checks, throttling, GitHub write conflicts, historical data precision, next-seminar selection, French navigation, safe rendering and Paris daylight-saving transitions. The build verifies local links and portrait assets before publishing.
 
-Website code: [MIT](LICENSE). The ENS courtyard photograph is separately licensed [CC BY-SA 1.0](https://creativecommons.org/licenses/by-sa/1.0/), by David Monniaux. The visible credit links to the [original Wikimedia file](https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg). It is displayed with CSS crops and reduced opacity; the original licensed image remains in the repository.
+Website code: [MIT](LICENSE). The five ENS page photographs have separate Creative Commons licenses (CC BY-SA 1.0, 3.0 and 4.0, and CC0 1.0), recorded alongside their source links and photographers in `data/content.json` and [image sources](docs/sources.md). Each page credits its own photograph, links to its license and identifies resizing and cropping. The optimized image files retain their respective licenses.
 
 The PI portraits have individual provenance and credits recorded in [portrait sources](docs/pi-portraits.md). They are separate from the website’s software license.

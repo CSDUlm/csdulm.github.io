@@ -29,13 +29,20 @@ Historical precision is preserved:
 - Three final entries have potentially erroneous years: François Charton is dated **2022/12/9**, Mathieu Wyart **2022/11/26** and Rémi Monasson **2022/11/18**, despite appearing after the December 2021 entries. Those dates are retained exactly as published, with a `sourceNote` flag for future archival verification.
 - Source spellings generally remain unchanged, including “Tony Silveti-Falls” and “Antonio Silveti-Falls”, “Loucas-Pillaud Vivien” and “Kruno”. The document supplies enough context to reconcile “Martin de Hoop” with Maarten de Hoop and “Nicolas Scwhreuder” with Nicolas Schreuder; those changes retain the original text and an explanatory note. Incomplete names such as “Gabriel”, “Malick” and “M. Jordan” are not expanded.
 
-## Photograph
+## ENS page photographs
 
-`assets/images/ens-ulm.jpg` is a 1280 × 960 Wikimedia thumbnail of **ENS Ulm cour Ernests DSC00106.jpg**, a photograph of the Cour aux Ernests at ENS Paris, taken on 29 June 2003 by **David Monniaux**.
+Verified on 11 October 2026. Each of the five main pages uses a different real photograph of ENS Ulm in Paris. The English and French versions of a page share the same photograph. Image paths, bilingual captions, photographer credits, original URLs and licenses are recorded under `images` in [data/content.json](../data/content.json).
 
-- [Original file description and verified license](https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg)
-- [Downloaded image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/ENS_Ulm_cour_Ernests_DSC00106.jpg/1280px-ENS_Ulm_cour_Ernests_DSC00106.jpg)
-- License: [Creative Commons Attribution–ShareAlike 1.0 Generic](https://creativecommons.org/licenses/by-sa/1.0/)
-- Changes: Wikimedia thumbnail resize; a 1024 × 768 WebP copy is used on the website to reduce download size; the site displays it with CSS cropping and reduced opacity. Any modified image remains available under the same license.
+| Page | Local image | Photographer | Original file and license |
+| --- | --- | --- | --- |
+| Home | `assets/images/ens-ulm.webp` | David Monniaux | [Wikimedia source](https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg) · [CC BY-SA 1.0](https://creativecommons.org/licenses/by-sa/1.0/) |
+| About | `assets/images/ens-courtyard-summer.webp` | Jan Sokol | [Wikimedia source](https://commons.wikimedia.org/wiki/File:ENS_dvur.JPG) · [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| Members | `assets/images/ens-courtyard-winter.webp` | Evarin | [Wikimedia source](https://commons.wikimedia.org/wiki/File:Cour_aux_Ernests_sous_la_neige.jpg) · [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| Seminars | `assets/images/ens-salle-dussane.webp` | Chabe01 | [Wikimedia source](https://commons.wikimedia.org/wiki/File:Salle_Dussane_%C3%89cole_Normale_Sup%C3%A9rieure_-_Paris_V_(FR75)_-_2025-11-17_-_1.jpg) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| Visit | `assets/images/ens-entrance.webp` | LPLT | [Wikimedia source](https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_ENS_45_rue_d%27ulm.JPG) · [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
-Recommended visible credit: “Cour aux Ernests, ENS Paris — David Monniaux, CC BY-SA 1.0”, with links to the file description and license. The repository's software license does not replace this image license.
+The homepage shows the Cour aux Ernests; About shows the courtyard in summer from another viewpoint; Members shows the snowy courtyard at night; Seminars shows Salle Dussane; Visit shows the entrance at 45 rue d’Ulm. Salle Dussane illustrates the ENS campus; the room listed for each seminar remains the event's venue.
+
+The new local assets are WebP conversions, resized to a maximum width of 1280 pixels without enlargement. The existing homepage WebP is 1024 × 768 pixels, with its original 1280 × 960 JPEG retained for the homepage sharing image. Source originals for the new photographs can be retrieved through their recorded original URLs and are not duplicated in the repository. No image was generated or had its depicted content altered.
+
+The layout applies CSS cropping, reduced opacity and partial grayscale. Captions and visible credits link to the source photograph and its selected license, name the photographer, and indicate resizing and cropping. Each modified CC BY-SA photograph remains available under its original selected license; the winter courtyard photograph is released under CC0 1.0. These image licenses are separate from the repository's software license.

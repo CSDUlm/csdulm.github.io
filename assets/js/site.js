@@ -271,9 +271,11 @@ async function load() {
       }
     }
     if (!data) {
-      const response = await fetch("/data/seminars.json", {
-        signal: AbortSignal.timeout(12000),
-      });
+      const version = window.CSD_CONFIG?.assetVersion;
+      const response = await fetch(
+        `/data/seminars.json${version ? `?v=${encodeURIComponent(version)}` : ""}`,
+        { cache: "no-cache", signal: AbortSignal.timeout(12000) },
+      );
       if (!response.ok) throw new Error("Unavailable");
       data = await response.json();
     }

@@ -123,9 +123,12 @@ export function renderPage(
   c,
   seminars,
   origin = "https://csdulm.github.io",
+  assetVersion = "",
 ) {
   const t = strings[lang],
     photo = c.images[page] || c.images.home;
+  const asset = (url) =>
+    `${url}${assetVersion ? `?v=${encodeURIComponent(assetVersion)}` : ""}`;
   const titles = {
     home: "Centre Sciences des Données · ENS–PSL",
     about: `${t.nav.about} · CSD ENS`,
@@ -149,5 +152,5 @@ export function renderPage(
       seminars,
     ) ??
     `${pageTop("CSD · ENS–PSL", e(t.notFound), t.notFoundLead)}<section class="section"><div class="container"><a class="button" href="/">${e(t.nav.home)} ${right}</a></div></section>`;
-  return `<!doctype html><html lang="${lang}" data-page="${page}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${e(description)}"><meta name="theme-color" content="#174c45"><title>${e(titles[page])}</title>${page === "404" ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${origin}${route(page, lang)}"><link rel="alternate" hreflang="en" href="${origin}${route(page, "en")}"><link rel="alternate" hreflang="fr" href="${origin}${route(page, "fr")}"><link rel="alternate" hreflang="x-default" href="${origin}${route(page, "en")}">`}<meta property="og:type" content="website"><meta property="og:title" content="${e(titles[page])}"><meta property="og:description" content="${e(description)}"><meta property="og:image" content="${origin}${e(photo.shareSrc || photo.src)}"><meta property="og:image:alt" content="${e(photo.caption[lang])}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/site.css"><noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript><script src="/assets/js/config.js" defer></script><script type="module" src="/assets/js/site.js"></script></head><body><a class="skip-link" href="#main">${e(t.skip)}</a>${masthead(page, lang)}<main id="main">${body}</main>${footer(lang, c, photo)}</body></html>`;
+  return `<!doctype html><html lang="${lang}" data-page="${page}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${e(description)}"><meta name="theme-color" content="#174c45"><title>${e(titles[page])}</title>${page === "404" ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${origin}${route(page, lang)}"><link rel="alternate" hreflang="en" href="${origin}${route(page, "en")}"><link rel="alternate" hreflang="fr" href="${origin}${route(page, "fr")}"><link rel="alternate" hreflang="x-default" href="${origin}${route(page, "en")}">`}<meta property="og:type" content="website"><meta property="og:title" content="${e(titles[page])}"><meta property="og:description" content="${e(description)}"><meta property="og:image" content="${origin}${e(photo.shareSrc || photo.src)}"><meta property="og:image:alt" content="${e(photo.caption[lang])}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="${e(asset("/assets/css/site.css"))}"><noscript><link rel="stylesheet" href="${e(asset("/assets/css/noscript.css"))}"></noscript><script src="${e(asset("/assets/js/config.js"))}" defer></script><script type="module" src="${e(asset("/assets/js/site.js"))}"></script></head><body><a class="skip-link" href="#main">${e(t.skip)}</a>${masthead(page, lang)}<main id="main">${body}</main>${footer(lang, c, photo)}</body></html>`;
 }

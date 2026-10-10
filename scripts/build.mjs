@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, cp, rm } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 import { pages, route, renderPage } from "../site/render.mjs";
 import { parseDateTime } from "../worker/src/index.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."),
@@ -71,6 +72,20 @@ const origin = (process.env.CSD_SITE_URL || "https://csdulm.github.io").replace(
 );
 if (new URL(origin).origin !== origin || !origin.startsWith("https://"))
   throw new Error("CSD_SITE_URL must be an HTTPS origin without a path");
+// Keep the page, module imports and seminar data on the same published version.
+const versionHash = createHash("sha256").update(apiBase);
+for (const file of [
+  "site/render.mjs",
+  "site/strings.mjs",
+  "assets/js/site.js",
+  "assets/js/seminars.mjs",
+  "assets/css/site.css",
+  "assets/css/noscript.css",
+  "data/seminars.json",
+]) {
+  versionHash.update(file).update(await readFile(path.join(root, file)));
+}
+const assetVersion = versionHash.digest("hex").slice(0, 16);
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 await cp(path.join(root, "assets"), path.join(dist, "assets"), {
@@ -83,7 +98,15 @@ await cp(
 );
 await writeFile(
   path.join(dist, "assets/js/config.js"),
-  `window.CSD_CONFIG = Object.freeze(${JSON.stringify({ apiBase })});\n`,
+  `window.CSD_CONFIG = Object.freeze(${JSON.stringify({ apiBase, assetVersion })});\n`,
+);
+const siteModule = await readFile(path.join(root, "assets/js/site.js"), "utf8");
+await writeFile(
+  path.join(dist, "assets/js/site.js"),
+  siteModule.replace(
+    /"\.\/(strings|seminars)\.mjs"/g,
+    `"./$1.mjs?v=${assetVersion}"`,
+  ),
 );
 for (const lang of ["en", "fr"])
   for (const page of pages) {
@@ -91,7 +114,7 @@ for (const lang of ["en", "fr"])
     await mkdir(dir, { recursive: true });
     await writeFile(
       path.join(dir, "index.html"),
-      renderPage(page, lang, content, db.seminars, origin),
+      renderPage(page, lang, content, db.seminars, origin, assetVersion),
     );
   }
 await cp(path.join(root, "admin"), path.join(dist, "admin"), {
@@ -99,7 +122,7 @@ await cp(path.join(root, "admin"), path.join(dist, "admin"), {
 });
 await writeFile(
   path.join(dist, "404.html"),
-  renderPage("404", "en", content, db.seminars, origin),
+  renderPage("404", "en", content, db.seminars, origin, assetVersion),
 );
 await writeFile(path.join(dist, ".nojekyll"), "");
 await writeFile(

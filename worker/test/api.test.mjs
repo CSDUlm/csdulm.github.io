@@ -1,24 +1,19 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { DatabaseSync } from 'node:sqlite';
-import { readFileSync, mkdtempSync, rmSync } from 'node:fs';
-import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { readFileSync } from 'node:fs';
 import { pbkdf2Sync } from 'node:crypto';
-import { Worker } from 'node:worker_threads';
-import { createHandler, parseDateTime, validateSeminar, validateReservation, verifyPassword } from '../src/index.mjs';
+import { createHandler, parseDateTime, validateSeminar, verifyPassword } from '../src/index.mjs';
 
 const migration = readFileSync(new URL('../migrations/0001_private_api.sql', import.meta.url), 'utf8');
 const origin = 'https://csdulm.github.io';
 const epoch = Date.parse('2026-10-10T08:00:00Z');
 const seminarPassword = 'a-long-seminar-test-passphrase';
-const bookingPassword = 'a-long-bookings-test-passphrase';
 function passwordHash(password, saltByte) {
   const salt = Buffer.alloc(16, saltByte);
   return `pbkdf2-sha256$100000$${salt.toString('base64url')}$${pbkdf2Sync(password, salt, 100000, 32, 'sha256').toString('base64url')}`;
 }
 const seminarHash = passwordHash(seminarPassword, 1);
-const bookingHash = passwordHash(bookingPassword, 2);
 
 class SqliteD1 {
   constructor(path = ':memory:') {
@@ -63,7 +58,7 @@ function fixture(t, options = {}) {
   t.after(() => db.sqlite.close());
   let time = epoch;
   const env = { DB: db, ENVIRONMENT: 'production', ALLOWED_ORIGINS: origin,
-    SEMINAR_PASSWORD_HASH: seminarHash, BOOKING_PASSWORD_HASH: bookingHash,
+    SEMINAR_PASSWORD_HASH: seminarHash,
     SESSION_SECRET: 'a1'.repeat(32), GITHUB_TOKEN: 'test-server-secret-token',
     GITHUB_REPOSITORY: 'CSDUlm/csdulm.github.io', GITHUB_BRANCH: 'main', ...options.env };
   const handle = createHandler({ now: () => time, fetch: options.fetch || (() => { throw new Error('Unexpected fetch'); }) });
@@ -76,7 +71,7 @@ function fixture(t, options = {}) {
       method, headers: requestHeaders, body: body === undefined ? undefined : JSON.stringify(body),
     }), env);
   }
-  async function login(role = 'bookings', password = bookingPassword, extra = {}) {
+  async function login(role = 'seminars', password = seminarPassword, extra = {}) {
     const response = await call('/auth/login', { method: 'POST', body: { role, password }, ...extra });
     assert.equal(response.status, 200);
     return (await response.json()).token;
@@ -85,31 +80,27 @@ function fixture(t, options = {}) {
 }
 
 test('password verification checks the full salted hash and fails closed on unsupported hashes', async () => {
-  assert.equal(await verifyPassword(bookingPassword, bookingHash), true);
-  assert.equal(await verifyPassword('wrong-password', bookingHash), false);
-  await assert.rejects(verifyPassword(bookingPassword, 'plaintext-password'));
-  await assert.rejects(verifyPassword(bookingPassword, bookingHash.replace('$100000$', '$1$')));
+  assert.equal(await verifyPassword(seminarPassword, seminarHash), true);
+  assert.equal(await verifyPassword('wrong-password', seminarHash), false);
+  await assert.rejects(verifyPassword(seminarPassword, 'plaintext-password'));
+  await assert.rejects(verifyPassword(seminarPassword, seminarHash.replace('$100000$', '$1$')));
 });
 
-test('all private reads/writes require sign-in and the correct role', async (t) => {
-  const { call, login } = fixture(t);
+test('seminar editing and private session endpoints require sign-in', async (t) => {
+  const { call } = fixture(t);
   const paths = [
-    ['/reservations?from=2026-10-10T00:00:00Z&to=2026-10-17T00:00:00Z', 'GET'],
-    ['/reservations', 'POST'], ['/reservations/0c269130-bb73-4f3a-b7a9-55c2d0082f7d', 'DELETE'],
-    ['/seminars', 'POST'], ['/seminars/archive-2024', 'DELETE'], ['/auth/session', 'GET'],
+    ['/seminars', 'POST'], ['/seminars/archive-2024', 'DELETE'],
+    ['/auth/session', 'GET'], ['/auth/logout', 'POST'],
   ];
   for (const [path, method] of paths) assert.equal((await call(path, { method })).status, 401);
-  const token = await login('seminars', seminarPassword);
-  assert.equal((await call(paths[0][0], { token })).status, 403);
-  assert.equal((await call('/reservations', { method: 'POST', token })).status, 403);
-  const bookingToken = await login();
-  assert.equal((await call('/seminars', { method: 'POST', token: bookingToken })).status, 403);
+  const invalidRole = await call('/auth/login', { method: 'POST', body: { role: 'admin', password: seminarPassword } });
+  assert.equal(invalidRole.status, 400);
 });
 
 test('exact Origin matching rejects missing, null, lookalike, and foreign origins', async (t) => {
   const { call, login, env } = fixture(t);
   for (const requestOrigin of [null, 'null', 'https://csdulm.github.io.evil.example', 'https://evil.example']) {
-    const response = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: bookingPassword }, requestOrigin });
+    const response = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: seminarPassword }, requestOrigin });
     assert.equal(response.status, 403);
     assert.equal(response.headers.get('Access-Control-Allow-Origin'), null);
   }
@@ -124,10 +115,10 @@ test('sessions expire, reject tampering, and are revoked immediately at logout',
   const token = await login();
   const active = await call('/auth/session', { token });
   assert.equal(active.status, 200);
-  assert.deepEqual(await active.json(), { role: 'bookings', expiresAt: '2026-10-10T08:30:00.000Z' });
+  assert.deepEqual(await active.json(), { role: 'seminars', expiresAt: '2026-10-10T08:30:00.000Z' });
   const parts = token.split('.');
   const payload = JSON.parse(Buffer.from(parts[1], 'base64url').toString());
-  payload.role = 'seminars';
+  payload.exp += 60;
   parts[1] = Buffer.from(JSON.stringify(payload)).toString('base64url');
   assert.equal((await call('/auth/session', { token: parts.join('.') })).status, 401);
   assert.equal((await call('/auth/session', { token: `${token}junk` })).status, 401);
@@ -142,44 +133,44 @@ test('sessions expire, reject tampering, and are revoked immediately at logout',
 test('durable login throttling counts attempts atomically and clears in the next window', async (t) => {
   const { call, setTime, db } = fixture(t);
   for (let attempt = 0; attempt < 5; attempt++) {
-    const response = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: 'wrong' } });
+    const response = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: 'wrong' } });
     assert.equal(response.status, 401);
   }
-  const denied = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: bookingPassword } });
+  const denied = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: seminarPassword } });
   assert.equal(denied.status, 429);
   assert.equal(denied.headers.get('Retry-After'), '900');
   const keys = db.sqlite.prepare('SELECT key FROM login_limits').all();
   assert.equal(keys.length, 2);
   assert.ok(keys.every(({ key }) => !key.includes('192.0.2.5')));
   setTime(epoch + 15 * 60 * 1000);
-  assert.equal((await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: bookingPassword } })).status, 200);
+  assert.equal((await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: seminarPassword } })).status, 200);
 });
 
 test('D1 or authentication misconfiguration fails closed without exposing secrets', async (t) => {
   const { call, env } = fixture(t);
   for (const badValue of ['', 'plaintext', 'REPLACE_WITH_SECRET']) {
     env.SESSION_SECRET = badValue;
-    const response = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: bookingPassword } });
+    const response = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: seminarPassword } });
     assert.equal(response.status, 503);
-    assert.ok(!(await response.text()).includes(bookingPassword));
+    assert.ok(!(await response.text()).includes(seminarPassword));
   }
   env.SESSION_SECRET = 'a1'.repeat(32);
   env.DB = { prepare() { throw new Error('Database SQL error with private details'); }, batch() { throw new Error('private database detail'); } };
-  const failure = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: bookingPassword } });
+  const failure = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: seminarPassword } });
   assert.equal(failure.status, 503);
   assert.ok(!(await failure.text()).includes('private database detail'));
   env.DB = null;
-  assert.equal((await call('/reservations')).status, 503);
+  assert.equal((await call('/auth/session')).status, 503);
 });
 
 test('one blocked IP cannot exhaust the global login budget for other users', async (t) => {
   const { call, db } = fixture(t);
   for (let attempt = 0; attempt < 60; attempt++) {
-    const response = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: 'wrong' } });
+    const response = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: 'wrong' } });
     assert.equal(response.status, attempt < 5 ? 401 : 429);
   }
-  assert.equal(db.sqlite.prepare("SELECT attempts FROM login_limits WHERE key = 'global:bookings'").get().attempts, 5);
-  const legitimate = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password: bookingPassword },
+  assert.equal(db.sqlite.prepare("SELECT attempts FROM login_limits WHERE key = 'global:seminars'").get().attempts, 5);
+  const legitimate = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: seminarPassword },
     headers: { 'CF-Connecting-IP': '192.0.2.6' } });
   assert.equal(legitimate.status, 200);
 });
@@ -187,9 +178,9 @@ test('one blocked IP cannot exhaust the global login budget for other users', as
 test('bounded JSON, strict field validation, real dates, safe links and default seminar room', async (t) => {
   const { call, login } = fixture(t);
   const token = await login();
-  const oversized = await call('/reservations', { method: 'POST', token, body: { name: 'x'.repeat(20000) } });
+  const oversized = await call('/seminars', { method: 'POST', token, body: { title: 'x'.repeat(20000) } });
   assert.equal(oversized.status, 413);
-  const unknownField = await call('/reservations', { method: 'POST', token, body: { room: 'reunion', admin: true } });
+  const unknownField = await call('/seminars', { method: 'POST', token, body: { admin: true } });
   assert.equal(unknownField.status, 400);
   assert.throws(() => parseDateTime('2026-02-30T08:00:00Z'));
   assert.throws(() => parseDateTime('2026-10-10T08:00:00'));
@@ -199,65 +190,6 @@ test('bounded JSON, strict field validation, real dates, safe links and default 
   assert.equal(validateSeminar(base).date, '2026-10-11T09:00:00.000Z');
   assert.throws(() => validateSeminar({ ...base, url: 'javascript:alert(1)' }));
   assert.throws(() => validateSeminar({ ...base, speaker: 'name\nforged' }));
-  const reservation = { room: 'reunion', name: 'Ada', start: '2026-10-10T09:00:00Z', end: '2026-10-10T10:00:00Z' };
-  assert.throws(() => validateReservation({ ...reservation, room: 'private-room' }, epoch));
-  assert.throws(() => validateReservation({ ...reservation, end: reservation.start }, epoch));
-  assert.throws(() => validateReservation({ ...reservation, end: '2026-10-12T10:00:00Z' }, epoch));
-  assert.throws(() => validateReservation({ ...reservation, start: '2026-10-09T09:00:00Z' }, epoch));
-});
-
-test('private booking CRUD prevents overlaps, permits adjacent/different-room slots, and deletes', async (t) => {
-  const { call, login } = fixture(t);
-  const token = await login();
-  const body = { room: 'reunion', name: 'Ada Lovelace', start: '2026-10-10T09:00:00Z', end: '2026-10-10T10:00:00Z' };
-  const created = await call('/reservations', { method: 'POST', token, body });
-  assert.equal(created.status, 201);
-  const { reservation } = await created.json();
-  assert.equal((await call('/reservations', { method: 'POST', token, body: { ...body, start: '2026-10-10T09:30:00Z' } })).status, 409);
-  assert.equal((await call('/reservations', { method: 'POST', token, body: { ...body, start: '2026-10-10T10:00:00Z', end: '2026-10-10T11:00:00Z' } })).status, 201);
-  assert.equal((await call('/reservations', { method: 'POST', token, body: { ...body, room: 'visio-cafe' } })).status, 201);
-  const range = '/reservations?from=2026-10-10T00%3A00%3A00Z&to=2026-10-11T00%3A00%3A00Z';
-  const list = await call(range, { token });
-  assert.equal(list.status, 200);
-  assert.equal((await list.json()).reservations.length, 3);
-  assert.equal(list.headers.get('Cache-Control'), 'no-store');
-  assert.ok(!(await (await call(range)).text()).includes('Ada Lovelace'));
-  assert.equal((await call(`/reservations/${reservation.id}`, { method: 'DELETE', token })).status, 200);
-  assert.equal((await call(`/reservations/${reservation.id}`, { method: 'DELETE', token })).status, 404);
-});
-
-test('the actual SQLite trigger rejects simultaneous conflicting writes from two connections', async (t) => {
-  const directory = mkdtempSync(join(tmpdir(), 'csd-booking-test-'));
-  t.after(() => rmSync(directory, { recursive: true, force: true }));
-  const file = join(directory, 'private.sqlite');
-  const setup = new DatabaseSync(file);
-  setup.exec(migration);
-  setup.close();
-  const shared = new SharedArrayBuffer(4);
-  const code = `const { workerData, parentPort } = require('node:worker_threads');
-    const { DatabaseSync } = require('node:sqlite');
-    const db = new DatabaseSync(workerData.file);
-    db.exec('PRAGMA busy_timeout = 5000');
-    const signal = new Int32Array(workerData.shared);
-    Atomics.add(signal, 0, 1); Atomics.notify(signal, 0);
-    while (Atomics.load(signal, 0) < 2) Atomics.wait(signal, 0, 1, 1000);
-    try {
-      db.prepare('INSERT INTO reservations VALUES (?, ?, ?, ?, ?, ?)').run(workerData.id,
-        'reunion', 'Concurrent booking', 1000, 2000, '2026-10-10T00:00:00Z');
-      parentPort.postMessage('inserted');
-    } catch (error) { parentPort.postMessage(error.message); }
-    db.close();`;
-  const run = (id) => new Promise((resolve, reject) => {
-    const worker = new Worker(code, { eval: true, workerData: { file, shared, id } });
-    worker.on('message', resolve);
-    worker.on('error', reject);
-  });
-  const results = await Promise.all([run('first'), run('second')]);
-  assert.equal(results.filter((result) => result === 'inserted').length, 1);
-  assert.equal(results.filter((result) => result.includes('reservation_overlap')).length, 1);
-  const read = new DatabaseSync(file);
-  assert.equal(read.prepare('SELECT COUNT(*) AS count FROM reservations').get().count, 1);
-  read.close();
 });
 
 test('GitHub writes merge on SHA conflict and preserve imported unknown times and metadata', async (t) => {
@@ -313,16 +245,16 @@ test('GitHub writes merge on SHA conflict and preserve imported unknown times an
 
 test('CORS only permits the configured origin, methods and headers and sets no persistent cookies', async (t) => {
   const { call, login } = fixture(t);
-  const allowed = await call('/reservations', { method: 'OPTIONS', headers: {
+  const allowed = await call('/seminars', { method: 'OPTIONS', headers: {
     'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'authorization,content-type',
   } });
   assert.equal(allowed.status, 204);
   assert.equal(allowed.headers.get('Access-Control-Allow-Origin'), origin);
   assert.equal(allowed.headers.get('Access-Control-Allow-Credentials'), null);
-  assert.equal((await call('/reservations', { method: 'OPTIONS', headers: {
+  assert.equal((await call('/seminars', { method: 'OPTIONS', headers: {
     'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'x-forged-header',
   } })).status, 403);
-  assert.equal((await call('/reservations', { method: 'OPTIONS', headers: {
+  assert.equal((await call('/seminars', { method: 'OPTIONS', headers: {
     'Access-Control-Request-Method': 'PATCH',
   } })).status, 405);
   const token = await login();

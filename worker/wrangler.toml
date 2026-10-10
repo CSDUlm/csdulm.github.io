@@ -30,4 +30,4 @@ cpu_ms = 1000
 # custom_domain = true
 
 # Configure secrets with wrangler secret put, never in this file:
-# SEMINAR_PASSWORD_HASH, BOOKING_PASSWORD_HASH, SESSION_SECRET, GITHUB_TOKEN
+# SEMINAR_PASSWORD_HASH, SESSION_SECRET, GITHUB_TOKEN

@@ -11,6 +11,25 @@ const content = JSON.parse(
 const db = JSON.parse(
   await readFile(path.join(root, "data/seminars.json"), "utf8"),
 );
+const memberNames = new Set();
+for (const person of content.teams) {
+  if (
+    typeof person.name !== "string" ||
+    memberNames.has(person.name) ||
+    !/^https?:\/\//.test(person.url) ||
+    !/^\/assets\/images\/people\/[a-z0-9-]+\.(?:webp|jpe?g|png)$/.test(
+      person.portrait?.src,
+    ) ||
+    !person.research?.en ||
+    !person.research?.fr ||
+    (person.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(person.email)) ||
+    (person.portrait.position &&
+      !/^\d{1,3}% \d{1,3}%$/.test(person.portrait.position))
+  )
+    throw new Error(`Invalid member profile: ${person.name}`);
+  await readFile(path.join(root, person.portrait.src));
+  memberNames.add(person.name);
+}
 if (
   db.version !== 1 ||
   db.timezone !== "Europe/Paris" ||
@@ -76,8 +95,9 @@ for (const lang of ["en", "fr"])
       renderPage(page, lang, content, db.seminars, origin),
     );
   }
-for (const page of ["admin", "rooms"])
-  await cp(path.join(root, page), path.join(dist, page), { recursive: true });
+await cp(path.join(root, "admin"), path.join(dist, "admin"), {
+  recursive: true,
+});
 await writeFile(
   path.join(dist, "404.html"),
   renderPage("404", "en", content, db.seminars, origin),
@@ -85,7 +105,7 @@ await writeFile(
 await writeFile(path.join(dist, ".nojekyll"), "");
 await writeFile(
   path.join(dist, "robots.txt"),
-  `User-agent: *\nDisallow: /rooms/\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`,
+  `User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`,
 );
 const urls = ["en", "fr"].flatMap((lang) =>
   pages.map((page) => `<url><loc>${origin}${route(page, lang)}</loc></url>`),
@@ -100,7 +120,6 @@ const htmlFiles = [
     pages.map((page) => path.join(dist, route(page, lang), "index.html")),
   ),
   path.join(dist, "admin/index.html"),
-  path.join(dist, "rooms/index.html"),
   path.join(dist, "404.html"),
 ];
 for (const file of htmlFiles) {
@@ -124,7 +143,7 @@ for (const file of htmlFiles) {
   }
 }
 console.log(
-  `Built 10 translated public pages, private management pages and ${db.seminars.length} archived seminars in dist/.`,
+  `Built 10 translated public pages, seminar administration and ${db.seminars.length} seminar records in dist/.`,
 );
 console.log(
   apiBase

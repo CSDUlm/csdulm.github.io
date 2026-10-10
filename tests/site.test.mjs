@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { renderPage } from "../site/render.mjs";
+import { renderPage, nextFeature } from "../site/render.mjs";
 import {
   upcomingSeminars,
   timeLabel,
@@ -132,4 +132,47 @@ test("tentative events remain labelled and cancelled events never become the nex
   assert.ok(html.includes("To be confirmed"));
   assert.ok(html.includes("Title to be announced"));
   assert.ok(html.includes("Room W (default room)"));
+  const calendar = calendarFile(talk);
+  assert.ok(calendar.includes("SUMMARY:CSD seminar — Nicolas Schreuder"));
+  assert.ok(calendar.includes("STATUS:TENTATIVE\r\n"));
+  assert.ok(!calendar.includes("SUMMARY:Title not recorded"));
+});
+
+test("member gallery renders bilingual profiles, portraits and supplied contact addresses", () => {
+  assert.equal(content.teams.length, 12);
+  const contacts = new Map([
+    ["Julie Delon", "julie.delon@math.cnrs.fr"],
+    ["Irène Waldspurger", "Irene.Waldspurger@ens.fr"],
+    ["Nicolas Schreuder", "nicolas.schreuder@cnrs.fr"],
+    ["Yann Ollivier", "yann@yann-ollivier.org"],
+  ]);
+  for (const [name, email] of contacts) {
+    assert.equal(
+      content.teams.find((person) => person.name === name)?.email,
+      email,
+    );
+  }
+  for (const lang of ["en", "fr"]) {
+    const html = renderPage("teams", lang, content, []);
+    assert.equal((html.match(/class="person-card"/g) || []).length, 12);
+    for (const person of content.teams) {
+      assert.ok(html.includes(`alt="${escapeHTML(person.name)}"`));
+      assert.ok(html.includes(`src="${person.portrait.src}"`));
+      assert.ok(html.includes(escapeHTML(person.research[lang])));
+      if (person.email) assert.ok(html.includes(`mailto:${person.email}`));
+    }
+  }
+});
+
+test("date-only next seminar metadata has no stray separator", () => {
+  const html = nextFeature([
+    {
+      id: "day-only",
+      speaker: "Speaker",
+      title: "Seminar",
+      date: "2099-06-15",
+      room: "Room W",
+    },
+  ]);
+  assert.ok(html.includes("<span>Room W</span>"));
 });

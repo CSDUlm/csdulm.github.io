@@ -6,11 +6,11 @@ import { pbkdf2Sync } from 'node:crypto';
 import { Miniflare, convertV4MiniflareOptions } from 'miniflare';
 
 const origin = 'https://csdulm.github.io';
-const password = 'runtime-only-booking-test-passphrase';
+const password = 'runtime-only-seminar-test-passphrase';
 const salt = Buffer.alloc(16, 3);
 const hash = `pbkdf2-sha256$100000$${salt.toString('base64url')}$${pbkdf2Sync(password, salt, 100000, 32, 'sha256').toString('base64url')}`;
 
-test('Cloudflare workerd executes real D1 auth, concurrent reservation guard and logout', async (t) => {
+test('Cloudflare workerd executes password-only seminar sign-in, origin checks and D1 revocation', async (t) => {
   const mf = new Miniflare(convertV4MiniflareOptions({
     modules: true,
     scriptPath: fileURLToPath(new URL('../src/index.mjs', import.meta.url)),
@@ -19,15 +19,16 @@ test('Cloudflare workerd executes real D1 auth, concurrent reservation guard and
     d1Databases: { DB: '00000000-0000-0000-0000-000000000001' },
     bindings: {
       ENVIRONMENT: 'production', ALLOWED_ORIGINS: origin,
-      SEMINAR_PASSWORD_HASH: hash, BOOKING_PASSWORD_HASH: hash, SESSION_SECRET: 'c3'.repeat(32),
+      SEMINAR_PASSWORD_HASH: hash, SESSION_SECRET: 'c3'.repeat(32),
     },
   }));
   t.after(() => mf.dispose());
   const db = await mf.getD1Database('DB');
   const migration = readFileSync(new URL('../migrations/0001_private_api.sql', import.meta.url), 'utf8');
-  // Keep trigger BEGIN/END bodies intact when creating the actual production schema.
-  const statements = migration.replace(/^--.*$/gm, '').trim().split(/;\s*(?=CREATE)/);
+  const statements = migration.trim().split(/;\s*(?=CREATE)/);
   await db.batch(statements.map((statement) => db.prepare(statement.trim())));
+  const tables = await db.prepare("SELECT name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%' ORDER BY name").all();
+  assert.deepEqual(tables.results.map(({ name }) => name).filter((name) => !name.startsWith('_cf_')), ['login_limits', 'sessions']);
 
   function call(path, { method = 'GET', body, token, requestOrigin = origin } = {}) {
     const headers = { 'CF-Connecting-IP': '192.0.2.50' };
@@ -39,33 +40,22 @@ test('Cloudflare workerd executes real D1 auth, concurrent reservation guard and
     });
   }
 
-  const denied = await call('/reservations');
-  assert.equal(denied.status, 401);
-  const signIn = await call('/auth/login', { method: 'POST', body: { role: 'bookings', password } });
+  assert.equal((await call('/seminars', { method: 'POST' })).status, 401);
+  const wrongPassword = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password: 'incorrect' } });
+  assert.equal(wrongPassword.status, 401);
+  // No GitHub token or end-user GitHub identity is required to sign in.
+  const signIn = await call('/auth/login', { method: 'POST', body: { role: 'seminars', password } });
   assert.equal(signIn.status, 200, await signIn.clone().text());
   const { token } = await signIn.json();
   assert.equal((await call('/auth/session', { token })).status, 200);
   assert.equal((await call('/auth/session', { token, requestOrigin: null })).status, 403);
-
-  const tomorrow = Date.now() + 24 * 60 * 60 * 1000;
-  const start = new Date(tomorrow).toISOString();
-  const end = new Date(tomorrow + 60 * 60 * 1000).toISOString();
-  const booking = { room: 'reunion', name: 'Runtime test booking', start, end };
-  const concurrent = await Promise.all([
-    call('/reservations', { method: 'POST', token, body: booking }),
-    call('/reservations', { method: 'POST', token, body: booking }),
-  ]);
-  assert.deepEqual(concurrent.map((response) => response.status).sort(), [201, 409]);
-  const { reservation } = await concurrent.find((response) => response.status === 201).json();
-  const adjacent = await call('/reservations', { method: 'POST', token,
-    body: { ...booking, start: end, end: new Date(tomorrow + 2 * 60 * 60 * 1000).toISOString() } });
-  assert.equal(adjacent.status, 201);
-  const from = encodeURIComponent(new Date(tomorrow - 60 * 60 * 1000).toISOString());
-  const to = encodeURIComponent(new Date(tomorrow + 3 * 60 * 60 * 1000).toISOString());
-  const calendar = await call(`/reservations?from=${from}&to=${to}`, { token });
-  assert.equal(calendar.status, 200);
-  assert.equal((await calendar.json()).reservations.length, 2);
-  assert.equal((await call(`/reservations/${reservation.id}`, { method: 'DELETE', token })).status, 200);
+  assert.equal((await call('/auth/session', { token: `${token}invalid` })).status, 401);
+  assert.equal((await call('/seminars', { method: 'POST', token, body: { title: 'Incomplete submission' } })).status, 400);
+  // Repository writing requires the administrator's server credential and fails closed without it.
+  const missingServerCredential = await call('/seminars', { method: 'POST', token, body: {
+    speaker: 'Jane Doe', institution: 'ENS', title: 'Runtime test seminar', date: '2027-01-15T11:00:00+01:00',
+  } });
+  assert.equal(missingServerCredential.status, 503);
   assert.equal((await call('/auth/logout', { method: 'POST', token })).status, 200);
   assert.equal((await call('/auth/session', { token })).status, 401);
 });

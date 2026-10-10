@@ -15,7 +15,7 @@ export const strings = {
     nav: {
       home: "Home",
       about: "About",
-      teams: "Teams",
+      teams: "Members",
       seminars: "Seminars",
       visit: "Visit",
     },
@@ -26,7 +26,7 @@ export const strings = {
     heroEyebrow: "École normale supérieure · PSL",
     heroTitle: "Center for<br>Data Science at ENS",
     heroLead:
-      "A shared space for research, ideas, and people at the intersection of mathematics, computer science, physics, and cognitive science.",
+      "The Center for Data Science brings together research in mathematics, computer science, physics, and cognitive science at the École normale supérieure.",
     discover: "Discover the centre",
     seminarLink: "Explore the seminars",
     courtyard: "The courtyard at 45 rue d’Ulm, Paris",
@@ -44,12 +44,12 @@ export const strings = {
     homeAboutBody:
       "From fundamental theory to scientific applications, the centre creates opportunities to exchange expertise, collaborate across disciplines, and welcome new ideas.",
     aboutLink: "Our mission",
-    teamsLink: "The hosted teams",
+    teamsLink: "Members and research teams",
     visitLink: "Find us at ENS",
     nextEyebrow: "Seminars",
     nextTitle: "The CSD seminar",
     nextDescription:
-      "Talks bringing different perspectives on data science into the same room.",
+      "Research talks on data science and artificial intelligence, open to the scientific community.",
     nextLabel: "Next seminar",
     noneTitle: "No upcoming seminar announced",
     noneBody:
@@ -60,7 +60,7 @@ export const strings = {
     communityTitle: "Seminars, courses<br>and events",
     communityBody:
       "Weekly seminars, student seminars, courses, and conferences bring researchers and students together. The centre welcomes colleagues from ENS, PSL, and PRAIRIE, alongside international visitors.",
-    communityLink: "Meet the teams",
+    communityLink: "Meet the members",
     mailTitle: "CSD mailing list",
     mailBody:
       "Receive announcements of seminars, courses, and events at the centre.",
@@ -89,10 +89,10 @@ export const strings = {
     coursesLink: "Course archive",
     supportHeading: "Supported by",
     teamsEyebrow: "People and research",
-    teamsTitle: "Research teams",
+    teamsTitle: "Members",
     teamsLead:
-      "Researchers with different perspectives, working side by side. Explore the teams hosted at the centre through their leaders’ research pages.",
-    teamsHeading: "Hosted teams",
+      "Meet the principal investigators whose teams are hosted at the centre, and explore their research.",
+    teamsHeading: "Principal investigators",
     teamRole: "Team led by",
     profileLabel: "Research page",
     steeringHeading: "Steering committee",
@@ -101,11 +101,13 @@ export const strings = {
     visitorsHeading: "International visitors",
     visitorsBody:
       "The centre also welcomes visiting researchers. The previous website records the following invited professors:",
-    archiveNote: "Information recovered from the previous CSD website.",
+    galleryCount: "principal investigators",
+    emailLabel: "Email",
+    portraitSource: "Portrait source",
     seminarEyebrow: "Seminars & scientific exchange",
     seminarTitle: "Seminars",
     seminarLead:
-      "Discover the CSD seminar: a meeting place for ideas across data science and artificial intelligence.",
+      "The CSD seminar programme and archive: research talks in data science and artificial intelligence.",
     seminarAbout:
       "The regular seminar is held in the CSD conference room. Consult each announcement for its date, time, and room.",
     seminarTime: "All announced times are shown in Paris time.",
@@ -170,7 +172,7 @@ export const strings = {
     nav: {
       home: "Accueil",
       about: "Le centre",
-      teams: "Équipes",
+      teams: "Membres",
       seminars: "Séminaires",
       visit: "Venir",
     },
@@ -181,7 +183,7 @@ export const strings = {
     heroEyebrow: "École normale supérieure · PSL",
     heroTitle: "Centre Sciences<br>des Données de l’ENS",
     heroLead:
-      "Un lieu commun pour la recherche, les idées et les rencontres, au croisement des mathématiques, de l’informatique, de la physique et des sciences cognitives.",
+      "Le Centre Sciences des Données réunit les recherches en mathématiques, informatique, physique et sciences cognitives à l’École normale supérieure.",
     discover: "Découvrir le centre",
     seminarLink: "Explorer les séminaires",
     courtyard: "La cour du 45 rue d’Ulm, Paris",
@@ -199,12 +201,12 @@ export const strings = {
     homeAboutBody:
       "De la théorie fondamentale aux applications scientifiques, le centre favorise les échanges d’expertise, les collaborations entre disciplines et l’émergence de nouvelles idées.",
     aboutLink: "Notre mission",
-    teamsLink: "Les équipes hébergées",
+    teamsLink: "Membres et équipes de recherche",
     visitLink: "Nous trouver à l’ENS",
     nextEyebrow: "Séminaires",
     nextTitle: "Le séminaire du CSD",
     nextDescription:
-      "Des points de vue variés sur les sciences des données, réunis dans une même salle.",
+      "Des exposés de recherche en sciences des données et en intelligence artificielle, ouverts à la communauté scientifique.",
     nextLabel: "Prochain séminaire",
     noneTitle: "Aucun prochain séminaire annoncé",
     noneBody:
@@ -215,7 +217,7 @@ export const strings = {
     communityTitle: "Séminaires, cours<br>et événements",
     communityBody:
       "Séminaires hebdomadaires, séminaires étudiants, cours et conférences réunissent chercheurs et étudiants. Le centre accueille des collègues de l’ENS, de PSL et de PRAIRIE, ainsi que des visiteurs internationaux.",
-    communityLink: "Rencontrer les équipes",
+    communityLink: "Rencontrer les membres",
     mailTitle: "Liste de diffusion du CSD",
     mailBody:
       "Recevez les annonces de séminaires, cours et événements du centre.",
@@ -244,10 +246,10 @@ export const strings = {
     coursesLink: "Archives des cours",
     supportHeading: "Avec le soutien de",
     teamsEyebrow: "La recherche et ses acteurs",
-    teamsTitle: "Équipes de recherche",
+    teamsTitle: "Membres",
     teamsLead:
-      "Des chercheurs aux perspectives variées, travaillant côte à côte. Découvrez les équipes hébergées au centre à travers les pages de leurs responsables.",
-    teamsHeading: "Équipes hébergées",
+      "Découvrez les responsables des équipes hébergées au centre et leurs domaines de recherche.",
+    teamsHeading: "Responsables de recherche",
     teamRole: "Équipe de",
     profileLabel: "Page de recherche",
     steeringHeading: "Comité de pilotage",
@@ -256,11 +258,13 @@ export const strings = {
     visitorsHeading: "Visiteurs internationaux",
     visitorsBody:
       "Le centre accueille également des chercheurs invités. Le précédent site mentionne les professeurs invités suivants :",
-    archiveNote: "Informations reprises du précédent site du CSD.",
+    galleryCount: "responsables de recherche",
+    emailLabel: "Courriel",
+    portraitSource: "Source du portrait",
     seminarEyebrow: "Séminaires et échanges scientifiques",
     seminarTitle: "Séminaires",
     seminarLead:
-      "Découvrez le séminaire du CSD : un lieu de rencontre autour des sciences des données et de l’intelligence artificielle.",
+      "Le programme et les archives du séminaire du CSD : des exposés de recherche en sciences des données et en intelligence artificielle.",
     seminarAbout:
       "Le séminaire régulier se tient dans la salle de conférence du CSD. Consultez chaque annonce pour connaître la date, l’horaire et la salle.",
     seminarTime: "Les horaires annoncés sont affichés à l’heure de Paris.",

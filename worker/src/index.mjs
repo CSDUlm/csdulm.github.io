@@ -6,8 +6,6 @@ const MAX_BODY_BYTES = 16 * 1024;
 // GitHub's JSON Contents response includes Base64 data only for files below 1 MB.
 // Keep writes below that ceiling so every saved database remains readable.
 const MAX_REPOSITORY_BYTES = 950 * 1024;
-const ROLES = new Set(['seminars', 'bookings']);
-const ROOMS = new Set(['reunion', 'reunion-bis', 'visio-cafe', 'visio-couloir']);
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const RECORD_ID = /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,79}$/;
 
@@ -93,7 +91,7 @@ async function readSessionToken(token, env, nowSeconds) {
     const valid = await crypto.subtle.verify('HMAC', key, signatureBytes, encoder.encode(`${version}.${encoded}`));
     if (!valid) throw new Error();
     const payload = JSON.parse(decoder.decode(unbase64url(encoded)));
-    if (payload.aud !== 'csd-private-api' || !UUID.test(payload.sub) || !ROLES.has(payload.role)
+    if (payload.aud !== 'csd-private-api' || !UUID.test(payload.sub) || payload.role !== 'seminars'
       || !Number.isInteger(payload.exp) || !Number.isInteger(payload.iat)
       || payload.exp <= nowSeconds || payload.iat > nowSeconds + 30
       || payload.exp <= payload.iat || payload.exp - payload.iat > SESSION_SECONDS
@@ -138,7 +136,6 @@ function privateDatabase(env) {
 function requireAuthConfig(env) {
   secretBytes(env);
   parsePasswordHash(env.SEMINAR_PASSWORD_HASH);
-  parsePasswordHash(env.BOOKING_PASSWORD_HASH);
   return privateDatabase(env);
 }
 
@@ -250,19 +247,6 @@ export function validateSeminar(body) {
   return seminar;
 }
 
-export function validateReservation(body, nowMilliseconds) {
-  if (!ROOMS.has(body.room)) throw new HttpError(400, 'Please choose one of the four available rooms.');
-  const start = parseDateTime(body.start, 'The start time');
-  const end = parseDateTime(body.end, 'The end time');
-  if (end <= start || end - start > 24 * 60 * 60 * 1000) {
-    throw new HttpError(400, 'A reservation must end after it starts and last at most 24 hours.');
-  }
-  if (start < nowMilliseconds - 5 * 60 * 1000 || start > nowMilliseconds + 366 * 24 * 60 * 60 * 1000) {
-    throw new HttpError(400, 'Please choose a start time within the coming year.');
-  }
-  return { room: body.room, name: textField(body.name, 'the reserving person’s name', 120), start, end };
-}
-
 async function consumeLoginAttempt(request, env, db, role, nowSeconds) {
   const ip = request.headers.get('CF-Connecting-IP');
   if (!ip && env.ENVIRONMENT !== 'development') throw new HttpError(503, 'The secure service is temporarily unavailable.');
@@ -351,11 +335,6 @@ async function updateSeminars(env, fetchImpl, modify, message) {
   throw new HttpError(409, 'Another seminar change was saved at the same time. Please try again.');
 }
 
-function reservationRow(row) {
-  return { id: row.id, room: row.room, name: row.name,
-    start: new Date(row.start_ms).toISOString(), end: new Date(row.end_ms).toISOString(), createdAt: row.created_at };
-}
-
 function responseHeaders(request, env, extra = {}) {
   const headers = new Headers({
     'Content-Type': 'application/json; charset=utf-8',
@@ -408,13 +387,12 @@ export function createHandler({ fetch: fetchImpl = globalThis.fetch, now = Date.
         const origin = requireOrigin(request, env);
         const db = requireAuthConfig(env);
         const body = await bodyObject(request, ['role', 'password']);
-        if (!ROLES.has(body.role)) throw new HttpError(400, 'Please choose a valid sign-in role.');
+        if (body.role !== 'seminars') throw new HttpError(400, 'Please choose a valid sign-in role.');
         if (typeof body.password !== 'string' || body.password.length < 1 || body.password.length > 256) {
           throw new HttpError(400, 'Please enter a valid password.');
         }
         await consumeLoginAttempt(request, env, db, body.role, nowSeconds);
-        const passwordHash = body.role === 'seminars' ? env.SEMINAR_PASSWORD_HASH : env.BOOKING_PASSWORD_HASH;
-        if (!await verifyPassword(body.password, passwordHash)) throw new HttpError(401, 'The password is incorrect.');
+        if (!await verifyPassword(body.password, env.SEMINAR_PASSWORD_HASH)) throw new HttpError(401, 'The password is incorrect.');
         const payload = { aud: 'csd-private-api', sub: crypto.randomUUID(), role: body.role,
           origin, iat: nowSeconds, exp: nowSeconds + SESSION_SECONDS };
         await db.prepare('INSERT INTO sessions (id, role, origin, expires_at) VALUES (?, ?, ?, ?)')
@@ -456,44 +434,6 @@ export function createHandler({ fetch: fetchImpl = globalThis.fetch, now = Date.
           if (index < 0) throw new HttpError(404, 'This seminar could not be found.');
           data.seminars.splice(index, 1);
         }, `Remove CSD seminar: ${seminarId}`);
-        return json({ ok: true });
-      }
-
-      if (path === '/reservations' && method === 'GET') {
-        const { db } = await authorize(request, env, nowSeconds, 'bookings');
-        const from = parseDateTime(url.searchParams.get('from'), 'The calendar start');
-        const to = parseDateTime(url.searchParams.get('to'), 'The calendar end');
-        if (to <= from || to - from > 93 * 24 * 60 * 60 * 1000) {
-          throw new HttpError(400, 'Choose a calendar range of at most 93 days.');
-        }
-        const result = await db.prepare(
-          'SELECT id, room, name, start_ms, end_ms, created_at FROM reservations WHERE start_ms < ? AND end_ms > ? ORDER BY start_ms, room LIMIT 1001',
-        ).bind(to, from).all();
-        if (result.results.length > 1000) throw new HttpError(422, 'There are too many reservations. Choose a shorter calendar range.');
-        return json({ reservations: result.results.map(reservationRow) });
-      }
-      if (path === '/reservations' && method === 'POST') {
-        const { db } = await authorize(request, env, nowSeconds, 'bookings');
-        const reservation = validateReservation(await bodyObject(request, ['room', 'name', 'start', 'end']), nowMilliseconds);
-        const row = { id: crypto.randomUUID(), room: reservation.room, name: reservation.name,
-          start_ms: reservation.start, end_ms: reservation.end, created_at: new Date(nowMilliseconds).toISOString() };
-        try {
-          await db.prepare('INSERT INTO reservations (id, room, name, start_ms, end_ms, created_at) VALUES (?, ?, ?, ?, ?, ?)')
-            .bind(row.id, row.room, row.name, row.start_ms, row.end_ms, row.created_at).run();
-        } catch (error) {
-          if (String(error?.message).includes('reservation_overlap')) {
-            throw new HttpError(409, 'This room is already reserved for part of that time. Please choose another time or room.');
-          }
-          throw error;
-        }
-        return json({ reservation: reservationRow(row) }, 201);
-      }
-      const reservationId = path.startsWith('/reservations/') ? path.slice('/reservations/'.length) : '';
-      if (reservationId && method === 'DELETE') {
-        const { db } = await authorize(request, env, nowSeconds, 'bookings');
-        if (!UUID.test(reservationId)) throw new HttpError(400, 'The reservation ID is not valid.');
-        const result = await db.prepare('DELETE FROM reservations WHERE id = ?').bind(reservationId).run();
-        if (!result.meta?.changes) throw new HttpError(404, 'This reservation could not be found.');
         return json({ ok: true });
       }
 

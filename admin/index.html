@@ -9,6 +9,8 @@
       content="Secure seminar administration for the Centre Sciences des Données at ENS Ulm."
     />
     <title>Seminar administration — CSD, ENS Ulm</title>
+    <meta name="theme-color" content="#174c45" />
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../assets/css/site.css" />
     <link rel="stylesheet" href="../assets/css/manage.css" />
     <script src="../assets/js/config.js" defer></script>
@@ -49,11 +51,11 @@
         <div>
           <h2 id="login-heading" data-i18n="signIn">Sign in</h2>
           <p data-i18n="adminLoginHint">
-            Use the seminar organiser password to make changes. No GitHub account
-            is required.
+            Use the seminar organiser password to make changes. No GitHub
+            account is required.
           </p>
         </div>
-        <form id="login-form" class="manage-login-form">
+        <form id="login-form" class="manage-login-form" method="post">
           <div class="manage-field">
             <label for="password" data-i18n="password">Password</label
             ><input
@@ -63,6 +65,7 @@
               autocomplete="current-password"
               required
               maxlength="256"
+              disabled
             />
           </div>
           <button
@@ -70,6 +73,7 @@
             type="submit"
             id="login-button"
             data-i18n="signIn"
+            disabled
           >
             Sign in
           </button>

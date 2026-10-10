@@ -24,6 +24,39 @@ function dateHelpers(lang = "") {
 }
 const time = dateHelpers();
 
+test("The login form cannot leak a password into a URL before JavaScript initializes", () => {
+  const html = readFileSync(new URL("../admin/index.html", import.meta.url), "utf8");
+  const form = html.match(/<form\b[^>]*\bid="login-form"[^>]*>/s)?.[0];
+  const password = html.match(/<input\b[^>]*\bid="password"[^>]*>/s)?.[0];
+  const button = html.match(/<button\b[^>]*\bid="login-button"[^>]*>/s)?.[0];
+  assert.ok(form && password && button, "Login controls exist in the static page");
+  assert.match(form, /\bmethod="post"/i, "Native form submission must not use GET");
+  assert.match(password, /\bdisabled(?:\s|>|=)/, "Password entry is disabled until the handler is ready");
+  assert.match(button, /\bdisabled(?:\s|>|=)/, "Native submission is disabled until the handler is ready");
+});
+
+test("Unconfigured administration keeps login disabled and sends no password", async () => {
+  const elements = new Map();
+  const getElementById = (id) => {
+    if (!elements.has(id)) elements.set(id, {
+      disabled: true, value: "", events: {}, dataset: {},
+      addEventListener(name, callback) { this.events[name] = callback; },
+    });
+    return elements.get(id);
+  };
+  let requests = 0;
+  vm.runInNewContext(source, {
+    window: { location: { search: "" }, CSD_CONFIG: { apiBase: "" }, addEventListener() {} },
+    document: { body: { dataset: { management: "seminars" } }, documentElement: {}, getElementById, querySelectorAll: () => [] },
+    fetch: async () => { requests += 1; throw new Error("Unexpected request"); },
+    URLSearchParams, Intl, Date, Set, Object, Number, Error,
+  });
+  assert.equal(getElementById("password").disabled, true);
+  assert.equal(getElementById("login-button").disabled, true);
+  await getElementById("login-form").events.submit({ preventDefault() {} });
+  assert.equal(requests, 0);
+});
+
 test("Paris datetime inputs become the correct winter and summer instants", () => {
   assert.equal(
     time.toParisInstant("2026-01-20T14:00"),
@@ -51,7 +84,7 @@ test("Paris datetime inputs become the correct winter and summer instants", () =
   );
 });
 
-test("DST gaps and repeated hours are rejected instead of silently changing the booking time", () => {
+test("DST gaps and repeated hours are rejected instead of silently changing the seminar time", () => {
   assert.throws(
     () => time.toParisInstant("2026-03-29T02:30"),
     /does not exist/,
@@ -82,13 +115,10 @@ test("Invalid dates are rejected and valid leap days are preserved", () => {
   );
 });
 
-test("Calendar dates follow Paris time and week navigation handles month and year boundaries", () => {
+test("Seminar dates follow Paris local time across midnight", () => {
   assert.equal(time.dateKey("2026-01-20T23:30:00Z"), "2026-01-21");
   assert.equal(time.dateKey("2026-07-20T22:30:00Z"), "2026-07-21");
-  assert.equal(time.addDays("2026-12-31", 1), "2027-01-01");
-  assert.equal(time.addDays("2026-03-01", -1), "2026-02-28");
-  assert.equal(time.mondayFor("2026-10-11"), "2026-10-05");
-  assert.equal(time.mondayFor("2026-10-12"), "2026-10-12");
+  assert.equal(time.dateKey("2026-12-31T23:30:00Z"), "2027-01-01");
 });
 
 test("Administration preserves unknown seminar details and displays upcoming event status", async () => {
@@ -127,6 +157,8 @@ test("Administration preserves unknown seminar details and displays upcoming eve
     "speaker",
   ];
   const elements = Object.fromEntries(ids.map((id) => [id, new Element()]));
+  elements.password.disabled = true;
+  elements["login-button"].disabled = true;
   elements.password.value = "test-password";
   const window = {
     location: {
@@ -171,7 +203,7 @@ test("Administration preserves unknown seminar details and displays upcoming eve
                 speaker: "Upcoming speaker",
                 institution: "",
                 title: "Generic imported title",
-                date: time.addDays(time.dateKey(Date.now()), 7),
+                date: time.dateKey(Date.now() + 7 * 86400000),
                 room: null,
                 titleKnown: false,
                 timeKnown: false,
@@ -183,7 +215,7 @@ test("Administration preserves unknown seminar details and displays upcoming eve
                 speaker: "Cancelled speaker",
                 institution: "",
                 title: "Generic imported title",
-                date: time.addDays(time.dateKey(Date.now()), 14),
+                date: time.dateKey(Date.now() + 14 * 86400000),
                 room: null,
                 titleKnown: false,
                 timeKnown: false,
@@ -209,6 +241,8 @@ test("Administration preserves unknown seminar details and displays upcoming eve
     setTimeout: () => 1,
     clearTimeout() {},
   });
+  assert.equal(elements.password.disabled, false, "Configured login enables password entry after installing the handler");
+  assert.equal(elements["login-button"].disabled, false, "Configured login enables submission after installing the handler");
   await elements["login-form"].events.submit({ preventDefault() {} });
   const allText = (element) => [
     element.textContent || "",

@@ -483,7 +483,7 @@ p {
   position: absolute;
   z-index: -2;
   inset: 0 0 0 45%;
-  background: url("../images/ens-ulm.jpg") center 44% / cover;
+  background: url("../images/ens-ulm.webp") center 44% / cover;
   opacity: 0.13;
 }
 .page-top.image::after {
@@ -509,36 +509,99 @@ p {
   display: block;
   margin-bottom: 12px;
 }
-.team-list {
+.section-lined {
   border-top: 1px solid var(--line);
 }
-.team-row {
+.members-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 35px;
+}
+.members-heading h2 {
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  margin-bottom: 0;
+}
+.members-heading p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.people-gallery {
   display: grid;
-  grid-template-columns: 55px 1fr auto;
-  align-items: center;
-  gap: 20px;
-  padding: 25px 0;
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 42px 28px;
+}
+.person-card {
+  min-width: 0;
+}
+.person-portrait {
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #e4e7df;
+}
+.person-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.person-info {
+  padding-top: 18px;
+}
+.person-info h3 {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  letter-spacing: -0.025em;
+  margin-bottom: 9px;
+}
+.person-info h3 a {
   text-decoration: none;
 }
-.team-row .index {
-  font-size: 0.7rem;
+.person-research {
   color: var(--muted);
-}
-.team-row h3 {
-  font-family: var(--serif);
-  font-size: 1.75rem;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-.team-row small {
-  display: block;
-  color: var(--muted);
-  margin-top: 6px;
   font-size: 0.82rem;
+  line-height: 1.55;
+  min-height: 3.1em;
+  margin-bottom: 13px;
 }
-.team-row .arrow {
-  font-size: 1.3rem;
+.person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-size: 0.78rem;
+}
+.person-links a {
+  text-decoration: none;
+}
+.person-links a:hover {
+  text-decoration: underline;
+}
+.portrait-credit {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 0.65rem;
+  margin-top: 12px;
+  text-decoration: none;
+}
+.portrait-credit > span {
+  display: block;
+  margin-bottom: 3px;
+}
+.portrait-credit a {
+  text-decoration: none;
+}
+.portrait-credit a:hover {
+  text-decoration: underline;
+}
+.seminar-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
 }
 .people-inline {
   display: flex;
@@ -795,6 +858,10 @@ textarea {
     grid-template-columns: 170px 1fr;
     padding: 30px;
   }
+  .people-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px 24px;
+  }
   .hero-caption {
     right: 32px;
   }
@@ -947,8 +1014,8 @@ textarea {
     padding-bottom: 20px;
   }
   .seminar-date span {
-    display: inline;
-    margin-left: 15px;
+    display: block;
+    margin-top: 10px;
   }
   .seminar-feature h3 {
     font-size: 1.65rem;
@@ -968,15 +1035,27 @@ textarea {
   .lead {
     font-size: 1rem;
   }
-  .team-row {
-    grid-template-columns: 25px 1fr auto;
-    gap: 12px;
+  .members-heading {
+    display: block;
+    margin-bottom: 28px;
   }
-  .team-row h3 {
-    font-size: 1.45rem;
+  .members-heading p {
+    margin-top: 16px;
   }
-  .team-row small {
+  .people-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 18px;
+  }
+  .person-info h3 {
+    font-size: 1.25rem;
+  }
+  .person-research {
     font-size: 0.75rem;
+    min-height: 0;
+  }
+  .person-links {
+    font-size: 0.7rem;
+    gap: 8px 12px;
   }
   .seminar-row {
     grid-template-columns: 1fr;

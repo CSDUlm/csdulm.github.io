@@ -1,6 +1,6 @@
 # Centre Sciences des Données · ENS–PSL
 
-A static, responsive English website with complete French translations at `/fr/`. It includes the centre’s mission, hosted teams, visitor information, a searchable seminar archive, and an automatically selected next-seminar announcement. The licensed ENS courtyard photograph appears with subdued opacity.
+A static, responsive English website with complete French translations at `/fr/`. It includes the centre’s mission, a portrait gallery of the principal investigators, visitor information, a searchable seminar archive, and an automatically selected next-seminar announcement. The licensed ENS courtyard photograph appears with subdued opacity.
 
 ## Run locally
 
@@ -52,41 +52,24 @@ Repository Actions variables:
 
 Changing a variable requires rerunning the publishing workflow. For local API development, set `CSD_API_URL` when building; localhost HTTP is allowed only for local preview.
 
-## Private management
+## Seminar management
 
-End users do **not** need a GitHub account, Cloudflare account, or personal access token. They open `/admin/` to add a seminar using the organiser password, or `/rooms/` to view, add and remove bookings using the room password. GitHub access is an administrator concern: the private API holds a repository credential on the server and makes seminar commits on the users’ behalf.
+End users do **not** need a GitHub account, Cloudflare account, or personal access token. Organisers open `/admin/` (French: `/admin/?lang=fr`) and enter the shared seminar password to add or remove a seminar. GitHub access is an administrator concern: the private API holds a repository credential on the server and makes seminar commits on the organisers’ behalf.
 
-Passwords are transmitted over HTTPS and checked against **salted one-way hashes**, rather than stored using reversible encryption. Neither the plaintext passwords nor their hashes are included in the public website. Anyone with the booking password can remove a reservation; no individual account is required.
+Passwords are sent over HTTPS and checked against **salted one-way hashes**. Neither the plaintext password nor its hash is included in the public website. The sign-in session is short-lived and stays only in page memory; signing out revokes it on the server. Anyone with the shared organiser password can add or remove a seminar.
 
-Seminar organisers use `/admin/`. Room bookings use the unlisted `/rooms/` page (French: append `?lang=fr`). The room page is omitted from navigation and the sitemap and marked `noindex`. Its HTML contains no reservations. Hiding a URL is not the security boundary: the API requires authentication for every reservation read, addition and deletion.
+A small Cloudflare Worker and D1 database in `worker/` provide password verification, revocable sessions and login throttling. **They must be deployed and configured separately before seminar management works.** Until then, the public website remains usable and the administration page clearly explains that sign-in is unavailable.
 
-Static hosting cannot securely validate passwords or maintain private shared bookings. A small Cloudflare Worker and private D1 database in `worker/` provide those functions. **They must be deployed and configured separately before management works.** Until then, the site explicitly disables sign-in and remains fully usable as a public static website. No successful save is simulated.
+See [private API setup](worker/README.md) for deployment instructions. Cloudflare’s paid Workers plan is required for the password-verification CPU budget; the public site’s build and Pages workflow create no paid resource.
 
-See [private API setup](worker/README.md) for exact deployment instructions. Cloudflare’s paid Workers plan is required for the password-verification CPU budget; no paid resource is created by the public site’s build or Pages workflow.
+The API uses HTTPS, strict origin checks, input and request-size limits, durable login throttling and safe rendering of submitted text. Seminar updates commit the JSON file through a narrowly scoped server-side GitHub token, with conflict-safe retries. No password, hash, GitHub token or signing secret is published in the website or repository.
 
-Security measures include:
-
-- Two separate access passwords, stored only as salted server-side hashes. No password, hash, GitHub token or signing secret is published in the website or repository.
-- Short-lived, role-limited sessions held only in page memory, never browser storage. Reloading closes the frontend session; sign-out revokes it server-side.
-- HTTPS, strict origin checks, input and request-size limits, durable login throttling, and safe rendering of submitted text.
-- Private reservation storage, database-enforced overlapping-booking prevention, and explicit confirmation before removing an entry.
-- Seminar updates commit the JSON file through a narrowly scoped server-side GitHub token, with conflict-safe retries. Reservations never enter the public repository.
-
-Anyone with the corresponding shared password can remove that role’s entries. If individual accountability or per-person deletion permissions are needed later, replace shared passwords with ENS identity-provider accounts.
-
-## The four rooms
-
-| Identifier | Display name |
-| --- | --- |
-| `reunion` | Salle réunion |
-| `reunion-bis` | Salle réunion bis |
-| `visio-cafe` | Salle visio café |
-| `visio-couloir` | Salle visio couloir |
-
-The private interface shows a weekly calendar with room filters and a mobile agenda. It accepts the person reserving, room, start and end; times are interpreted in Europe/Paris regardless of the browser’s timezone. Overlapping slots are rejected atomically, while adjacent reservations and simultaneous bookings in different rooms are permitted.
+There is no room-reservation page or API. The seminar venue field is retained, with **Room W** as its default.
 
 ## Verification and licenses
 
-Tests cover authentication, roles, revocation, expiry, malformed input, origin checks, throttling, concurrent reservation overlap, GitHub write conflicts, historical data precision, next-seminar selection, French navigation, safe rendering and Paris daylight-saving transitions.
+Tests cover authentication, revocation, expiry, malformed input, origin checks, throttling, GitHub write conflicts, historical data precision, next-seminar selection, French navigation, safe rendering and Paris daylight-saving transitions. The build verifies local links and portrait assets before publishing.
 
 Website code: [MIT](LICENSE). The ENS courtyard photograph is separately licensed [CC BY-SA 1.0](https://creativecommons.org/licenses/by-sa/1.0/), by David Monniaux. The visible credit links to the [original Wikimedia file](https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg). It is displayed with CSS crops and reduced opacity; the original licensed image remains in the repository.
+
+The PI portraits have individual provenance and credits recorded in [portrait sources](docs/pi-portraits.md). They are separate from the website’s software license.

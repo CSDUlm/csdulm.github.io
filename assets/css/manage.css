@@ -138,7 +138,6 @@
   letter-spacing: 0.025em;
 }
 .manage-field input,
-.manage-field select,
 .manage-field textarea {
   border: 1px solid #bac8bc;
   border-radius: 4px;
@@ -155,7 +154,6 @@
 }
 .manage-page button,
 .manage-page input,
-.manage-page select,
 .manage-page textarea {
   accent-color: #174c45;
 }
@@ -298,106 +296,6 @@
   font-size: 11px;
   color: #954321;
 }
-.manage-calendar-controls {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 24px;
-}
-.manage-calendar-controls .manage-field {
-  width: 260px;
-}
-.manage-week-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-}
-.manage-calendar-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin: 30px 0 12px;
-}
-.manage-calendar {
-  display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  margin-top: 20px;
-  border: 1px solid #d2dcd2;
-  border-radius: 4px;
-  overflow: hidden;
-}
-.manage-day {
-  min-height: 230px;
-  border-left: 1px solid #d2dcd2;
-  background: #fdfdf8;
-}
-.manage-day:first-child {
-  border-left: 0;
-}
-.manage-day-header {
-  margin: 0;
-  padding: 12px 9px;
-  border-bottom: 1px solid #d2dcd2;
-  background: #edf1e8;
-  display: flex;
-  flex-direction: column;
-  font-size: 11px;
-  font-weight: normal;
-}
-.manage-day-header time {
-  font-size: 21px;
-  color: #174c45;
-  font-family: Georgia, serif;
-}
-.manage-day[data-today="true"] .manage-day-header {
-  background: #174c45;
-  color: white;
-}
-.manage-day[data-today="true"] .manage-day-header time {
-  color: white;
-}
-.manage-day-content {
-  padding: 7px;
-}
-.manage-reservation {
-  border: 1px solid #cad8ca;
-  background: #eaf0e4;
-  border-left: 3px solid #174c45;
-  border-radius: 3px;
-  padding: 10px 8px;
-  margin: 7px 0;
-  overflow-wrap: anywhere;
-}
-.manage-reservation[data-room="reunion-bis"] {
-  border-left-color: #b95a38;
-  background: #f4e9df;
-}
-.manage-reservation[data-room="visio-cafe"] {
-  border-left-color: #7f7936;
-  background: #f0edd9;
-}
-.manage-reservation[data-room="visio-couloir"] {
-  border-left-color: #547a8c;
-  background: #e7edf0;
-}
-.manage-reservation p {
-  margin: 4px 0;
-  font-size: 11px;
-  line-height: 1.4;
-}
-.manage-reservation .manage-reservation-time {
-  font-weight: bold;
-  font-size: 12px;
-}
-.manage-reservation .manage-delete {
-  margin-top: 10px;
-}
-.manage-day-empty {
-  font-size: 11px;
-  color: #66766b;
-  padding: 8px 3px;
-}
 .manage-loading,
 .manage-empty {
   color: #63736a;
@@ -413,37 +311,6 @@
 @media (max-width: 1000px) {
   .manage-card {
     padding: 24px;
-  }
-  .manage-calendar {
-    grid-template-columns: 1fr;
-  }
-  .manage-day {
-    min-height: 0;
-    border-left: 0;
-    border-top: 1px solid #d2dcd2;
-    display: grid;
-    grid-template-columns: 90px 1fr;
-  }
-  .manage-day:first-child {
-    border-top: 0;
-  }
-  .manage-day-header {
-    border-bottom: 0;
-    justify-content: center;
-    padding: 14px;
-  }
-  .manage-day-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 8px 14px;
-  }
-  .manage-reservation {
-    min-width: 180px;
-    flex: 1;
-  }
-  .manage-day-empty {
-    margin: 0;
   }
 }
 @media (max-width: 650px) {
@@ -490,17 +357,6 @@
     align-items: start;
     gap: 12px;
   }
-  .manage-calendar-controls {
-    flex-direction: column;
-    align-items: start;
-    gap: 17px;
-  }
-  .manage-calendar-controls .manage-field {
-    width: 100%;
-  }
-  .manage-calendar-heading h3 {
-    font-size: 18px;
-  }
   .manage-seminar {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -515,15 +371,5 @@
   }
   .manage-session {
     align-items: start;
-  }
-  .manage-day {
-    grid-template-columns: 70px 1fr;
-  }
-  .manage-day-content {
-    padding: 5px 9px;
-  }
-  .manage-reservation {
-    min-width: 0;
-    flex-basis: 100%;
   }
 }

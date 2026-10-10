@@ -16,13 +16,15 @@ menu?.addEventListener("click", () => {
   menu.setAttribute("aria-expanded", String(open));
   nav.classList.toggle("open", open);
 });
-nav?.addEventListener("keydown", (event) => {
+function closeMenuOnEscape(event) {
   if (event.key === "Escape") {
     nav.classList.remove("open");
     menu.setAttribute("aria-expanded", "false");
     menu.focus();
   }
-});
+}
+nav?.addEventListener("keydown", closeMenuOnEscape);
+menu?.addEventListener("keydown", closeMenuOnEscape);
 const next = document.getElementById("next-seminar"),
   upcomingList = document.getElementById("upcoming-list"),
   list = document.getElementById("seminar-list");
@@ -39,7 +41,8 @@ const roomLabel = (s) =>
       : s.room
     : "";
 let programme = [],
-  limit = 30;
+  limit = 30,
+  revealInitialHash = true;
 function renderNext() {
   const coming = upcomingSeminars(programme);
   if (upcomingList && coming.length) {
@@ -78,16 +81,25 @@ function renderNext() {
         "eyebrow",
         `${t.nextLabel}${s.status === "tentative" ? ` · ${t.tentative}` : ""}`,
       ),
-      node("h3", "", s.titleKnown === false ? t.titlePending : s.title),
-      node("p", "", [s.speaker, s.institution].filter(Boolean).join(" · ")),
+      node("h3", "", s.titleKnown === false ? s.speaker : s.title),
+      node(
+        "p",
+        "",
+        (s.titleKnown === false
+          ? [s.institution, t.titlePending]
+          : [s.speaker, s.institution]
+        )
+          .filter(Boolean)
+          .join(" · "),
+      ),
     );
+    const actions = node("div", "seminar-actions");
     const a = node("a", "text-link", `${t.seminarLink} →`);
     a.href = `${lang === "fr" ? "/fr" : ""}/seminars/#${encodeURIComponent(s.id)}`;
-    content.append(a);
+    actions.append(a);
     if (s.date.length > 10) {
       const button = node("button", "button secondary", t.calendar);
       button.type = "button";
-      button.style.marginLeft = "20px";
       button.addEventListener("click", () => {
         const url = URL.createObjectURL(
           new Blob([calendarFile(s)], { type: "text/calendar;charset=utf-8" }),
@@ -100,8 +112,9 @@ function renderNext() {
         download.remove();
         setTimeout(() => URL.revokeObjectURL(url), 1000);
       });
-      content.append(button);
+      actions.append(button);
     }
+    content.append(actions);
     feature.append(date, content);
   }
   (next || upcomingList).replaceChildren(feature);
@@ -120,25 +133,30 @@ function renderRow(s) {
       [timeLabel(s, lang), roomLabel(s)].filter(Boolean).join(" · "),
     ),
   );
+  const coming = upcomingSeminars([s]).length > 0;
+  if (coming) meta.append(node("span", "pill green", t.upcomingLabel));
   if (s.status === "tentative") meta.append(node("span", "pill", t.tentative));
   if (s.status === "cancelled") meta.append(node("span", "pill", t.cancelled));
   if (s.type && t.eventTypes[s.type])
     meta.append(node("span", "small-label", t.eventTypes[s.type]));
-  const coming = upcomingSeminars([s]).length > 0;
   const content = node("div");
   content.append(
     node(
       "h3",
       "",
+      s.titleKnown === false ? s.speaker || t.unknownSpeaker : s.title,
+    ),
+  );
+  const speaker = node("p"),
+    name = node(
+      "span",
+      "speaker",
       s.titleKnown === false
         ? coming
           ? t.titlePending
           : t.unknownTitle
-        : s.title,
-    ),
-  );
-  const speaker = node("p"),
-    name = node("span", "speaker", s.speaker || t.unknownSpeaker);
+        : s.speaker || t.unknownSpeaker,
+    );
   speaker.append(name);
   if (s.institution)
     speaker.append(document.createTextNode(` · ${s.institution}`));
@@ -198,11 +216,27 @@ function renderArchive() {
     `${matches.length} ${matches.length === 1 ? t.result : t.results}`;
   const more = document.getElementById("show-more");
   more.hidden = matches.length <= limit;
-  const hash = decodeURIComponent(location.hash.slice(1));
+}
+function revealSeminar() {
+  let hash;
+  try {
+    hash = decodeURIComponent(location.hash.slice(1));
+  } catch {
+    return;
+  }
   if (hash) {
     const item = programme.find((s) => s.id === hash);
-    if (item && !upcoming.has(item.id) && !document.getElementById(hash)) {
-      list.append(renderRow(item));
+    if (list && item && !document.getElementById(hash)) {
+      const coming = new Set(upcomingSeminars(programme).map((s) => s.id));
+      const position = sortSeminars(programme)
+        .filter((s) => !coming.has(s.id))
+        .findIndex((s) => s.id === hash);
+      if (position >= 0) {
+        document.getElementById("search").value = "";
+        document.getElementById("year").value = "";
+        limit = Math.max(limit, position + 1);
+        renderArchive();
+      }
     }
     document
       .getElementById(hash)
@@ -235,12 +269,18 @@ function accept(data) {
         .map((y) => new Option(y, y)),
     );
     year.value = selected;
+    document.getElementById("archive-search").hidden = false;
     renderArchive();
+    if (revealInitialHash) {
+      revealSeminar();
+      revealInitialHash = false;
+    }
   }
 }
 async function load() {
   try {
-    let data;
+    let data,
+      serviceUnavailable = false;
     const api = window.CSD_CONFIG?.apiBase;
     if (api) {
       try {
@@ -250,6 +290,7 @@ async function load() {
         if (!res.ok) throw new Error("Unavailable");
         data = await res.json();
       } catch {
+        serviceUnavailable = true;
         const notice = document.getElementById("programme-notice");
         if (notice) notice.replaceChildren(node("p", "notice", t.failed));
       }
@@ -262,6 +303,8 @@ async function load() {
       data = await response.json();
     }
     accept(data);
+    if (!serviceUnavailable)
+      document.getElementById("programme-notice")?.replaceChildren();
   } catch {
     const notice = document.getElementById("programme-notice");
     if (notice) notice.replaceChildren(node("p", "notice", t.failed));
@@ -284,6 +327,7 @@ if (next || list) {
     renderArchive();
   });
   load();
+  window.addEventListener("hashchange", revealSeminar);
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") load();
   });

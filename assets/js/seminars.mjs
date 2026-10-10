@@ -81,5 +81,15 @@ export function calendarFile(s) {
   const description = [s.speaker, s.institution, s.abstract]
     .filter(Boolean)
     .join("\n");
-  return `BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//CSD ENS//Seminars//EN\r\nBEGIN:VEVENT\r\nUID:${escape(s.id)}@csdulm.github.io\r\nDTSTAMP:${stamp(new Date())}\r\n${start}\r\nSUMMARY:${escape(s.title)}\r\nDESCRIPTION:${escape(description)}\r\nLOCATION:${escape(s.room || "CSD, 45 rue d’Ulm, Paris")}\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n`;
+  const title =
+    s.titleKnown === false
+      ? `CSD seminar — ${s.speaker || "title to be announced"}`
+      : s.title;
+  const status =
+    s.status === "tentative"
+      ? "STATUS:TENTATIVE\r\n"
+      : s.status === "cancelled"
+        ? "STATUS:CANCELLED\r\n"
+        : "";
+  return `BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//CSD ENS//Seminars//EN\r\nBEGIN:VEVENT\r\nUID:${escape(s.id)}@csdulm.github.io\r\nDTSTAMP:${stamp(new Date())}\r\n${start}\r\nSUMMARY:${escape(title)}\r\n${status}DESCRIPTION:${escape(description)}\r\nLOCATION:${escape(s.room || "CSD, 45 rue d’Ulm, Paris")}\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n`;
 }

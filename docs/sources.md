@@ -1,6 +1,6 @@
 # Content provenance and image credit
 
-Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below.
+Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below. The user added Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier as principal investigators on 10 October 2026, with their public contact addresses. Their profiles and the portrait gallery are documented in [portrait sources](pi-portraits.md).
 
 ## CSD information
 
@@ -36,6 +36,6 @@ Historical precision is preserved:
 - [Original file description and verified license](https://commons.wikimedia.org/wiki/File:ENS_Ulm_cour_Ernests_DSC00106.jpg)
 - [Downloaded image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/ENS_Ulm_cour_Ernests_DSC00106.jpg/1280px-ENS_Ulm_cour_Ernests_DSC00106.jpg)
 - License: [Creative Commons Attribution–ShareAlike 1.0 Generic](https://creativecommons.org/licenses/by-sa/1.0/)
-- Changes: Wikimedia thumbnail resize; the site may display it with CSS cropping and reduced opacity. Any modified image remains available under the same license.
+- Changes: Wikimedia thumbnail resize; a 1024 × 768 WebP copy is used on the website to reduce download size; the site displays it with CSS cropping and reduced opacity. Any modified image remains available under the same license.
 
 Recommended visible credit: “Cour aux Ernests, ENS Paris — David Monniaux, CC BY-SA 1.0”, with links to the file description and license. The repository's software license does not replace this image license.

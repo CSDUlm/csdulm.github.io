@@ -48,35 +48,168 @@
   "teams": [
     {
       "name": "Giulio Biroli",
-      "url": "https://www.lpens.ens.psl.eu/giulio-biroli/"
+      "url": "https://www.lpens.ens.psl.eu/giulio-biroli/",
+      "research": {
+        "en": "Statistical physics, complex systems and the theory of machine learning.",
+        "fr": "Physique statistique, systèmes complexes et théorie de l’apprentissage automatique."
+      },
+      "portrait": {
+        "src": "/assets/images/people/giulio-biroli.webp",
+        "sourceUrl": "https://www.phys.ens.psl.eu/en/annuaire/200/giulio-biroli",
+        "position": "50% 35%"
+      }
     },
     {
       "name": "Olivier Cappé",
-      "url": "https://www.di.ens.fr/~cappe/"
+      "url": "https://www.di.ens.fr/~cappe/",
+      "research": {
+        "en": "Statistical learning, sequential decision-making and privacy.",
+        "fr": "Apprentissage statistique, décision séquentielle et confidentialité des données."
+      },
+      "portrait": {
+        "src": "/assets/images/people/olivier-cappe.webp",
+        "sourceUrl": "https://www.di.ens.fr/~cappe/",
+        "position": "50% 30%"
+      }
+    },
+    {
+      "name": "Julie Delon",
+      "url": "https://judelo.github.io/",
+      "research": {
+        "en": "Optimal transport, image processing and inverse problems.",
+        "fr": "Transport optimal, traitement d’images et problèmes inverses."
+      },
+      "portrait": {
+        "src": "/assets/images/people/julie-delon.webp",
+        "sourceUrl": "https://www.ens.psl.eu/actualites/je-suis-persuadee-qu-fait-de-la-meilleure-science-lorsqu-ne-vient-pas-tous-du-meme-moule",
+        "position": "53% 35%",
+        "credit": "© Julien Campet / DMA ENS–PSL"
+      },
+      "email": "julie.delon@math.cnrs.fr"
     },
     {
       "name": "Emmanuel Dupoux",
-      "url": "http://www.lscp.net/persons/dupoux/"
+      "url": "http://www.lscp.net/persons/dupoux/",
+      "research": {
+        "en": "Cognitive development, language acquisition and machine learning.",
+        "fr": "Développement cognitif, acquisition du langage et apprentissage automatique."
+      },
+      "portrait": {
+        "src": "/assets/images/people/emmanuel-dupoux.webp",
+        "sourceUrl": "https://cognition.ens.fr/fr/member/630/emmanuel-dupoux",
+        "position": "55% 25%"
+      }
     },
     {
       "name": "Marylou Gabrié",
-      "url": "https://marylou-gabrie.github.io/"
+      "url": "https://marylou-gabrie.github.io/",
+      "research": {
+        "en": "Machine learning and statistical mechanics, generative models and sampling.",
+        "fr": "Apprentissage automatique et mécanique statistique, modèles génératifs et échantillonnage."
+      },
+      "portrait": {
+        "src": "/assets/images/people/marylou-gabrie.webp",
+        "sourceUrl": "https://www.ens.psl.eu/en/node/8733",
+        "position": "50% 35%"
+      }
     },
     {
       "name": "Bruno Loureiro",
-      "url": "https://brloureiro.github.io/"
+      "url": "https://brloureiro.github.io/",
+      "research": {
+        "en": "Mathematical theory of machine learning and statistical mechanics.",
+        "fr": "Théorie mathématique de l’apprentissage automatique et mécanique statistique."
+      },
+      "portrait": {
+        "src": "/assets/images/people/bruno-loureiro.webp",
+        "sourceUrl": "https://github.com/brloureiro/brloureiro.github.io/blob/master/assets/img/profile.jpeg",
+        "position": "50% 35%"
+      }
     },
     {
       "name": "Stéphane Mallat",
-      "url": "https://www.di.ens.fr/~mallat/mallat.html"
+      "url": "https://www.di.ens.fr/~mallat/mallat.html",
+      "research": {
+        "en": "Mathematics of deep learning, wavelets and multiscale signal representations.",
+        "fr": "Mathématiques de l’apprentissage profond, ondelettes et représentations multi-échelles des signaux."
+      },
+      "portrait": {
+        "src": "/assets/images/people/stephane-mallat.webp",
+        "sourceUrl": "https://www.di.ens.fr/~mallat/mallat.html",
+        "position": "50% 35%"
+      }
     },
     {
       "name": "Kimia Nadjahi",
-      "url": "https://kimiandj.github.io/"
+      "url": "https://kimiandj.github.io/",
+      "research": {
+        "en": "Computational optimal transport, generative models and learning theory.",
+        "fr": "Transport optimal numérique, modèles génératifs et théorie de l’apprentissage."
+      },
+      "portrait": {
+        "src": "/assets/images/people/kimia-nadjahi.webp",
+        "sourceUrl": "https://www.ens.psl.eu/actualites/encourager-chacun-se-former-permet-de-repenser-collectivement-nos-societes-l-ere-de-l-ia",
+        "position": "56% 40%"
+      }
+    },
+    {
+      "name": "Yann Ollivier",
+      "url": "https://www.yann-ollivier.org/",
+      "research": {
+        "en": "Probability and information theory for machine learning and reinforcement learning.",
+        "fr": "Probabilités et théorie de l’information pour l’apprentissage automatique et l’apprentissage par renforcement."
+      },
+      "portrait": {
+        "src": "/assets/images/people/yann-ollivier.webp",
+        "sourceUrl": "https://www.yann-ollivier.org/",
+        "position": "50% 35%"
+      },
+      "email": "yann@yann-ollivier.org"
     },
     {
       "name": "Gabriel Peyré",
-      "url": "http://www.gpeyre.com/"
+      "url": "https://www.gpeyre.com/",
+      "research": {
+        "en": "Optimal transport for machine learning, imaging and single-cell genomics.",
+        "fr": "Transport optimal pour l’apprentissage automatique, l’imagerie et la génomique à cellule unique."
+      },
+      "portrait": {
+        "src": "/assets/images/people/gabriel-peyre.webp",
+        "sourceUrl": "https://www.insmi.cnrs.fr/fr/personne/gabriel-peyre-0",
+        "position": "50% 35%",
+        "credit": "© Mael et Camille Peyré-Guichaoua / DR"
+      }
+    },
+    {
+      "name": "Nicolas Schreuder",
+      "url": "https://nicolasschreuder.github.io/",
+      "research": {
+        "en": "Fairness, robustness and privacy in statistical learning; nonparametric testing.",
+        "fr": "Équité, robustesse et confidentialité en apprentissage statistique ; tests non paramétriques."
+      },
+      "portrait": {
+        "src": "/assets/images/people/nicolas-schreuder.webp",
+        "sourceUrl": "https://github.com/NicolasSchreuder/nicolasschreuder.github.io/blob/98b8b46b127d77b634f2ecca1e436b7cb6034118/images/pp.png",
+        "position": "50% 35%"
+      },
+      "email": "nicolas.schreuder@cnrs.fr"
+    },
+    {
+      "name": "Irène Waldspurger",
+      "url": "https://www.ceremade.dauphine.fr/~waldspurger/",
+      "research": {
+        "en": "Non-convex optimization, inverse problems and phase retrieval.",
+        "fr": "Optimisation non convexe, problèmes inverses et reconstruction de phase."
+      },
+      "portrait": {
+        "src": "/assets/images/people/irene-waldspurger.webp",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ir%C3%A8ne_Waldspurger_Oberwolfach_2015.jpg",
+        "position": "40% 35%",
+        "credit": "Katrin Schmid / MFO",
+        "license": "CC BY-SA 2.0 DE",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+      },
+      "email": "Irene.Waldspurger@ens.fr"
     }
   ],
   "steeringCommittee": [

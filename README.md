@@ -54,6 +54,10 @@ Changing a variable requires rerunning the publishing workflow. For local API de
 
 ## Private management
 
+End users do **not** need a GitHub account, Cloudflare account, or personal access token. They open `/admin/` to add a seminar using the organiser password, or `/rooms/` to view, add and remove bookings using the room password. GitHub access is an administrator concern: the private API holds a repository credential on the server and makes seminar commits on the users’ behalf.
+
+Passwords are transmitted over HTTPS and checked against **salted one-way hashes**, rather than stored using reversible encryption. Neither the plaintext passwords nor their hashes are included in the public website. Anyone with the booking password can remove a reservation; no individual account is required.
+
 Seminar organisers use `/admin/`. Room bookings use the unlisted `/rooms/` page (French: append `?lang=fr`). The room page is omitted from navigation and the sitemap and marked `noindex`. Its HTML contains no reservations. Hiding a URL is not the security boundary: the API requires authentication for every reservation read, addition and deletion.
 
 Static hosting cannot securely validate passwords or maintain private shared bookings. A small Cloudflare Worker and private D1 database in `worker/` provide those functions. **They must be deployed and configured separately before management works.** Until then, the site explicitly disables sign-in and remains fully usable as a public static website. No successful save is simulated.

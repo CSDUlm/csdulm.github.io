@@ -20,8 +20,8 @@
     signIn: ["Sign in", "Se connecter"],
     password: ["Password", "Mot de passe"],
     adminLoginHint: [
-      "Use the seminar organiser password to make changes.",
-      "Utilisez le mot de passe des organisateurs pour modifier les séminaires.",
+      "Use the seminar organiser password to make changes. No GitHub account is required.",
+      "Utilisez le mot de passe des organisateurs pour modifier les séminaires. Aucun compte GitHub n’est nécessaire.",
     ],
     signOut: ["Sign out", "Se déconnecter"],
     newSeminar: ["Add a seminar", "Ajouter un séminaire"],
@@ -50,8 +50,8 @@
       "Consultez et gérez les réservations des quatre salles de réunion et de visioconférence du CSD. Connectez-vous pour accéder au calendrier.",
     ],
     roomsLoginHint: [
-      "Use the room booking password. Reservation details are visible only after signing in.",
-      "Utilisez le mot de passe de réservation des salles. Les réservations sont visibles uniquement après connexion.",
+      "Use the room booking password to view, add, or remove reservations. No GitHub account is required.",
+      "Utilisez le mot de passe de réservation des salles pour consulter, ajouter ou supprimer des réservations. Aucun compte GitHub n’est nécessaire.",
     ],
     roomCalendar: ["Room calendar", "Calendrier des salles"],
     viewRoom: ["View room", "Afficher une salle"],

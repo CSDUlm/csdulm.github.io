@@ -4,6 +4,17 @@ The public website stays static on GitHub Pages. This small, separate Cloudflare
 
 Seminars live in the versioned `data/seminars.json` file in this repository. An authenticated change creates a GitHub commit, then the normal Pages deployment publishes it. Historical records and their source metadata are preserved. Reservations and session records live only in a private Cloudflare D1 database; they are never committed to the public repository or returned by a public endpoint.
 
+## What users need
+
+Users need only the password supplied by CSD. They do not need a GitHub account, a Cloudflare account, or a personal access token:
+
+- `/admin/`: the organiser password permits adding and removing seminars.
+- `/rooms/`: the booking password permits viewing, adding and removing reservations for the four rooms.
+
+All setup below is performed once by a CSD administrator. `GITHUB_TOKEN` is a server-side service credential used to publish seminars on behalf of users. It is never requested from an end user or exposed to their browser. Room booking operations do not use GitHub credentials.
+
+Passwords travel over HTTPS and are stored as salted, one-way hashes. The server checks a hash rather than decrypting a stored password. Do not send plaintext passwords in repository issues, commits, or setup instructions.
+
 ## Security design
 
 - Separate seminar and booking passwords, checked only on the server against salted PBKDF2-SHA256 hashes. The server stores no plaintext password. The local password tool hides its input and requires at least 20 characters; use two different, randomly generated passphrases from a password manager.
@@ -88,7 +99,7 @@ Run commands from `worker/`. Node 22.13 or later is needed for the dependency-fr
    npx wrangler deploy
    ```
 
-   Set the GitHub repository's **Actions variable** `CSD_API_URL` to the returned HTTPS Worker URL, then rerun the **Publish CSD website** workflow. The site build generates `assets/js/config.js` and its Content Security Policy from that variable; do not edit the generated configuration file. Only the public API URL belongs in this variable; never add a password, token or hash.
+   Set the GitHub repository's **Actions variable** `CSD_API_URL` to the returned HTTPS Worker URL, then rerun the **Publish CSD website** workflow. The site build generates `assets/js/config.js` from that variable; do not edit the generated configuration file. Only the public API URL belongs in this variable; never add a password, token or hash.
 
 9. Verify from the deployed website: a wrong password fails; the correct seminar password adds and removes a test seminar; the booking password shows the private calendar, creates/deletes a test booking, and rejects an overlapping booking. Refresh the page and verify sign-in is required again. Verify an unauthenticated call to `/reservations` returns no booking information.
 

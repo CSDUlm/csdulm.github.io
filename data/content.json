@@ -218,6 +218,19 @@
       }
     },
     {
+      "name": "Eric Vanden-Eijnden",
+      "url": "https://wp.nyu.edu/courantinstituteofmathematicalsciences-eve2/",
+      "research": {
+        "en": "Statistical mechanics, complex dynamical systems and mathematical foundations of machine learning.",
+        "fr": "Mécanique statistique, systèmes dynamiques complexes et fondements mathématiques de l’apprentissage automatique."
+      },
+      "portrait": {
+        "src": "/assets/images/people/eric-vanden-eijnden.webp",
+        "sourceUrl": "https://www.simonsfoundation.org/people/eric-vanden-eijnden/",
+        "position": "50% 35%"
+      }
+    },
+    {
       "name": "Irène Waldspurger",
       "url": "https://www.ceremade.dauphine.fr/~waldspurger/",
       "research": {
@@ -261,6 +274,12 @@
     }
   ],
   "invitedProfessors": [
+    {
+      "name": "Jérôme Bolte",
+      "institution": "Toulouse",
+      "year": "2025–2026",
+      "url": "https://www.tse-fr.eu/people/jerome-bolte"
+    },
     {
       "name": "Demba Ba",
       "institution": "Harvard",

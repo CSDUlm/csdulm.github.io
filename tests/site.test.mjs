@@ -74,6 +74,7 @@ test("English and French public pages expose translated navigation and safely es
     );
     for (const record of [malicious, { ...malicious, date: "2000-10-15" }]) {
       const row = seminarRow(record, lang);
+      assert.ok(row.includes('<span class="seminar-institution"> (ENS)</span>'));
       assert.ok(
         row.indexOf(escapeHTML(record.speaker)) <
           row.indexOf(escapeHTML(record.title)),
@@ -158,10 +159,10 @@ test("tentative events remain labelled and cancelled events never become the nex
 });
 
 test("member gallery renders bilingual profiles and portraits without email addresses", () => {
-  assert.equal(content.teams.length, 14);
+  assert.equal(content.teams.length, 15);
   for (const lang of ["en", "fr"]) {
     const html = renderPage("teams", lang, content, []);
-    assert.equal((html.match(/class="person-card"/g) || []).length, 14);
+    assert.equal((html.match(/class="person-card"/g) || []).length, 15);
     assert.ok(!html.includes("mailto:"));
     for (const person of content.teams) {
       assert.ok(html.includes(`alt="${escapeHTML(person.name)}"`));

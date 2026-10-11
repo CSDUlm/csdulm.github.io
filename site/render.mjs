@@ -22,7 +22,7 @@ const roomLabel = (s, t) =>
 const ext = (url, text, cls = "", label = "") =>
   `<a href="${e(safeURL(url))}"${cls ? ` class="${cls}"` : ""}${label ? ` aria-label="${e(label)}"` : ""}>${e(text)} ${arrow}</a>`;
 const speakerHeading = (s, t) =>
-  `<h3>${e(s.speaker || t.unknownSpeaker)}${s.institution ? `<span class="seminar-institution"> · ${e(s.institution)}</span>` : ""}</h3>`;
+  `<h3>${e(s.speaker || t.unknownSpeaker)}${s.institution ? `<span class="seminar-institution"> (${e(s.institution)})</span>` : ""}</h3>`;
 export function seminarRow(s, lang = "en", now = Date.now()) {
   const t = strings[lang],
     upcoming = upcomingSeminars([s], now).length > 0;

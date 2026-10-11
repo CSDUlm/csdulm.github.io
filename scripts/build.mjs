@@ -82,6 +82,13 @@ for (const file of [
   "assets/css/site.css",
   "assets/css/noscript.css",
   "data/seminars.json",
+  "data/booking-access.json",
+  "assets/js/reservations.mjs",
+  "assets/js/reservations-ui.mjs",
+  "assets/js/reservations-strings.mjs",
+  "assets/js/booking-access.mjs",
+  "assets/css/reservations.css",
+  "reservations/index.html",
 ]) {
   versionHash.update(file).update(await readFile(path.join(root, file)));
 }
@@ -91,7 +98,9 @@ await mkdir(dist, { recursive: true });
 await cp(path.join(root, "assets"), path.join(dist, "assets"), {
   recursive: true,
 });
-await cp(path.join(root, "data"), path.join(dist, "data"), { recursive: true });
+await mkdir(path.join(dist, "data"), { recursive: true });
+for (const file of ["content.json", "seminars.json", "booking-access.json"])
+  await cp(path.join(root, "data", file), path.join(dist, "data", file));
 await cp(
   path.join(root, "site/strings.mjs"),
   path.join(dist, "assets/js/strings.mjs"),
@@ -120,6 +129,13 @@ for (const lang of ["en", "fr"])
 await cp(path.join(root, "admin"), path.join(dist, "admin"), {
   recursive: true,
 });
+await cp(path.join(root, "reservations"), path.join(dist, "reservations"), { recursive: true });
+const agendaHTML = await readFile(path.join(root, "reservations/index.html"), "utf8");
+await writeFile(path.join(dist, "reservations/index.html"), agendaHTML.replace(/((?:src|href)="\.\.\/assets\/[^"?]+)(")/g, `$1?v=${assetVersion}$2`));
+for (const file of ["reservations-ui.mjs", "booking-access.mjs"]) {
+  const source = await readFile(path.join(root, "assets/js", file), "utf8");
+  await writeFile(path.join(dist, "assets/js", file), source.replace(/(["'])\.\/(reservations|reservations-strings|booking-access)\.mjs\1/g, `"./$2.mjs?v=${assetVersion}"`));
+}
 await writeFile(
   path.join(dist, "404.html"),
   renderPage("404", "en", content, db.seminars, origin, assetVersion),
@@ -127,7 +143,7 @@ await writeFile(
 await writeFile(path.join(dist, ".nojekyll"), "");
 await writeFile(
   path.join(dist, "robots.txt"),
-  `User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`,
+  `User-agent: *\nDisallow: /admin/\nDisallow: /reservations/\nSitemap: ${origin}/sitemap.xml\n`,
 );
 const urls = ["en", "fr"].flatMap((lang) =>
   pages.map((page) => `<url><loc>${origin}${route(page, lang)}</loc></url>`),
@@ -142,6 +158,7 @@ const htmlFiles = [
     pages.map((page) => path.join(dist, route(page, lang), "index.html")),
   ),
   path.join(dist, "admin/index.html"),
+  path.join(dist, "reservations/index.html"),
   path.join(dist, "404.html"),
 ];
 for (const file of htmlFiles) {
@@ -165,7 +182,7 @@ for (const file of htmlFiles) {
   }
 }
 console.log(
-  `Built 10 translated public pages, seminar administration and ${db.seminars.length} seminar records in dist/.`,
+  `Built 10 translated public pages, seminar administration, a private room agenda and ${db.seminars.length} seminar records in dist/.`,
 );
 console.log(
   apiBase

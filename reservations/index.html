@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="description" content="Private room agenda for the Centre Sciences des Données at ENS Ulm." />
+    <meta name="theme-color" content="#174c45" />
+    <title>Room agenda — CSD, ENS Ulm</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <link rel="stylesheet" href="../assets/css/reservations.css" />
+    <script src="../assets/js/config.js" defer></script>
+    <script src="../assets/js/reservations-ui.mjs" type="module"></script>
+  </head>
+  <body class="agenda-page">
+    <header class="agenda-header">
+      <a href="../" class="agenda-brand" aria-label="CSD home">CSD <span>ENS · ULM</span></a>
+      <nav aria-label="Navigation">
+        <a href="../" data-i18n="backToCsd">Back to CSD</a>
+        <a href="?lang=fr" id="language-switch" class="agenda-language" lang="fr">Français</a>
+      </nav>
+    </header>
+    <main class="agenda-main">
+      <div class="agenda-intro">
+        <div><p class="agenda-eyebrow" data-i18n="eyebrow">Centre Sciences des Données</p>
+          <h1 data-i18n="pageTitle">Room agenda</h1>
+          <p class="agenda-subtitle" data-i18n="intro">Find a room, choose a time, and keep everyone’s plans in one place.</p>
+        </div>
+        <span class="agenda-zone" data-i18n="parisTimes">Paris local time</span>
+      </div>
+
+      <section class="agenda-access" id="access-panel" aria-labelledby="access-title">
+        <div class="agenda-access-copy">
+          <span class="agenda-lock-icon" aria-hidden="true">⌑</span>
+          <p class="agenda-eyebrow" data-i18n="privateSpace">A shared space for the centre</p>
+          <h2 id="access-title" data-i18n="unlockTitle">Open the room agenda</h2>
+          <p data-i18n="unlockIntro">Use the centre’s shared password to view, add, change, or remove a reservation.</p>
+          <form id="access-form" method="post" class="agenda-access-form">
+            <label for="agenda-password" data-i18n="password">Shared password</label>
+            <div class="agenda-password-row"><input id="agenda-password" name="password" type="password" autocomplete="current-password" minlength="1" maxlength="256" required disabled />
+              <button id="unlock-button" class="agenda-button" type="submit" disabled data-i18n="unlock">Open agenda</button></div>
+          </form>
+          <p id="access-status" class="agenda-access-status" role="status" aria-live="polite" data-i18n="checkingAccess">Checking access…</p>
+        </div>
+        <div class="agenda-access-art" aria-hidden="true">
+          <div class="agenda-art-header"><span>CSD</span><span>▦</span></div>
+          <div class="agenda-art-days"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+          <div class="agenda-art-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p data-i18n="fourRooms">Four rooms. One shared agenda.</p>
+        </div>
+      </section>
+      <noscript><p class="agenda-notice">JavaScript is required to open the private agenda. / JavaScript est nécessaire pour ouvrir l’agenda privé.</p></noscript>
+
+      <div id="agenda-panel" hidden>
+        <div class="agenda-session">
+          <span class="agenda-session-info"><span class="agenda-live-dot" aria-hidden="true"></span><span id="session-text" data-i18n="sessionOpen">Agenda open</span></span>
+          <div><button id="refresh-button" type="button" class="agenda-text-button" data-i18n="refresh">Refresh</button><button id="lock-button" type="button" class="agenda-text-button" data-i18n="lock">Lock agenda</button></div>
+        </div>
+        <p id="agenda-status" class="agenda-notice" role="status" aria-live="polite" hidden></p>
+        <div class="agenda-workspace">
+          <aside class="agenda-sidebar" aria-label="Calendar options">
+            <button type="button" id="new-reservation" class="agenda-button agenda-create"><span aria-hidden="true">＋</span><span data-i18n="newReservation">New reservation</span></button>
+            <section class="agenda-mini-section" aria-label="Choose a date">
+              <div class="agenda-mini-heading"><strong id="mini-month"></strong><div><button type="button" id="mini-prev" class="agenda-icon-button" aria-label="Previous month">‹</button><button type="button" id="mini-next" class="agenda-icon-button" aria-label="Next month">›</button></div></div>
+              <div id="mini-calendar" class="agenda-mini-calendar"></div>
+              <label class="agenda-sr-only" for="date-picker" data-i18n="chooseDate">Choose a date</label><input id="date-picker" class="agenda-date-picker" type="date" />
+            </section>
+            <fieldset class="agenda-room-filters"><legend data-i18n="rooms">Rooms</legend><div id="room-filters"></div><button id="all-rooms" type="button" class="agenda-text-button" data-i18n="showAllRooms">Show all rooms</button></fieldset>
+            <fieldset class="agenda-display-options"><legend data-i18n="display">Display</legend>
+              <label><input id="show-weekends" type="checkbox" checked /><span data-i18n="weekends">Show weekends</span></label>
+              <label><input id="full-day" type="checkbox" /><span data-i18n="fullDay">Show all 24 hours</span></label>
+            </fieldset>
+            <p class="agenda-sidebar-tip" data-i18n="gridHint">Select a time in the calendar to reserve it. Select a reservation to change its details.</p>
+          </aside>
+          <section class="agenda-calendar-panel" aria-label="Room calendar">
+            <div class="agenda-toolbar">
+              <div class="agenda-navigation"><button id="today-button" type="button" class="agenda-small-button" data-i18n="today">Today</button><div class="agenda-nav-arrows"><button id="previous-button" type="button" class="agenda-icon-button" aria-label="Previous period">‹</button><button id="next-button" type="button" class="agenda-icon-button" aria-label="Next period">›</button></div><h2 id="period-heading"></h2></div>
+              <div id="view-switch" class="agenda-view-switch" role="group" aria-label="Calendar view">
+                <button type="button" data-view="week" aria-pressed="true" data-i18n="week">Week</button><button type="button" data-view="day" aria-pressed="false" data-i18n="day">Day</button><button type="button" data-view="month" aria-pressed="false" data-i18n="month">Month</button><button type="button" data-view="rooms" aria-pressed="false" data-i18n="rooms">Rooms</button><button type="button" data-view="list" aria-pressed="false" data-i18n="list">List</button>
+              </div>
+            </div>
+            <div class="agenda-search-row"><label class="agenda-search"><span aria-hidden="true">⌕</span><span class="agenda-sr-only" data-i18n="searchLabel">Search reservations</span><input id="agenda-search" type="search" maxlength="200" placeholder="Search people or reservations" autocomplete="off" /></label><span id="reservation-count" class="agenda-count" aria-live="polite"></span></div>
+            <div id="calendar" class="agenda-calendar"></div>
+            <p id="outside-hours" class="agenda-outside-hours" hidden><span id="outside-hours-text"></span> <button id="reveal-all-hours" type="button" class="agenda-text-button" data-i18n="showFullDay">Show all hours</button></p>
+            <div class="agenda-calendar-footer"><span data-i18n="parisTimes">Paris local time</span><span id="last-refreshed"></span></div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <dialog id="reservation-dialog" class="agenda-dialog" aria-labelledby="dialog-title">
+      <form id="reservation-form">
+        <div class="agenda-dialog-heading"><p class="agenda-eyebrow" data-i18n="reservation">Room reservation</p><button id="close-dialog" type="button" class="agenda-icon-button" aria-label="Close">×</button></div>
+        <h2 id="dialog-title" data-i18n="newReservation">New reservation</h2>
+        <p id="dialog-summary" class="agenda-dialog-summary" hidden></p>
+        <div class="agenda-field"><label for="reservation-room" data-i18n="room">Room</label><select id="reservation-room" name="room" required></select></div>
+        <div class="agenda-time-fields"><div class="agenda-field"><label for="reservation-start" data-i18n="starts">Starts</label><input id="reservation-start" name="start" type="datetime-local" step="60" required /></div><div class="agenda-field"><label for="reservation-end" data-i18n="ends">Ends</label><input id="reservation-end" name="end" type="datetime-local" step="60" required /></div></div>
+        <div class="agenda-duration-row"><span id="reservation-duration"></span><span data-i18n="parisTimes">Paris local time</span></div>
+        <div class="agenda-field"><label for="reservation-people" data-i18n="people">Reserved by</label><input id="reservation-people" name="people" maxlength="160" autocomplete="name" required /></div>
+        <div class="agenda-field"><label for="reservation-title" data-i18n="optionalTitle">Purpose or title (optional)</label><input id="reservation-title" name="title" maxlength="120" /></div>
+        <p id="dialog-status" class="agenda-notice" role="status" aria-live="polite" hidden></p>
+        <div id="delete-confirmation" class="agenda-delete-confirmation" hidden><p data-i18n="deleteQuestion">Remove this reservation? This frees the room for everyone.</p><div><button id="confirm-delete" type="button" class="agenda-button agenda-danger" data-i18n="confirmDelete">Yes, remove it</button><button id="cancel-delete" type="button" class="agenda-small-button" data-i18n="keepReservation">Keep reservation</button></div></div>
+        <div class="agenda-dialog-actions"><button id="delete-reservation" type="button" class="agenda-text-button agenda-danger-text" data-i18n="remove" hidden>Remove</button><div><button id="cancel-dialog" type="button" class="agenda-small-button" data-i18n="cancel">Cancel</button><button id="save-reservation" type="submit" class="agenda-button" data-i18n="save">Save reservation</button></div></div>
+      </form>
+    </dialog>
+    <footer class="agenda-footer"><span>Centre Sciences des Données · ENS Ulm</span><a href="../" data-i18n="backToCsd">Back to CSD</a></footer>
+  </body>
+</html>

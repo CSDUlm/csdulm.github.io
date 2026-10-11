@@ -43,7 +43,7 @@ const roomLabel = (s) =>
 const speakerHeading = (s) => {
   const heading = node("h3", "", s.speaker || t.unknownSpeaker);
   if (s.institution)
-    heading.append(node("span", "seminar-institution", ` · ${s.institution}`));
+    heading.append(node("span", "seminar-institution", ` (${s.institution})`));
   return heading;
 };
 let programme = [],

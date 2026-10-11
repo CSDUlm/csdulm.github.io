@@ -95,9 +95,9 @@ export const strings = {
     steeringHeading: "Steering committee",
     steeringBody:
       "The committee brings together perspectives from across the ENS research community.",
-    visitorsHeading: "International visitors",
+    visitorsHeading: "Visiting researchers",
     visitorsBody:
-      "The centre also welcomes visiting researchers. The previous website records the following invited professors:",
+      "The centre welcomes visiting researchers from France and abroad. Invited professors include:",
     galleryCount: "principal investigators",
     portraitSource: "Portrait source",
     seminarEyebrow: "Seminars & scientific exchange",
@@ -246,9 +246,9 @@ export const strings = {
     steeringHeading: "Comité de pilotage",
     steeringBody:
       "Le comité réunit des perspectives issues de la communauté de recherche de l’ENS.",
-    visitorsHeading: "Visiteurs internationaux",
+    visitorsHeading: "Chercheurs invités",
     visitorsBody:
-      "Le centre accueille également des chercheurs invités. Le précédent site mentionne les professeurs invités suivants :",
+      "Le centre accueille des chercheurs invités de France et de l’étranger. Parmi les professeurs invités :",
     galleryCount: "responsables de recherche",
     portraitSource: "Source du portrait",
     seminarEyebrow: "Séminaires et échanges scientifiques",

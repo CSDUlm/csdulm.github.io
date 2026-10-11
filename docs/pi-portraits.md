@@ -1,6 +1,6 @@
 # PI portraits and research sources
 
-Verified on 10 October 2026; Eddie Aamari and Amaury Hayat added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Eddie Aamari and Amaury Hayat were subsequently added at the site owner’s request. Email addresses are omitted from the gallery and public data at the owner's request. All 14 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
+Verified on 10 October 2026; Eddie Aamari, Amaury Hayat and Eric Vanden-Eijnden added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Eddie Aamari, Amaury Hayat and Eric Vanden-Eijnden were subsequently added at the site owner’s request. Email addresses are omitted from the gallery and public data at the owner's request. All 15 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
 
 The local assets are WebP conversions of the original photographs, limited to a maximum of 600 pixels in either dimension without enlargement. The original framing and aspect ratio are preserved in the files; the gallery applies a CSS crop with a face-sensitive `object-position`. WebP conversion removes source metadata. The gallery links to each photograph's source, and displays named photographer credits where verified.
 
@@ -23,6 +23,7 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 | Yann Ollivier | `assets/images/people/yann-ollivier.webp` | [Personal page](https://www.yann-ollivier.org/) | Photographer and photo-specific reuse license not stated for the current 2017 photograph. A commented-out J.-Ph. Jover credit applies to the previous 2012 image in his research page; it is not assigned to this different photo. |
 | Gabriel Peyré | `assets/images/people/gabriel-peyre.webp` | [CNRS Mathematics profile](https://www.insmi.cnrs.fr/fr/personne/gabriel-peyre-0) | **© Mael et Camille Peyré-Guichaoua / DR**, stated in the source file name and corroborated by [CNRS's 2022 mathematics booklet](https://www.insmi.cnrs.fr/sites/institut_insmi/files/download-file/Livret%20Accueil%20Insmi%202022.pdf). No open license stated. |
 | Nicolas Schreuder | `assets/images/people/nicolas-schreuder.webp` | [Original personal website photograph, immutable commit](https://github.com/NicolasSchreuder/nicolasschreuder.github.io/blob/98b8b46b127d77b634f2ecca1e436b7cb6034118/images/pp.png) | Photographer and photo-specific reuse license not stated. The original index associates this image with his name. The current site's drawing by Sébastien Coube is not used and that drawing's credit does not apply to this photograph. The repository README's CC BY-SA 3.0 notice describes the generic Minimal Theme, not a verified photo license. |
+| Eric Vanden-Eijnden | `assets/images/people/eric-vanden-eijnden.webp` | [Simons Foundation researcher profile](https://www.simonsfoundation.org/people/eric-vanden-eijnden/) | Photographer and photo-specific reuse license not stated. No open license inferred. |
 | Irène Waldspurger | `assets/images/people/irene-waldspurger.webp` | [Wikimedia Commons file](https://commons.wikimedia.org/wiki/File:Ir%C3%A8ne_Waldspurger_Oberwolfach_2015.jpg), from [MFO photo collection](https://opc.mfo.de/detail?photo_id=20261) | **Katrin Schmid / Mathematisches Forschungsinstitut Oberwolfach, 2015; [CC BY-SA 2.0 Germany](https://creativecommons.org/licenses/by-sa/2.0/de/deed.en)**. The local WebP conversion retains this license. CSS display crop and format conversion are the only changes. |
 
 ## Original image URLs
@@ -40,6 +41,7 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 - Yann Ollivier: <https://www.yann-ollivier.org/yann_ollivier_2017.jpg>
 - Gabriel Peyré: <https://www.insmi.cnrs.fr/sites/institut_insmi/files/image/Gabriel%20Peyre%CC%81%20%C2%A9%20Mael%20et%20Camille%20PEYRE-GUICHAOUA%3ADR.jpg>
 - Nicolas Schreuder: <https://raw.githubusercontent.com/NicolasSchreuder/nicolasschreuder.github.io/98b8b46b127d77b634f2ecca1e436b7cb6034118/images/pp.png>
+- Eric Vanden-Eijnden: <https://simonsfoundation.imgix.net/wp-content/uploads/2017/09/15185431/vanden-eijnden.jpg>
 - Irène Waldspurger: <https://upload.wikimedia.org/wikipedia/commons/6/66/Ir%C3%A8ne_Waldspurger_Oberwolfach_2015.jpg>
 
 ## Research descriptions
@@ -59,8 +61,9 @@ The short English and French descriptions are concise paraphrases, not quotation
 - **Yann Ollivier:** [Personal research page](https://www.yann-ollivier.org/rech/), describing probability and information theory for machine learning, with research articles on reinforcement learning.
 - **Gabriel Peyré:** [2025 ENS interview](https://www.ens.psl.eu/en/node/8439), describing optimal transport, mathematical machine learning, imaging and single-cell genomics, alongside his [personal page](https://www.gpeyre.com/).
 - **Nicolas Schreuder:** [Personal page](https://nicolasschreuder.github.io/), describing fairness, robustness, privacy and nonparametric two-sample testing.
+- **Eric Vanden-Eijnden:** [Courant institutional research profile](https://cims.nyu.edu/people/profiles/data/VANDEN-EIJNDEN_Eric_data.html), describing statistical mechanics, complex dynamical systems, mathematical foundations of machine learning and scientific computing.
 - **Irène Waldspurger:** [Personal page](https://www.ceremade.dauphine.fr/~waldspurger/), describing non-convex optimization, inverse problems, low-rank matrix recovery and phase retrieval.
 
 ## Verification
 
-All 14 originals were opened and inspected before conversion. Unrelated namesakes were excluded. Drawings found on Bruno Loureiro's homepage and Nicolas Schreuder's current site, and illustrated GitHub avatars, were excluded. Only the 14 optimized `.webp` assets are kept in the repository; source originals are not duplicated there.
+All 15 originals were opened and inspected before conversion. Unrelated namesakes were excluded. Drawings found on Bruno Loureiro's homepage and Nicolas Schreuder's current site, and illustrated GitHub avatars, were excluded. Only the 15 optimized `.webp` assets are kept in the repository; source originals are not duplicated there.

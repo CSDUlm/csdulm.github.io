@@ -6,7 +6,7 @@
   "seminars": [
     {
       "speaker": "Steven L. Brunton",
-      "institution": "",
+      "institution": "University of Washington",
       "title": "-",
       "titleKnown": false,
       "date": "2026-12-08T14:00:00+01:00",
@@ -24,13 +24,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.me.washington.edu/facultyfinder/steve-brunton",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-12-08-steven-l-brunton"
     },
     {
       "speaker": "Alexander Mathis",
-      "institution": "",
+      "institution": "EPFL",
       "title": "-",
       "titleKnown": false,
       "date": "2026-12-03T11:00:00+01:00",
@@ -48,13 +54,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://people.epfl.ch/alexander.mathis?lang=en",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-12-03-alexander-mathis"
     },
     {
       "speaker": "Antonin de Courcel",
-      "institution": "",
+      "institution": "École normale supérieure, Paris",
       "title": "Effective models in high dimensional unstable regimes: optimization dynamics at the edge of stability",
       "titleKnown": true,
       "date": "2026-11-12T11:00:00+01:00",
@@ -72,13 +84,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.ihes.fr/~decourcel/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-11-12-antonin-de-courcel"
     },
     {
       "speaker": "Pierre Gentine",
-      "institution": "",
+      "institution": "Columbia University",
       "title": "-",
       "titleKnown": false,
       "date": "2026-11-10T11:00:00+01:00",
@@ -96,13 +114,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.engineering.columbia.edu/faculty-staff/directory/pierre-gentine",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-11-10-pierre-gentine"
     },
     {
       "speaker": "Xiaoming Yuan",
-      "institution": "",
+      "institution": "University of Hong Kong",
       "title": "-",
       "titleKnown": false,
       "date": "2026-11-05T11:00:00+01:00",
@@ -120,13 +144,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://hkumath.hku.hk/~xmyuan/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-11-05-xiaoming-yuan"
     },
     {
       "speaker": "Marc Lelarge",
-      "institution": "",
+      "institution": "Inria / École normale supérieure, Paris",
       "title": "-",
       "titleKnown": false,
       "date": "2026-10-29T11:00:00+01:00",
@@ -144,13 +174,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.di.ens.fr/~lelarge/cv_lelarge.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-10-29-marc-lelarge"
     },
     {
       "speaker": "Jerome Garnier Brun",
-      "institution": "",
+      "institution": "Bocconi University",
       "title": "-",
       "titleKnown": false,
       "date": "2026-10-22T11:00:00+02:00",
@@ -168,13 +204,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://faculty.unibocconi.eu/jeromegarnier-brun/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-10-22-jerome-garnier-brun"
     },
     {
       "speaker": "Nicolas Schreuder",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "-",
       "titleKnown": false,
       "date": "2026-10-15T11:00:00+02:00",
@@ -192,13 +234,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://nicolasschreuder.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-10-15-nicolas-schreuder"
     },
     {
       "speaker": "Samuel Vaiter",
-      "institution": "",
+      "institution": "CNRS / Université Côte d’Azur",
       "title": "(Trying to) Understand Steering in Language Models",
       "titleKnown": true,
       "date": "2026-10-01T11:00:00+02:00",
@@ -215,6 +263,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://samuelvaiter.com/about/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-10-01-samuel-vaiter"
@@ -254,7 +308,7 @@
     },
     {
       "speaker": "Guy Gilboa",
-      "institution": "",
+      "institution": "Technion – Israel Institute of Technology",
       "title": "How to Encode World Knowledge?",
       "titleKnown": true,
       "date": "2026-09-17T11:00:00+02:00",
@@ -271,13 +325,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://t3.technion.ac.il/researcher/gilboa-guy/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-09-17-guy-gilboa"
     },
     {
       "speaker": "Florent Krzakala",
-      "institution": "",
+      "institution": "EPFL",
       "title": "Deep Learning as Neural Low-Degree Filtering: A Spectral Theory of Hierarchical Feature Learning",
       "titleKnown": true,
       "date": "2026-06-25T12:00:00+02:00",
@@ -299,6 +359,12 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.epfl.ch/labs/idephics/members-of-the-idephics-group/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-06-25-florent-krzakala"
@@ -329,7 +395,7 @@
     },
     {
       "speaker": "Constant Bourdrez; Hanna Benarroch",
-      "institution": "",
+      "institution": "École normale supérieure, Paris",
       "title": "Learning To Sample From Diffusion Models Via Inverse Reinforcement Learning / Certified Per-instance Unlearning using Individual Sensitivity Bounds",
       "titleKnown": true,
       "date": "2026-06-11T12:00:00+02:00",
@@ -356,13 +422,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://hal.science/hal-05523140v1/file/main.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2602.15602v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-06-11-constant-bourdrez-hanna-benarroch"
     },
     {
       "speaker": "Théo Lacombe",
-      "institution": "",
+      "institution": "Université Gustave Eiffel",
       "title": "Learning Monge Maps with Constrained Drifting Models",
       "titleKnown": true,
       "date": "2026-06-04T12:00:00+02:00",
@@ -384,13 +462,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://tlacombe.github.io/curriculum/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-06-04-theo-lacombe"
     },
     {
       "speaker": "Rebecca Willet",
-      "institution": "",
+      "institution": "University of Chicago",
       "title": "How do simple rotations affect the implicit bias of Adam?",
       "titleKnown": true,
       "date": "2026-06-02",
@@ -411,13 +495,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://stat.uchicago.edu/people/profile/rebecca-willett/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-06-02-rebecca-willet"
     },
     {
       "speaker": "Fabian Schaipp",
-      "institution": "",
+      "institution": "Inria / École normale supérieure, Paris",
       "title": "The Surprising Agreement Between Convex Optimization Theory and Learning-Rate Scheduling for Large Model Training",
       "titleKnown": true,
       "date": "2026-05-28",
@@ -438,13 +528,25 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2602.09842v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2607.01487v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-05-28-fabian-schaipp"
     },
     {
       "speaker": "Jiayi Li",
-      "institution": "",
+      "institution": "Max Planck Institute of Molecular Cell Biology and Genetics",
       "title": "A Basin-Selection Perspective on Grokking via Singular Learning Theory",
       "titleKnown": true,
       "date": "2026-05-21",
@@ -465,13 +567,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://jl2ml.github.io/cv.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-05-21-jiayi-li"
     },
     {
       "speaker": "Valérie Castin; Gauthier Thurin",
-      "institution": "",
+      "institution": "École normale supérieure, Paris",
       "title": "Balanced Low-Rank Adaptation: Removing Parameter Invariance to Accelerate Convergence / Convergence Rates for Distribution Matching with Sliced Optimal Transport",
       "titleKnown": true,
       "date": "2026-05-07",
@@ -492,6 +600,18 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://vcastin.github.io/fr/cv/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2602.10691v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-05-07-valerie-castin-gauthier-thurin",
@@ -508,7 +628,7 @@
     },
     {
       "speaker": "Eugène Ndiaye",
-      "institution": "",
+      "institution": "Apple",
       "title": "Beyond Uncertainty Sets: Leveraging Optimal Transport to Extend Conformal Predictive Distribution to Multivariate Settings",
       "titleKnown": true,
       "date": "2026-04-23",
@@ -529,13 +649,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://openreview.net/pdf?id=0sCyk9Tr5J",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-04-23-eugene-ndiaye"
     },
     {
       "speaker": "Batiste Le bars",
-      "institution": "",
+      "institution": "Inria Lille",
       "title": "Conformal Prediction for Uncertainty Quantification in Machine Learning: Recent Advances",
       "titleKnown": true,
       "date": "2026-04-16",
@@ -556,13 +682,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://batistelb.github.io/files/cv-new.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-04-16-batiste-le-bars"
     },
     {
       "speaker": "Michael Chertkov",
-      "institution": "",
+      "institution": "University of Arizona",
       "title": "Samples That Cooperate, Samples That Remember: Two Exactly Solvable Bridge Diffusions",
       "titleKnown": true,
       "date": "2026-04-09",
@@ -583,6 +715,12 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://profiles.arizona.edu/person/chertkov",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2026-04-09-michael-chertkov"
@@ -590,7 +728,7 @@
     {
       "id": "2026-04-02-tony-silveti-falls",
       "speaker": "Tony Silveti-Falls",
-      "institution": "",
+      "institution": "CentraleSupélec / Université Paris-Saclay",
       "title": "Training Neural Networks at Any Scale",
       "date": "2026-04-02",
       "room": null,
@@ -612,13 +750,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://tonysf.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-03-26-francois-malgouyres",
       "speaker": "François Malgouyres",
-      "institution": "",
+      "institution": "Institut de Mathématiques de Toulouse",
       "title": "Geometry-induced regularization and identifiability of deep ReLU networks",
       "date": "2026-03-26",
       "room": null,
@@ -645,13 +789,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.math.univ-toulouse.fr/~fmalgouy/CV.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-03-19-eugene-ndiaye",
       "speaker": "Eugène Ndiaye",
-      "institution": "",
+      "institution": "Apple",
       "title": "-",
       "date": "2026-03-19",
       "room": null,
@@ -673,13 +823,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://openreview.net/pdf?id=0sCyk9Tr5J",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-03-17-julien-mairal",
       "speaker": "Julien Mairal",
-      "institution": "",
+      "institution": "Inria Grenoble",
       "title": "Physical Models and Machine Learning for Scientific Imaging",
       "date": "2026-03-17",
       "room": null,
@@ -706,13 +862,25 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://lear.inrialpes.fr/people/mairal/bio.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://openreview.net/pdf/6b929184e4cf15f42d8a1dc35a40857ba2c93c7b.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-03-12-leonardo-defilippis-luigi-fogliani",
       "speaker": "Leonardo Defilippis; Luigi Fogliani",
-      "institution": "",
+      "institution": "École normale supérieure, Paris",
       "title": "Scaling Laws and Spectra of Shallow Neural Networks in the Feature Learning Regime / Annealing in variational inference mitigates mode collapse: A theoretical study on Gaussian mixtures",
       "date": "2026-03-12",
       "room": null,
@@ -739,6 +907,18 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2602.05846v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2602.12923v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "talks": [
@@ -755,7 +935,7 @@
     {
       "id": "2026-02-19-thibaut-germain",
       "speaker": "Thibaut Germain",
-      "institution": "",
+      "institution": "École polytechnique",
       "title": "A Spectral-Grassmann Wasserstein metric for operator representations of dynamical systems",
       "date": "2026-02-19",
       "room": null,
@@ -782,13 +962,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://thibaut-germain.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-02-12-alessandro-laio",
       "speaker": "Alessandro Laio",
-      "institution": "",
+      "institution": "SISSA",
       "title": "Identifying informative distance measures in high-dimensional feature spaces",
       "date": "2026-02-12",
       "room": null,
@@ -815,13 +1001,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://datascience.sissa.it/person/26/alessandro-laio",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-02-05-nina-vesseron-johannes-hertrich",
       "speaker": "Nina Vesseron; Johannes Hertrich",
-      "institution": "",
+      "institution": "Nina Vesseron: CREST / ENSAE Paris; Johannes Hertrich: Université Paris Dauphine-PSL / Inria / ENS",
       "title": "On a Neural Implementation of Brenier's Polar Factorization / On the Relation between Rectified Flows and Optimal Transport",
       "date": "2026-02-05",
       "room": null,
@@ -848,6 +1040,24 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://nvesseron.github.io/cv/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://aaai.org/conference/aaai/aaai-26/2026-program-committee/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://dauphine.psl.eu/recherche/cvtheque/profil/hertrich-johannes",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "talks": [
@@ -864,7 +1074,7 @@
     {
       "id": "2026-01-29-ashok-vardhan",
       "speaker": "Ashok Vardhan",
-      "institution": "",
+      "institution": "Télécom Paris",
       "title": "From Markov to Laplace: A Markovian Tale of Large Language Models",
       "date": "2026-01-29",
       "room": null,
@@ -886,6 +1096,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.telecom-paris.fr/agenda/ice-seminar-from-markov-to-laplace-markovian-tale-large-language-models",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://ashokvardhan.github.io/resume_.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "abstract": "Large Language Models based on transformers and state-space models (Mamba) are at the forefront of recent breakthroughs in a variety of disciplines, including natural languages. Despite their remarkable empirical success, our theoretical understanding of how these models learn and represent sequential structure, and how in-context learning (ICL) capabilities emerge on such tasks, remains limited. This raises a fundamental question: How do modern sequence models learn from sequential data? To address this question, in this talk I will present our new framework for a principled theoretical and empirical analysis of LLMs via Markov chains. The key idea underpinning our approach is the modeling of sequential input data as a Markov process, inspired by the Markovianity of natural languages. We utilize this framework to systematically study the interplay between the Markov order and model depth,  revealing sharp contrasts between transformers and state-space models. In particular, our analysis reveals the curious phenomena that (i) even a single-layer Mamba efficiently learns the in-context Laplacian smoothing estimator, whereas transformers require two layers, and (ii) while a single layer transformer cannot efficiently represent a conditional $k$-gram model, a two layer transformer can represent it for any Markov order $k \\geq 1$. Together, our results provide the first formal connection between Mamba and optimal statistical estimators, and yield the tightest known characterization of the interplay between transformer depth and Markov order for ICL. Deepening our understanding of LLMs and their ICL capabilities, we believe our framework provides a new avenue for a principled study of LLMs with plenty of interesting open questions abound, which I will discuss in the end."
@@ -893,7 +1115,7 @@
     {
       "id": "2026-01-22-eddie-aamari",
       "speaker": "Eddie Aamari",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "-",
       "date": "2026-01-22",
       "room": null,
@@ -915,13 +1137,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://emap.fgv.br/en/event/theory-stratification-learning-clustering-dimensionality-reconstruction",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-01-15-marine-le-morvan",
       "speaker": "Marine Le Morvan",
-      "institution": "",
+      "institution": "Inria",
       "title": "A Tabular Foundation Model for In-Context Learning on Large Data",
       "date": "2026-01-15",
       "room": null,
@@ -943,13 +1171,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://marinelm.github.io/files/CV_short.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://radar.inria.fr/report/2025/soda/index.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2026-01-08-nathan-srebro",
       "speaker": "Nathan Srebro",
-      "institution": "",
+      "institution": "Toyota Technological Institute at Chicago",
       "title": "Learning to Answer from Correct Demonstrations",
       "date": "2026-01-08",
       "room": null,
@@ -971,13 +1211,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.ttic.edu/faculty/srebro/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.ttic.edu/dl/annual_report.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-12-18-pierre-marion",
       "speaker": "Pierre Marion",
-      "institution": "",
+      "institution": "EPFL",
       "title": "Phase Diagram of Dropout for Two-Layer Neural Networks in the Mean-Field Regime",
       "date": "2025-12-18",
       "room": null,
@@ -1004,6 +1256,12 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://pierremarion23.github.io/bio.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -1048,7 +1306,7 @@
     {
       "id": "2025-11-27-jerome-bolte",
       "speaker": "Jérôme Bolte",
-      "institution": "",
+      "institution": "Toulouse School of Economics / École normale supérieure, Paris",
       "title": "Optimization Perspectives on the Differentiation of Programs",
       "date": "2025-11-27",
       "room": null,
@@ -1075,13 +1333,19 @@
           "kind": "site-owner",
           "name": "Seminar title corrections",
           "date": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.tse-fr.eu/sites/default/files/TSE/documents/doc/cv/bolte.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-11-20-stephen-zhang",
       "speaker": "Stephen Zhang",
-      "institution": "",
+      "institution": "University of Melbourne",
       "title": "Flow matching for (generalized) Schrödinger bridges and dynamical optimal transport",
       "date": "2025-11-20",
       "room": null,
@@ -1103,13 +1367,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.caltech.edu/campus-life-events/calendar/math-graduate-student-seminar-31",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2505.13197v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-11-18-etienne-ollion",
       "speaker": "Étienne Ollion",
-      "institution": "",
+      "institution": "CNRS / École polytechnique",
       "title": "-",
       "date": "2025-11-18",
       "room": null,
@@ -1131,13 +1407,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://hi-paris.fr/core-researchers/etienne-ollion/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-11-13-hugo-cui",
       "speaker": "Hugo Cui",
-      "institution": "",
+      "institution": "Harvard University",
       "title": "-",
       "date": "2025-11-13",
       "room": null,
@@ -1159,6 +1441,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://pehlevan.seas.harvard.edu/sites/g/files/omnuum6471/files/2025-11/Cui_etal_NeurIPS_2025.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/html/2501.03937v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -1221,7 +1515,7 @@
     {
       "id": "2025-10-21-eva-dyer",
       "speaker": "Eva Dyer",
-      "institution": "",
+      "institution": "University of Pennsylvania",
       "title": "Large-scale pretraining on neural data allows for transfer across individuals, tasks and species",
       "date": "2025-10-21",
       "room": null,
@@ -1243,6 +1537,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://penntoday.upenn.edu/news/penn-engineering-eva-dyer-listening-brains-code-little-help-ai",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -1277,7 +1577,7 @@
     {
       "id": "2025-10-09-emile-pierret",
       "speaker": "Emile Pierret",
-      "institution": "",
+      "institution": "Université Paris Cité / École normale supérieure, Paris",
       "title": "-",
       "date": "2025-10-09",
       "room": null,
@@ -1299,6 +1599,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://emilepi.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://emilepi.github.io/files/cv.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -1333,7 +1645,7 @@
     {
       "id": "2025-09-25-julie-delon",
       "speaker": "Julie Delon",
-      "institution": "",
+      "institution": "École normale supérieure, Paris",
       "title": "Computing Barycentres of Measures for Generic Transport Costs",
       "date": "2025-09-25",
       "room": null,
@@ -1355,13 +1667,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2025–2026"
+        },
+        {
+          "kind": "website",
+          "url": "https://judelo.github.io/pages/CV_Court/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-06-26-luiz-chamon",
       "speaker": "Luiz Chamon",
-      "institution": "",
+      "institution": "École polytechnique",
       "title": "Learning under requirements",
       "date": "2025-06-26",
       "room": null,
@@ -1383,6 +1701,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.ki.uni-stuttgart.de/de/institut/aktuelles/Luiz-Chamon-joins-Ecole-Polytechnique-as-a-tenure-track-assistant-professor/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -1417,7 +1741,7 @@
     {
       "id": "2025-06-12-david-louapre",
       "speaker": "David Louapre",
-      "institution": "",
+      "institution": "Ubisoft",
       "title": "-",
       "date": "2025-06-12",
       "room": null,
@@ -1439,13 +1763,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://perimeterinstitute.ca/news/david-louapre-pursuing-scientific-outreach-through-video-game-development",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.ubisoft.com/ar-ae/game/for-honor/credits-2024",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-05-22-eric-vanden-eijnden",
       "speaker": "Eric Vanden-Eijnden",
-      "institution": "",
+      "institution": "New York University",
       "title": "-",
       "date": "2025-05-22",
       "room": null,
@@ -1467,13 +1803,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/5/24622/files/2025/06/AI4Chemistry-Summit-Program-9.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-05-15-grant-rotskoff",
       "speaker": "Grant Rotskoff",
-      "institution": "",
+      "institution": "Stanford University",
       "title": "-",
       "date": "2025-05-15",
       "room": null,
@@ -1495,13 +1837,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://talks.cam.ac.uk/talk/index/229843",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-04-24-loucas-pillaud-vivien",
       "speaker": "Loucas-Pillaud Vivien",
-      "institution": "",
+      "institution": "École des Ponts ParisTech",
       "title": "-",
       "date": "2025-04-24",
       "room": null,
@@ -1523,13 +1871,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://cermics-lab.enpc.fr/2024/01/08/arrival-of-loucas-pillaud-vivien-at-cermics/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-04-17-beatrice-achilli",
       "speaker": "Beatrice Achilli",
-      "institution": "",
+      "institution": "Bocconi University",
       "title": "-",
       "date": "2025-04-17",
       "room": null,
@@ -1551,13 +1905,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://beatriceachilli.github.io/files/Curriculum_Vitae.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-04-03-olivier-cappe-gabriel-peyre",
       "speaker": "Olivier Cappé; Gabriel Peyré",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "Modern Transformers and GRPO",
       "date": "2025-04-03",
       "room": null,
@@ -1579,13 +1939,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.di.ens.fr/~cappe/files/Postdoc_SSFMLDH_PSL_fall2024.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.dataia.eu/evenements/conference-ia-maths",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-03-27-denny-wu",
       "speaker": "Denny Wu",
-      "institution": "",
+      "institution": "New York University / Flatiron Institute",
       "title": "-",
       "date": "2025-03-27",
       "room": null,
@@ -1607,13 +1979,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://2025.cpal.cc/rising_stars_presentations/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-03-20-demba-ba",
       "speaker": "Demba Ba",
-      "institution": "",
+      "institution": "Harvard University",
       "title": "Ten years of playing in deep haystacks: a taxonomy of interpretability research",
       "date": "2025-03-20",
       "room": null,
@@ -1635,13 +2013,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://seas.harvard.edu/person/demba-ba",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-03-13-alex-cayco-gajic",
       "speaker": "Alex Cayco Gajic",
-      "institution": "",
+      "institution": "École normale supérieure, Paris",
       "title": "-",
       "date": "2025-03-13",
       "room": null,
@@ -1663,13 +2047,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://en.qlife.psl.eu/page/ens",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://lnc2.dec.ens.fr/en/member/100373/alex-cayco-gajic",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-03-06-yann-fleureau",
       "speaker": "Yann Fleureau",
-      "institution": "",
+      "institution": "Project Numina",
       "title": "Projet Numina: IA appliquée au raisonnement et à la formalisation mathématiques",
       "date": "2025-03-06",
       "room": null,
@@ -1691,13 +2087,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.dataia.eu/evenements/conference-ia-maths",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-02-27-antonio-ocello",
       "speaker": "Antonio Ocello",
-      "institution": "",
+      "institution": "École polytechnique",
       "title": "-",
       "date": "2025-02-27",
       "room": null,
@@ -1719,13 +2121,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://hi-paris.fr/core-researchers/antonio-ocello/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-02-20-clement-bonet",
       "speaker": "Clément Bonet",
-      "institution": "",
+      "institution": "CREST / ENSAE Paris",
       "title": "-",
       "date": "2025-02-20",
       "room": null,
@@ -1747,13 +2155,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://clbonet.github.io/pdf/CV___2025___Academic.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.polytechnique.edu/fondation/actualites/toutes-les-actualites/clement-bonet-simone-kotthaus-elisabeth-maria-niel-et-chloe-techens-laureats-des-launching-packages",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-02-13-fanny-yang",
       "speaker": "Fanny Yang",
-      "institution": "",
+      "institution": "ETH Zürich",
       "title": "-",
       "date": "2025-02-13",
       "room": null,
@@ -1775,13 +2195,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://sml.inf.ethz.ch/group/fannyy/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-02-06-maxence-noble",
       "speaker": "Maxence Noble",
-      "institution": "",
+      "institution": "École polytechnique",
       "title": "-",
       "date": "2025-02-06",
       "room": null,
@@ -1803,13 +2229,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://maxencenoble.github.io/cv/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-01-30-alessandro-de-palma",
       "speaker": "Alessandro de Palma",
-      "institution": "",
+      "institution": "Inria Paris",
       "title": "-",
       "date": "2025-01-30",
       "room": null,
@@ -1831,13 +2263,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://radar.inria.fr/report/2025/antique/index.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2025-01-23-michele-ceriotti",
       "speaker": "Michele Ceriotti",
-      "institution": "",
+      "institution": "EPFL",
       "title": "-",
       "date": "2025-01-23",
       "room": null,
@@ -1859,6 +2297,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://people.epfl.ch/michele.ceriotti/?lang=en",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -1893,7 +2337,7 @@
     {
       "id": "2025-01-09-gauthier-thurin-leonardo-defilippis",
       "speaker": "Gauthier Thurin; Leonardo Defilippis",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "-",
       "date": "2025-01-09",
       "room": null,
@@ -1915,13 +2359,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/pdf/2501.18991v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/pdf/2309.16476v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2024-12-19-olivier-cappe",
       "speaker": "Olivier Cappé",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "-",
       "date": "2024-12-19",
       "room": null,
@@ -1943,6 +2399,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.di.ens.fr/~cappe/files/Postdoc_SSFMLDH_PSL_fall2024.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.di.ens.fr/~cappe/fr/CV/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -1977,7 +2445,7 @@
     {
       "id": "2024-12-05-jean-remi-king",
       "speaker": "Jean-Remi King",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris / Meta AI",
       "title": "-",
       "date": "2024-12-05",
       "room": null,
@@ -1999,13 +2467,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.math.ens.psl.eu/evenement/ens-data-science-colloquium-jean-remi-king/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2024-11-28-carl-allen",
       "speaker": "Carl Allen",
-      "institution": "",
+      "institution": "École normale supérieure, Paris",
       "title": "-",
       "date": "2024-11-28",
       "room": null,
@@ -2027,13 +2501,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://carl-allen.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2024-11-21-elisabetta-cornacchia",
       "speaker": "Elisabetta Cornacchia",
-      "institution": "",
+      "institution": "Inria / École normale supérieure, Paris",
       "title": "-",
       "date": "2024-11-21",
       "room": null,
@@ -2055,13 +2535,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://malga.unige.it/seminars/17218",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2024-11-14-luca-biferale",
       "speaker": "Luca Biferale",
-      "institution": "",
+      "institution": "University of Rome Tor Vergata",
       "title": "-",
       "date": "2024-11-14",
       "room": null,
@@ -2083,6 +2569,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.math.ens.psl.eu/evenement/ens-data-science-colloquium-luca-biferale/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -2189,7 +2681,7 @@
     },
     {
       "speaker": "Tony Bonnaire",
-      "institution": "",
+      "institution": "École normale supérieure, Paris / Université PSL",
       "title": "-",
       "titleKnown": false,
       "date": "2024-10-03",
@@ -2205,6 +2697,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2024–2025"
+        },
+        {
+          "kind": "website",
+          "url": "https://tonybonnaire.com/uploads/CV.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2024-10-03-tony-bonnaire"
@@ -2295,7 +2793,7 @@
     },
     {
       "speaker": "Maarten de Hoop",
-      "institution": "",
+      "institution": "Rice University",
       "title": "Lecture on neural operators",
       "titleKnown": true,
       "date": "2024-07-02",
@@ -2312,13 +2810,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://profiles.rice.edu/faculty/maarten-de-hoop",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2024-07-02-maarten-de-hoop"
     },
     {
       "speaker": "Andrea Montanari",
-      "institution": "",
+      "institution": "Stanford University",
       "title": "-",
       "titleKnown": false,
       "date": "2024-06-27",
@@ -2334,6 +2838,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://icmp2024.pages.math.unistra.fr/v3/ICMP.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2024-06-27-andrea-montanari"
@@ -2553,7 +3063,7 @@
     },
     {
       "speaker": "Lenaic Chizat",
-      "institution": "",
+      "institution": "EPFL",
       "title": "-",
       "titleKnown": false,
       "date": "2024-04-04",
@@ -2569,6 +3079,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://actu.epfl.ch/news/nominations-de-quatre-nouveaux-professeurs-sb/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2024-04-04-lenaic-chizat"
@@ -2576,7 +3092,7 @@
     {
       "id": "2024-03-28-ulugbek-kamilov",
       "speaker": "Ulugbek Kamilov",
-      "institution": "",
+      "institution": "Washington University in St. Louis",
       "title": "Computational Imaging: Restoration Deep Networks as Image Priors",
       "date": "2024-03-28",
       "room": null,
@@ -2598,12 +3114,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://ukmlv.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "speaker": "Antoine Georges",
-      "institution": "",
+      "institution": "Collège de France / Flatiron Institute",
       "title": "-",
       "titleKnown": false,
       "date": "2024-03-21",
@@ -2619,6 +3141,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://quantalps.univ-grenoble-alpes.fr/events/lectures-colloquium-antoine-georges-1366215.kjsp",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2024-03-21-antoine-georges"
@@ -2626,7 +3154,7 @@
     {
       "id": "2024-03-14-florent-krzakala",
       "speaker": "Florent Krzakala",
-      "institution": "",
+      "institution": "EPFL",
       "title": "How do neural nets learn?",
       "date": "2024-03-14T12:00:00+01:00",
       "room": null,
@@ -2649,12 +3177,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.epfl.ch/labs/idephics/members-of-the-idephics-group/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "speaker": "Aymeric Dieuleveut",
-      "institution": "",
+      "institution": "École polytechnique",
       "title": "-",
       "titleKnown": false,
       "date": "2024-03-07",
@@ -2670,13 +3204,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.cmap.polytechnique.fr/~aymeric.dieuleveut/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2024-03-07-aymeric-dieuleveut"
     },
     {
       "speaker": "Noah Smith",
-      "institution": "",
+      "institution": "University of Washington",
       "title": "-",
       "titleKnown": false,
       "date": "2024-02-29",
@@ -2692,6 +3232,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://cse.umn.edu/cs/events/cray-distinguished-speaker-olmo-tulu-and-friends-accelerating-science-language-modeling",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2024-02-29-noah-smith"
@@ -2836,7 +3382,7 @@
     {
       "id": "2023-12-14-mathieu-desbrun",
       "speaker": "Mathieu Desbrun",
-      "institution": "",
+      "institution": "Inria / École polytechnique",
       "title": "Blue Noise Sampling",
       "date": "2023-12-14",
       "room": null,
@@ -2858,13 +3404,25 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.lix.polytechnique.fr/geovic/events.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://pages.saclay.inria.fr/mathieu.desbrun/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "id": "2023-11-30-pierre-alexandre-mattei",
       "speaker": "Pierre-Alexandre Mattei",
-      "institution": "",
+      "institution": "Inria Sophia Antipolis",
       "title": "Are ensembles getting better All the time ?",
       "date": "2023-11-30",
       "room": null,
@@ -2886,12 +3444,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://orcid.org/0000-0002-1297-908X",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "speaker": "Leonardo Defilippis",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "High-dimensional estimation under heavy-tails, with applications to robust regression",
       "titleKnown": true,
       "date": "2023-11-23",
@@ -2908,6 +3472,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/pdf/2309.16476v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2023-11-23-leonardo-defilippis"
@@ -2915,7 +3485,7 @@
     {
       "id": "2023-11-14-antoine-maillard",
       "speaker": "Antoine Maillard",
-      "institution": "",
+      "institution": "ETH Zürich",
       "title": "Fitting ellipsoids to random points",
       "date": "2023-11-14",
       "room": null,
@@ -2937,6 +3507,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://anmaillard.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
@@ -2997,7 +3573,7 @@
     {
       "id": "2023-10-17-andrea-montanari",
       "speaker": "Andrea Montanari",
-      "institution": "",
+      "institution": "Stanford University",
       "title": "Sampling via diffusion processes : rigorous guarantees, hardness, disorder chaos",
       "date": "2023-10-17T12:30:00+02:00",
       "room": null,
@@ -3020,12 +3596,18 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://mathematics.stanford.edu/events/sampling-gibbs-measures-and-bayes-posteriors-diffusion-processes",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ]
     },
     {
       "speaker": "Michael Sander",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "-",
       "titleKnown": false,
       "date": "2023-10-12",
@@ -3041,13 +3623,19 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/pdf/2309.01213v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2023-10-12-michael-sander"
     },
     {
       "speaker": "Julia Kempe",
-      "institution": "",
+      "institution": "New York University",
       "title": "-",
       "titleKnown": false,
       "date": "2023-10-05",
@@ -3063,6 +3651,12 @@
           "kind": "document",
           "name": "CSD – Séminaire, GT et colloquium",
           "academicYear": "2023–2024"
+        },
+        {
+          "kind": "website",
+          "url": "https://cds.nyu.edu/team/julia-kempe/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
         }
       ],
       "id": "2023-10-05-julia-kempe"
@@ -3092,7 +3686,7 @@
     {
       "id": "2023-06-22-soledad-villar",
       "speaker": "Soledad Villar",
-      "institution": "",
+      "institution": "Johns Hopkins University",
       "title": "Machine learning and invariant theory",
       "date": "2023-06-22",
       "room": null,
@@ -3101,12 +3695,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2023/06/22, Soledad Villar, Machine learning and invariant theory"
+      "sourceText": "2023/06/22, Soledad Villar, Machine learning and invariant theory",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://www.norbertwiener.umd.edu/fft/2023/Speakers/Soledad_Villar.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2023-06-08-antonio-silveti-falls",
       "speaker": "Antonio Silveti-Falls",
-      "institution": "",
+      "institution": "CentraleSupélec / Université Paris-Saclay",
       "title": "Differentiating Nonsmooth Solutions to Parametric Monotone Inclusion Problems",
       "date": "2023-06-08",
       "room": null,
@@ -3115,12 +3717,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2023/06/08, Antonio Silveti-Falls, Differentiating Nonsmooth Solutions to Parametric Monotone Inclusion Problems"
+      "sourceText": "2023/06/08, Antonio Silveti-Falls, Differentiating Nonsmooth Solutions to Parametric Monotone Inclusion Problems",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://tonysf.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2023-05-11-francois-lanusse",
       "speaker": "Francois Lanusse",
-      "institution": "",
+      "institution": "CNRS / CEA Paris-Saclay",
       "title": "Deep Generative Models for Hybrid Physical/Data-Driven Bayesian Inference",
       "date": "2023-05-11",
       "room": null,
@@ -3129,12 +3739,26 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2023/05/11, Francois Lanusse, Deep Generative Models for Hybrid Physical/Data-Driven Bayesian Inference"
+      "sourceText": "2023/05/11, Francois Lanusse, Deep Generative Models for Hybrid Physical/Data-Driven Bayesian Inference",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://indico.flatironinstitute.org/event/3624/overview",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://flanusse.net/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2023-04-27-pierre-ablin",
       "speaker": "Pierre Ablin",
-      "institution": "",
+      "institution": "Apple",
       "title": "Training neural networks with orthogonal weights",
       "date": "2023-04-27",
       "room": null,
@@ -3143,7 +3767,15 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2023/04/27, Pierre Ablin, Training neural networks with orthogonal weights"
+      "sourceText": "2023/04/27, Pierre Ablin, Training neural networks with orthogonal weights",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://arxiv.org/pdf/2303.16510v1",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2023-04-13-arthur-mensch",
@@ -3162,7 +3794,7 @@
     {
       "id": "2023-03-16-stephanie-allassonniere",
       "speaker": "Stéphanie Allassonnière",
-      "institution": "",
+      "institution": "Université Paris Cité / École polytechnique",
       "title": "Data-Augmentation in High Dimensional Low Sample Size Setting Using a Geometry-Based Variational Autoencoder",
       "date": "2023-03-16",
       "room": null,
@@ -3171,7 +3803,21 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2023/03/16, Stéphanie Allassonnière, Data-Augmentation in High Dimensional Low Sample Size Setting Using a Geometry-Based Variational Autoencoder"
+      "sourceText": "2023/03/16, Stéphanie Allassonnière, Data-Augmentation in High Dimensional Low Sample Size Setting Using a Geometry-Based Variational Autoencoder",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://orcid.org/0000-0002-5692-4945",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://heka.gitlabpages.inria.fr/team/members/allassonniere.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2023-03-02-james-thornton",
@@ -3190,7 +3836,7 @@
     {
       "id": "2023-02-16-gael-varoquaux",
       "speaker": "Gaël Varoquaux",
-      "institution": "",
+      "institution": "Inria",
       "title": "Embeddings to learn on messy relational data",
       "date": "2023-02-16",
       "room": null,
@@ -3199,7 +3845,15 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2023/02/16, Gaël Varoquaux, Embeddings to learn on messy relational data"
+      "sourceText": "2023/02/16, Gaël Varoquaux, Embeddings to learn on messy relational data",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://gael-varoquaux.info/pages/attachments/gael_varoquaux_cv.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2023-01-19-herve-jegou",
@@ -3218,7 +3872,7 @@
     {
       "id": "2022-12-09-francois-charton",
       "speaker": "François Charton",
-      "institution": "",
+      "institution": "Meta AI / FAIR Paris",
       "title": "Deep learning for symbolic maths",
       "date": "2022-12-09",
       "room": null,
@@ -3228,12 +3882,20 @@
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
       "sourceText": "2022/12/9, François Charton - Deep learning for symbolic maths",
-      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification."
+      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification.",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://indico.math.cnrs.fr/event/8087/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-11-26-mathieu-wyart",
       "speaker": "Mathieu Wyart",
-      "institution": "",
+      "institution": "EPFL",
       "title": "What makes data learnable by deep learning",
       "date": "2022-11-26",
       "room": null,
@@ -3243,12 +3905,20 @@
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
       "sourceText": "2022/11/26, Mathieu Wyart - What makes data learnable by deep learning",
-      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification."
+      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification.",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://www.epfl.ch/labs/pcsl/prof-matthieu-wyart/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-11-18-remi-monasson",
       "speaker": "Rémi Monasson",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "Restricted Boltzmann Machines revisited : from sampling to design",
       "date": "2022-11-18",
       "room": null,
@@ -3258,12 +3928,26 @@
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
       "sourceText": "2022/11/18, Rémi Monasson - Restricted Boltzmann Machines revisited : from sampling to design",
-      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification."
+      "sourceNote": "Date retained exactly as published. This entry appears after December 2021 in the source list; its year may need archival verification.",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://aissai.cnrs.fr/evenement/programme-thematique-physique-statistique/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.inp.cnrs.fr/fr/personne/remi-monasson",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-10-20-bruno-loureiro",
       "speaker": "Bruno Loureiro",
-      "institution": "",
+      "institution": "CNRS / École normale supérieure, Paris",
       "title": "Phase diagram of Stochastic Gradient Descent in high-dimensional two-layer neural networks",
       "date": "2022-10-20",
       "room": null,
@@ -3272,12 +3956,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/10/20 Bruno Loureiro, Phase diagram of Stochastic Gradient Descent in high-dimensional two-layer neural networks"
+      "sourceText": "2022/10/20 Bruno Loureiro, Phase diagram of Stochastic Gradient Descent in high-dimensional two-layer neural networks",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://brloureiro.github.io/assets/pdf/cv.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-10-13-raja-giryes",
       "speaker": "Raja Giryes",
-      "institution": "",
+      "institution": "Tel Aviv University",
       "title": "Sampling based analysis of neural network generalization and extrapolation",
       "date": "2022-10-13",
       "room": null,
@@ -3286,12 +3978,26 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/10/13, Raja Giryes, Sampling based analysis of neural network generalization and extrapolation"
+      "sourceText": "2022/10/13, Raja Giryes, Sampling based analysis of neural network generalization and extrapolation",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://postdocisrael.com/wp-content/uploads/listing-uploads/cv/2023/01/Raja-Giryes-Brief.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://english.tau.ac.il/profile/raja",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-06-16-francis-bach",
       "speaker": "Francis Bach",
-      "institution": "",
+      "institution": "Inria / École normale supérieure, Paris",
       "title": "The quest for adaptivity",
       "date": "2022-06-16",
       "room": null,
@@ -3300,12 +4006,26 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/6/16, Francis Bach, The quest for adaptivity"
+      "sourceText": "2022/6/16, Francis Bach, The quest for adaptivity",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://radar.inria.fr/report/2022/sierra/index.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://conferences.cirm-math.fr/2551.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-06-09-rachel-bawden",
       "speaker": "Rachel Bawden",
-      "institution": "",
+      "institution": "Inria",
       "title": "Low-resource MT : few-shot learning and historical language normalisation",
       "date": "2022-06-09",
       "room": null,
@@ -3314,12 +4034,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/6/9, Rachel Bawden, Low-resource MT : few-shot learning and historical language normalisation"
+      "sourceText": "2022/6/9, Rachel Bawden, Low-resource MT : few-shot learning and historical language normalisation",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://atoll.inria.fr/index-fr.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-06-02-thomas-moreau",
       "speaker": "Thomas Moreau",
-      "institution": "",
+      "institution": "Inria Saclay",
       "title": "Convolutional Sparse Coding for Electromagnetic Brain Signals",
       "date": "2022-06-02",
       "room": null,
@@ -3328,12 +4056,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/6/2, Thomas Moreau, Convolutional Sparse Coding for Electromagnetic Brain Signals"
+      "sourceText": "2022/6/2, Thomas Moreau, Convolutional Sparse Coding for Electromagnetic Brain Signals",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://radar.inria.fr/report/2022/mind/index.html",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-04-21-marylou-gabrie",
       "speaker": "Marylou Gabrié",
-      "institution": "",
+      "institution": "École polytechnique",
       "title": "Enhancing Sampling with Learning",
       "date": "2022-04-21",
       "room": null,
@@ -3342,12 +4078,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/4/21, Marylou Gabrié, Enhancing Sampling with Learning"
+      "sourceText": "2022/4/21, Marylou Gabrié, Enhancing Sampling with Learning",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://www.polytechnique.edu/evenements/journee-filles-maths-et-informatique-une-equation-lumineuse",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-03-24-charles-martin",
       "speaker": "Charles Martin",
-      "institution": "",
+      "institution": "Calculation Consulting",
       "title": "A Semi-Empirical Model for the Generalization Capacity of Deep Neural Networks",
       "date": "2022-03-24",
       "room": null,
@@ -3356,12 +4100,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/3/24, Charles Martin - A Semi-Empirical Model for the Generalization Capacity of Deep Neural Networks"
+      "sourceText": "2022/3/24, Charles Martin - A Semi-Empirical Model for the Generalization Capacity of Deep Neural Networks",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://www.ucl.ac.uk/engineering/computer-science/research/research-groups-and-centres/financial-computing-and-analytics-group/seminars/previous-seminars-and-recordings",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-02-03-marc-lelarge",
       "speaker": "Marc Lelarge",
-      "institution": "",
+      "institution": "Inria / École normale supérieure, Paris",
       "title": "Exploiting Graph Invariants in Deep Learning",
       "date": "2022-02-03",
       "room": null,
@@ -3370,12 +4122,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/2/3, Marc Lelarge - Exploiting Graph Invariants in Deep Learning"
+      "sourceText": "2022/2/3, Marc Lelarge - Exploiting Graph Invariants in Deep Learning",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://www.di.ens.fr/~lelarge/cv_lelarge.pdf",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2022-01-27-sebastian-goldt",
       "speaker": "Sebastian Goldt",
-      "institution": "",
+      "institution": "SISSA",
       "title": "The interplay of data structure and learning dynamics in simple neural networks",
       "date": "2022-01-27",
       "room": null,
@@ -3384,12 +4144,20 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2022/1/27, Sebastian Goldt - The interplay of data structure and learning dynamics in simple neural networks"
+      "sourceText": "2022/1/27, Sebastian Goldt - The interplay of data structure and learning dynamics in simple neural networks",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://datascience.sissa.it/person/16/sebastian-goldt",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     },
     {
       "id": "2021-12-16-dieuwke-hupkes-on-locality",
       "speaker": "Dieuwke Hupkes - On locality",
-      "institution": "",
+      "institution": "Facebook AI Research",
       "title": "globality, consistency and compositionality in neural machine translation",
       "date": "2021-12-16",
       "room": null,
@@ -3398,7 +4166,21 @@
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2021/12/16, Dieuwke Hupkes - On locality, globality, consistency and compositionality in neural machine translation"
+      "sourceText": "2021/12/16, Dieuwke Hupkes - On locality, globality, consistency and compositionality in neural machine translation",
+      "sources": [
+        {
+          "kind": "website",
+          "url": "https://talks.cam.ac.uk/talk/index/157291",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://blackboxnlp.github.io/2021/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        }
+      ]
     }
   ],
   "sources": [

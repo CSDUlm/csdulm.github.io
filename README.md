@@ -64,7 +64,13 @@ See [private API setup](worker/README.md) for deployment instructions. Cloudflar
 
 The API uses HTTPS, strict origin checks, input and request-size limits, durable login throttling and safe rendering of submitted text. Seminar updates commit the JSON file through a narrowly scoped server-side GitHub token, with conflict-safe retries. No password, hash, GitHub token or signing secret is published in the website or repository.
 
-There is no room-reservation page or API. The seminar venue field is retained, with **Room W** as its default.
+## Room agenda
+
+The hidden `/reservations/` page provides a visual four-room agenda with week, day, month, rooms and list views. Bookings are kept in the separate private `CSDUlm/csd-room-reservations` repository. Users unlock it with one shared password and do not need GitHub accounts. The password is never stored; a dedicated, restricted booking credential is encrypted with AES-256-GCM and a randomly generated high-entropy password. Sessions stay in page memory for 30 minutes.
+
+The private repository has been initialized. **An administrator must create a dedicated fine-grained token and run local setup before the agenda can be unlocked.** See [agenda deployment and security](docs/reservations.md). The published page stays locked and clearly reports unconfigured access until then. All password holders share authority over all bookings and can recover the booking credential; its scope must be limited to the private booking repository. Password rotation requires token revocation as well.
+
+Seminar management retains its separately configured private API. The seminar venue defaults to **Room W**.
 
 ## Verification and licenses
 

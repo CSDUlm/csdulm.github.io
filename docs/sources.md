@@ -15,6 +15,8 @@ The source's steering-committee profile link for Gabriel Peyré accidentally poi
 
 ## Seminar database
 
+On 11 October 2026 the site owner added Eric Vanden-Eijnden to the PI gallery and supplied the visitor entry Jérôme Bolte (Toulouse), 2025–2026. These membership and visit details are owner-provided; Eric's portrait and research summary are documented in [PI sources](pi-portraits.md).
+
 [data/seminars.json](../data/seminars.json) initially recovered all **91** entries from the [CSD seminar archive](https://csd.ens.psl.eu/?csd-seminar-webpage), covering **16 December 2021 to 2 April 2026**. It now contains **135** records after reconciliation with the user-supplied **CSD – Séminaire, GT et colloquium** Word document, which covers academic years 2023–2024 through 2026–2027. See [the import report](seminar-import.md) for the added programme, richer titles, precision and exclusions.
 
 Each record has a stable identifier, speaker, institution, title, ISO date, room and event type. The original entry is retained in `sourceText`, and `url` links to its source. A UTF-8 JSON file keeps the data easy to edit, review in Git and validate before publication.

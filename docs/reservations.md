@@ -17,6 +17,19 @@ An administrator must perform one final local credential setup. Agenda users onl
 
 Until that setup is completed, the page explicitly says access is not configured and disables its password form. No demonstration data or simulated saves are presented to users.
 
+### Troubleshooting setup
+
+An expiry such as “Expires on Sat, Jan 9 2027” is entered as `2027-01-09`. The expiry is checked before contacting GitHub; “Could not verify access” therefore indicates a later access or connection check, not a date-format problem.
+
+Setup now prints the failing operation and HTTP status without printing the token, password, response body or private data. You can safely report that diagnostic line.
+
+- **Repository access, HTTP 404:** confirm the token's resource owner is **CSDUlm** and the selected repository is **csd-room-reservations**. A pending token also cannot access the private repository; an organisation owner can approve it under Organisation Settings → Personal access tokens → Pending requests. Tokens created by an organisation owner are automatically approved. The token creator must be an organisation member or owner; an outside collaborator cannot use a fine-grained token for this private organisation repository.
+- **Booking write, HTTP 403:** check **Contents: Read and write**, organisation approval and any repository rules blocking writes. Do not grant access to additional repositories to fix this.
+- **HTTP 401:** the token was rejected, expired or revoked. Check that it was copied completely and is still active.
+- **Connection failure:** check that Node.js can reach `api.github.com` through the local network and proxy configuration. Do not disable TLS verification.
+
+The token settings are at <https://github.com/settings/personal-access-tokens>. Approval instructions: [GitHub organisation token requests](https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization).
+
 ## Security model
 
 **The password is not stored on GitHub, even encrypted.** A randomly generated password with 192 bits of entropy derives an AES-256-GCM key using PBKDF2-HMAC-SHA256 with 600,000 iterations and a fresh salt. The resulting encrypted envelope contains only the dedicated booking credential and its repository details. Authentication of the ciphertext detects tampering. Changing the encryption algorithm or cost requires a new envelope format.

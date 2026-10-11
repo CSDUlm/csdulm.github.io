@@ -3,6 +3,7 @@ import { randomBytes } from "node:crypto";
 import { emitKeypressEvents } from "node:readline";
 import { readFile, writeFile, rename, unlink } from "node:fs/promises";
 import { BOOKING_REPOSITORY, sealBookingAccess, openBookingSession } from "../assets/js/booking-access.mjs";
+import { createSetupDiagnostics } from "./booking-setup-diagnostics.mjs";
 
 const destination = new URL("../data/booking-access.json", import.meta.url);
 const temporary = new URL(`../data/.booking-access.${randomBytes(8).toString("hex")}.encrypted.tmp`, import.meta.url);
@@ -13,7 +14,6 @@ if (process.argv.length !== 2 || !process.stdin.isTTY || !process.stdout.isTTY) 
 
 emitKeypressEvents(process.stdin);
 function prompt(label, hidden = false) {
-  process.stdout.write(label);
   process.stdin.setRawMode(true);
   process.stdin.resume();
   return new Promise(resolve => {
@@ -35,10 +35,12 @@ function prompt(label, hidden = false) {
       }
     }
     process.stdin.on("keypress", listener);
+    process.stdout.write(label);
   });
 }
 
 let token = "", password = "", client;
+const diagnostics = createSetupDiagnostics();
 try {
   process.stdout.write(`This tool publishes an encrypted credential for ${BOOKING_REPOSITORY} only.\nCreate a fine-grained GitHub token with ONLY that selected private repository,\nContents: read and write, and no other optional permissions. Set a bounded expiry.\nEvery shared-password holder can recover this repository credential.\nNever use your normal GitHub credential or a token that can modify the website.\n\n`);
   process.stdout.write("Setup will verify write permission by committing the existing file unchanged.\nNo reservations will be added, removed, or modified.\n\n");
@@ -56,7 +58,7 @@ try {
   password = randomBytes(24).toString("base64url");
   const envelope = await sealBookingAccess({ repository: BOOKING_REPOSITORY, branch: "main", path: "bookings.json", token, expiresAt }, password);
   token = "";
-  client = await openBookingSession(envelope, password);
+  client = await openBookingSession(envelope, password, { fetchImpl: diagnostics.fetch });
   await client.verifyWriteAccess(); // Preserve exact file bytes while proving read/write permission.
   client.close();
   client = null;
@@ -77,6 +79,8 @@ try {
     expired: "The credential has expired. Create a replacement token.",
   };
   process.stderr.write(`${explanations[error.code || error.message] || "Setup could not finish. No secret was printed. Check the private repository and try again."}\n`);
+  const diagnostic = diagnostics.explain();
+  if (diagnostic) process.stderr.write(`${diagnostic}\n`);
   process.exitCode = 1;
 } finally {
   token = "";

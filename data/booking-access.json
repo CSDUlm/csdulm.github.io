@@ -1,4 +1,10 @@
 {
   "version": 1,
-  "configured": false
+  "configured": true,
+  "algorithm": "AES-256-GCM",
+  "kdf": "PBKDF2-SHA256",
+  "iterations": 600000,
+  "salt": "scxP8uogw0OgqB-MRMr8CA",
+  "iv": "eHtAz9X83N4aSjEN",
+  "ciphertext": "0WpS_XdX5NCIPOQPSif1zZSSmJkRrBVq9hQngx6eR6-4gBf1tRck2Gt7U_HY0FHdXvIie9cRYgxSbI1jUNUa1wqaSGMP8ZGfh0CfjFeRYXggHdYXvwxaSGuOksIz96_0SRYt5RqhwMx5MWTZB1Xjnd7YG19t27tAM4JUu78cl_0XkAThvRgVMzhmBCWLg1ZpaJwFL3ae7a8B8_CTG-xnWpLclMKMNYrYQYyWVk8smCk4eAbokbaosz-Q4htaewhFajt_RFyOTiNjgjhjdZG9dKsEdu0Sdygeg2F0la4mzbfi6fr5A9MxO0UxFhdBM8mkiIzL"
 }

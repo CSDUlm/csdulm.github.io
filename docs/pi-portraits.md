@@ -1,6 +1,6 @@
 # PI portraits and research sources
 
-Verified on 10 October 2026; Eddie Aamari added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Eddie Aamari was subsequently added at the site owner’s request. Email addresses are omitted from the gallery and public data at the owner's request. All 13 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
+Verified on 10 October 2026; Eddie Aamari and Amaury Hayat added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Eddie Aamari and Amaury Hayat were subsequently added at the site owner’s request. Email addresses are omitted from the gallery and public data at the owner's request. All 14 portraits below are photographs of the named researcher, verified against official or personal research pages. No generated portraits, stock faces or drawings are used.
 
 The local assets are WebP conversions of the original photographs, limited to a maximum of 600 pixels in either dimension without enlargement. The original framing and aspect ratio are preserved in the files; the gallery applies a CSS crop with a face-sensitive `object-position`. WebP conversion removes source metadata. The gallery links to each photograph's source, and displays named photographer credits where verified.
 
@@ -16,6 +16,7 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 | Julie Delon | `assets/images/people/julie-delon.webp` | [ENS interview, 24 February 2026](https://www.ens.psl.eu/actualites/je-suis-persuadee-qu-fait-de-la-meilleure-science-lorsqu-ne-vient-pas-tous-du-meme-moule) | **© Julien Campet – Département de mathématiques et applications ENS–PSL**, explicitly stated in the image caption. No open license stated. |
 | Emmanuel Dupoux | `assets/images/people/emmanuel-dupoux.webp` | [ENS Department of Cognitive Studies profile](https://cognition.ens.fr/fr/member/630/emmanuel-dupoux) | Photographer and photo-specific reuse license not stated. |
 | Marylou Gabrié | `assets/images/people/marylou-gabrie.webp` | [ENS interview, 9 July 2025](https://www.ens.psl.eu/en/node/8733) | Photographer and photo-specific reuse license not stated. |
+| Amaury Hayat | `assets/images/people/amaury-hayat.webp` | [Official Hi! PARIS researcher profile](https://hi-paris.fr/core-researchers/amaury-hayat/) | Photographer and photo-specific reuse license not stated. The source site has a general “All rights reserved” notice; no open license is inferred. |
 | Bruno Loureiro | `assets/images/people/bruno-loureiro.webp` | [Photograph published in his personal website repository](https://github.com/brloureiro/brloureiro.github.io/blob/master/assets/img/profile.jpeg) | His personal site has a general © Bruno Loureiro notice; photographer and photo-specific reuse license not stated. |
 | Stéphane Mallat | `assets/images/people/stephane-mallat.webp` | [Personal ENS page](https://www.di.ens.fr/~mallat/mallat.html) | Photographer and photo-specific reuse license not stated. |
 | Kimia Nadjahi | `assets/images/people/kimia-nadjahi.webp` | [ENS interview, 7 February 2025](https://www.ens.psl.eu/actualites/encourager-chacun-se-former-permet-de-repenser-collectivement-nos-societes-l-ere-de-l-ia) | Photographer and photo-specific reuse license not stated. Her separate personal site has an “All rights reserved” notice; it is not the source of this photograph. |
@@ -32,6 +33,7 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 - Julie Delon: <https://www.ens.psl.eu/sites/default/files/2026-02/julie_delon_-2_.jpg>
 - Emmanuel Dupoux: <https://cognition.ens.fr/sites/cognition.ens.fr/files/pictures/2021-10/emmanuel_dupoux.png>
 - Marylou Gabrié: <https://www.ens.psl.eu/sites/default/files/2025-06/marylou_gabrie_800.jpg>
+- Amaury Hayat: <https://hi-paris.fr/wp-content/uploads/2026/05/Amaury-Hayat.jpg>
 - Bruno Loureiro: <https://brloureiro.github.io/assets/img/profile.jpeg>
 - Stéphane Mallat: <https://www.di.ens.fr/~mallat/StephaneM.jpg>
 - Kimia Nadjahi: <https://www.ens.psl.eu/sites/default/files/2025-01/kimia-nadjahi_0.jpg>
@@ -50,6 +52,7 @@ The short English and French descriptions are concise paraphrases, not quotation
 - **Julie Delon:** [Personal page](https://judelo.github.io/), listing optimal transport, image processing, inverse problems and machine learning, corroborated by the [2026 ENS interview](https://www.ens.psl.eu/actualites/je-suis-persuadee-qu-fait-de-la-meilleure-science-lorsqu-ne-vient-pas-tous-du-meme-moule).
 - **Emmanuel Dupoux:** [Personal LSCP page](http://www.lscp.net/persons/dupoux/), describing language acquisition and cognitive development with behavioural, brain-imaging and machine-learning models.
 - **Marylou Gabrié:** [Personal page](https://marylou-gabrie.github.io/) and [2025 ENS interview](https://www.ens.psl.eu/en/node/8733), describing the interface of machine learning and statistical mechanics, generative models and sampling.
+- **Amaury Hayat:** [Official Institut Polytechnique de Paris research profile](https://researchportal.ip-paris.fr/en/persons/amaury-hayat/), explicitly describing control and stabilization of partial differential equations and the use of AI for advanced mathematical problems. The [Hi! PARIS biography](https://hi-paris.fr/core-researchers/amaury-hayat/) also describes his AI for Mathematics chair. His former personal-site URLs currently return a missing page or a GitLab sign-in screen, so the gallery links to the working institutional profile.
 - **Bruno Loureiro:** [Personal page](https://brloureiro.github.io/), describing mathematical theory for modern machine-learning models at the interface with statistical mechanics. The real photograph was also visually cross-checked against his named [MAPLE project portrait](https://brloureiro.github.io/projects/maple/); the homepage's linocut is not used.
 - **Stéphane Mallat:** [Personal ENS page and its publications/CV](https://www.di.ens.fr/~mallat/mallat.html), describing data science, deep learning, wavelets and multiscale signal representations.
 - **Kimia Nadjahi:** [Personal page](https://kimiandj.github.io/), listing computational optimal transport, generative models, learning theory and model compression.
@@ -60,4 +63,4 @@ The short English and French descriptions are concise paraphrases, not quotation
 
 ## Verification
 
-All 13 originals were opened and inspected before conversion. Unrelated namesakes were excluded. Drawings found on Bruno Loureiro's homepage and Nicolas Schreuder's current site, and illustrated GitHub avatars, were excluded. Only the 13 optimized `.webp` assets are kept in the repository; source originals are not duplicated there.
+All 14 originals were opened and inspected before conversion. Unrelated namesakes were excluded. Drawings found on Bruno Loureiro's homepage and Nicolas Schreuder's current site, and illustrated GitHub avatars, were excluded. Only the 14 optimized `.webp` assets are kept in the repository; source originals are not duplicated there.

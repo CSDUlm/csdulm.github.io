@@ -1,6 +1,6 @@
 # Content provenance and image credit
 
-Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below. The user added Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier as principal investigators on 10 October 2026, and subsequently Eddie Aamari. Their profiles and the portrait gallery are documented in [portrait sources](pi-portraits.md). PI email addresses are omitted from the gallery and public data at the site owner's request.
+Retrieved on 10 October 2026. The migration uses public pages of the previous CSD website as the primary source. Presentation prose has been edited for clarity in English and translated into French. Names, talk titles, event dates and profile links are preserved from the source unless explicitly noted below. The user added Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier as principal investigators on 10 October 2026, and subsequently Eddie Aamari. Amaury Hayat was added at the site owner’s request on 11 October 2026. Their profiles and the portrait gallery are documented in [portrait sources](pi-portraits.md). PI email addresses are omitted from the gallery and public data at the site owner's request.
 
 ## CSD information
 

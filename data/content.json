@@ -126,6 +126,19 @@
       }
     },
     {
+      "name": "Amaury Hayat",
+      "url": "https://researchportal.ip-paris.fr/en/persons/amaury-hayat/",
+      "research": {
+        "en": "Artificial intelligence for mathematics and control of partial differential equations.",
+        "fr": "Intelligence artificielle pour les mathématiques et contrôle des équations aux dérivées partielles."
+      },
+      "portrait": {
+        "src": "/assets/images/people/amaury-hayat.webp",
+        "sourceUrl": "https://hi-paris.fr/core-researchers/amaury-hayat/",
+        "position": "50% 35%"
+      }
+    },
+    {
       "name": "Bruno Loureiro",
       "url": "https://brloureiro.github.io/",
       "research": {

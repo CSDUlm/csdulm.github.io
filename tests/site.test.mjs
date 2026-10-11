@@ -158,10 +158,10 @@ test("tentative events remain labelled and cancelled events never become the nex
 });
 
 test("member gallery renders bilingual profiles and portraits without email addresses", () => {
-  assert.equal(content.teams.length, 13);
+  assert.equal(content.teams.length, 14);
   for (const lang of ["en", "fr"]) {
     const html = renderPage("teams", lang, content, []);
-    assert.equal((html.match(/class="person-card"/g) || []).length, 13);
+    assert.equal((html.match(/class="person-card"/g) || []).length, 14);
     assert.ok(!html.includes("mailto:"));
     for (const person of content.teams) {
       assert.ok(html.includes(`alt="${escapeHTML(person.name)}"`));

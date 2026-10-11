@@ -27,7 +27,6 @@
       <div class="agenda-intro">
         <div><p class="agenda-eyebrow" data-i18n="eyebrow">Centre Sciences des Données</p>
           <h1 data-i18n="pageTitle">Room agenda</h1>
-          <p class="agenda-subtitle" data-i18n="intro">Find a room, choose a time, and keep everyone’s plans in one place.</p>
         </div>
         <span class="agenda-zone" data-i18n="parisTimes">Paris local time</span>
       </div>
@@ -35,9 +34,9 @@
       <section class="agenda-access" id="access-panel" aria-labelledby="access-title">
         <div class="agenda-access-copy">
           <span class="agenda-lock-icon" aria-hidden="true">⌑</span>
-          <p class="agenda-eyebrow" data-i18n="privateSpace">A shared space for the centre</p>
+          <p class="agenda-eyebrow" data-i18n="privateSpace">Room reservations</p>
           <h2 id="access-title" data-i18n="unlockTitle">Open the room agenda</h2>
-          <p data-i18n="unlockIntro">Use the centre’s shared password to view, add, change, or remove a reservation.</p>
+          <p data-i18n="unlockIntro">Enter the shared password to view and manage reservations.</p>
           <form id="access-form" method="post" class="agenda-access-form">
             <label for="agenda-password" data-i18n="password">Shared password</label>
             <div class="agenda-password-row"><input id="agenda-password" name="password" type="password" autocomplete="current-password" minlength="1" maxlength="256" required disabled />
@@ -49,7 +48,7 @@
           <div class="agenda-art-header"><span>CSD</span><span>▦</span></div>
           <div class="agenda-art-days"><span>01</span><span>02</span><span>03</span><span>04</span></div>
           <div class="agenda-art-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <p data-i18n="fourRooms">Four rooms. One shared agenda.</p>
+          <p data-i18n="fourRooms">Four rooms</p>
         </div>
       </section>
       <noscript><p class="agenda-notice">JavaScript is required to open the private agenda. / JavaScript est nécessaire pour ouvrir l’agenda privé.</p></noscript>
@@ -101,7 +100,7 @@
         <div class="agenda-field"><label for="reservation-people" data-i18n="people">Reserved by</label><input id="reservation-people" name="people" maxlength="160" autocomplete="name" required /></div>
         <div class="agenda-field"><label for="reservation-title" data-i18n="optionalTitle">Purpose or title (optional)</label><input id="reservation-title" name="title" maxlength="120" /></div>
         <p id="dialog-status" class="agenda-notice" role="status" aria-live="polite" hidden></p>
-        <div id="delete-confirmation" class="agenda-delete-confirmation" hidden><p data-i18n="deleteQuestion">Remove this reservation? This frees the room for everyone.</p><div><button id="confirm-delete" type="button" class="agenda-button agenda-danger" data-i18n="confirmDelete">Yes, remove it</button><button id="cancel-delete" type="button" class="agenda-small-button" data-i18n="keepReservation">Keep reservation</button></div></div>
+        <div id="delete-confirmation" class="agenda-delete-confirmation" hidden><p data-i18n="deleteQuestion">Remove this reservation?</p><div><button id="confirm-delete" type="button" class="agenda-button agenda-danger" data-i18n="confirmDelete">Yes, remove it</button><button id="cancel-delete" type="button" class="agenda-small-button" data-i18n="keepReservation">Keep reservation</button></div></div>
         <div class="agenda-dialog-actions"><button id="delete-reservation" type="button" class="agenda-text-button agenda-danger-text" data-i18n="remove" hidden>Remove</button><div><button id="cancel-dialog" type="button" class="agenda-small-button" data-i18n="cancel">Cancel</button><button id="save-reservation" type="submit" class="agenda-button" data-i18n="save">Save reservation</button></div></div>
       </form>
     </dialog>

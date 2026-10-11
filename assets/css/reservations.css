@@ -11,8 +11,7 @@
 .agenda-header .agenda-language { padding: 6px 14px; border: 1px solid #b6c2b4; border-radius: 30px; }
 .agenda-intro { padding: 46px 0 32px; display: flex; justify-content: space-between; align-items: end; gap: 20px; }
 .agenda-eyebrow { text-transform: uppercase; font-size: 10px; font-weight: bold; letter-spacing: .16em; color: var(--green); margin: 0 0 14px; }
-.agenda-intro h1 { font-size: clamp(2.6rem,4.4vw,4.7rem); margin: 0 0 14px; }
-.agenda-subtitle { font-size: 15px; color: var(--muted); margin: 0; }
+.agenda-intro h1 { font-size: clamp(2.6rem,4.4vw,4.7rem); margin: 0; }
 .agenda-zone { font-size: 11px; color: var(--muted); padding-bottom: 3px; white-space: nowrap; }
 .agenda-access { display: grid; grid-template-columns: 1.2fr 1fr; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; max-width: 1100px; margin: 12px auto 70px; }
 .agenda-access-copy { padding: 42px 46px 34px; }

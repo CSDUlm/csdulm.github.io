@@ -7,14 +7,14 @@
   },
   "mission": {
     "en": [
-      "The Centre Sciences des Données (CSD) is an interdisciplinary centre that brings together data science and artificial intelligence research at École normale supérieure. It gives researchers from a wide range of backgrounds a place to share expertise, develop new approaches and connect theoretical and experimental advances.",
-      "The centre welcomes researchers in mathematics, computer science, cognitive science and physics, alongside colleagues from ENS, PSL and the PRAIRIE institute, external visitors and international guests.",
-      "Beyond research, CSD organises seminars, conferences and courses. These activities help students, the public and industrial partners understand data science methods and the questions they raise."
+      "The Centre Sciences des Données (CSD) is an interdisciplinary research centre for data science and artificial intelligence at École normale supérieure. It hosts research teams and supports collaboration across disciplines, including theoretical and experimental work.",
+      "The centre’s activities involve researchers in mathematics, computer science, cognitive science and physics from ENS, PSL and the PRAIRIE institute, as well as external and international visitors.",
+      "CSD organises seminars, conferences and courses on data science methods and their applications for students, researchers, the public and industrial partners."
     ],
     "fr": [
-      "Le Centre Sciences des Données (CSD) est un centre interdisciplinaire qui rassemble les recherches en sciences des données et en intelligence artificielle à l’École normale supérieure. Il offre aux chercheurs de différents horizons un lieu pour partager leurs expertises, enrichir leurs approches et relier les avancées théoriques et expérimentales.",
-      "Le centre accueille des chercheurs en mathématiques, informatique, sciences cognitives et physique, ainsi que des collègues de l’ENS, de PSL et de l’institut PRAIRIE, des visiteurs extérieurs et des invités internationaux.",
-      "Au-delà de la recherche, le CSD organise des séminaires, des conférences et des formations. Ces activités permettent aux étudiants, au grand public et aux partenaires industriels de mieux comprendre les méthodes des sciences des données et leurs enjeux."
+      "Le Centre Sciences des Données (CSD) est un centre interdisciplinaire de recherche en sciences des données et en intelligence artificielle à l’École normale supérieure. Il héberge des équipes de recherche et soutient les collaborations entre disciplines, notamment les travaux théoriques et expérimentaux.",
+      "Les activités du centre concernent des chercheurs en mathématiques, informatique, sciences cognitives et physique de l’ENS, de PSL et de l’institut PRAIRIE, ainsi que des visiteurs extérieurs et internationaux.",
+      "Le CSD organise des séminaires, des conférences et des formations sur les méthodes des sciences des données et leurs applications pour les étudiants, les chercheurs, le grand public et les partenaires industriels."
     ]
   },
   "location": {
@@ -322,8 +322,8 @@
   },
   "seminar": {
     "description": {
-      "en": "The CSD seminar brings together researchers from across data science, from physics and mathematics to linguistics and cognitive science. Talks last about 45 minutes, followed by questions and discussion.",
-      "fr": "Le séminaire du CSD accueille des chercheurs de tous les domaines liés aux sciences des données, de la physique et des mathématiques à la linguistique et aux sciences cognitives. Les exposés durent environ 45 minutes et sont suivis de questions et de discussions."
+      "en": "The CSD seminar covers data science research in physics, mathematics, linguistics and cognitive science. Talks last about 45 minutes, followed by questions and discussion.",
+      "fr": "Le séminaire du CSD porte sur les recherches en sciences des données en physique, mathématiques, linguistique et sciences cognitives. Les exposés durent environ 45 minutes et sont suivis de questions et de discussions."
     },
     "usualSchedule": {
       "en": "For 2026–2027, seminars usually take place on Thursdays, 11:00–12:00. Tuesday colloquia usually take place at 11:00–12:00. Check each event for exceptions. All times are Paris local time.",
@@ -398,8 +398,8 @@
   },
   "phdSeminar": {
     "description": {
-      "en": "The PhD seminar brings students together for interactive paper presentations, classes and tutorials. Students from outside the centre are also welcome.",
-      "fr": "Le séminaire des doctorants rassemble les étudiants autour de présentations interactives d’articles, de cours et de tutoriels. Les étudiants extérieurs au centre sont également les bienvenus."
+      "en": "The PhD seminar consists of paper presentations, classes and tutorials for students. Students from outside the centre may also attend.",
+      "fr": "Le séminaire des doctorants comprend des présentations d’articles, des cours et des tutoriels pour les étudiants. Les étudiants extérieurs au centre peuvent également y participer."
     },
     "legacyUrl": "https://csd.ens.psl.eu/?phd-seminar",
     "legacySchedule": {

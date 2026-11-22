@@ -170,37 +170,6 @@
       "id": "2026-12-03-alexander-mathis"
     },
     {
-      "speaker": "Antonin de Courcel",
-      "institution": "École normale supérieure, Paris",
-      "title": "-",
-      "titleKnown": false,
-      "date": "2026-12-02T14:00:00+01:00",
-      "type": "seminar",
-      "typeKnown": false,
-      "status": "scheduled",
-      "timeKnown": true,
-      "room": "Room W",
-      "roomKnown": false,
-      "timeSource": "2026–2027 weekday schedule in the November CSD programme",
-      "roomSource": "CSD default room; not individually confirmed in the November programme",
-      "sources": [
-        {
-          "kind": "document",
-          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
-          "academicYear": "2026–2027",
-          "retrievedAt": "2026-11-22"
-        },
-        {
-          "kind": "website",
-          "url": "https://www.ihes.fr/~decourcel/",
-          "name": "Speaker affiliation",
-          "retrievedAt": "2026-11-22"
-        }
-      ],
-      "id": "2026-12-02-antonin-de-courcel",
-      "sourceText": "2026-12-02, seminar, Antonin de Courcel"
-    },
-    {
       "speaker": "David Vävinggren; Rudy Skerk",
       "institution": "Uppsala University; SISSA",
       "title": "Adversarial training in linear models / Statistical physics of multi layer perceptrons: from optimal learning to gradient descent",
@@ -1617,15 +1586,15 @@
       "id": "2025-11-18-etienne-ollion",
       "speaker": "Étienne Ollion",
       "institution": "CNRS / École polytechnique",
-      "title": "-",
+      "title": "Machine Bias. How do generative LLMs Answer Opinion Polls?",
       "date": "2025-11-18",
       "room": null,
       "type": "colloquium",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2025-11-18, colloquium, Étienne Ollion",
+      "sourceText": "2025-11-18, colloquium, Étienne Ollion, Machine Bias. How do generative LLMs Answer Opinion Polls?",
       "typeKnown": true,
       "status": "scheduled",
       "legacySourceText": "2025/11/18, Étienne Ollion, Colloquium",
@@ -1644,6 +1613,12 @@
           "url": "https://hi-paris.fr/core-researchers/etienne-ollion/",
           "name": "Speaker affiliation",
           "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2025–2026",
+          "retrievedAt": "2026-11-22"
         }
       ]
     },
@@ -1809,15 +1784,15 @@
       "id": "2025-10-09-emile-pierret",
       "speaker": "Emile Pierret",
       "institution": "Université Paris Cité / École normale supérieure, Paris",
-      "title": "-",
+      "title": "A Precise Examination of Diffusion Models via Their Application to Gaussian Distributions",
       "date": "2025-10-09",
       "room": null,
       "type": "seminar",
-      "titleKnown": false,
+      "titleKnown": true,
       "timeKnown": false,
       "roomKnown": false,
       "url": "https://csd.ens.psl.eu/?csd-seminar-webpage",
-      "sourceText": "2025-10-09, seminar, Emile Pierret",
+      "sourceText": "2025-10-09, seminar, Emile Pierret, A Precise Examination of Diffusion Models via Their Application to Gaussian Distributions",
       "typeKnown": true,
       "status": "scheduled",
       "legacySourceText": "2025/10/09, Emile Pierret, Séminaire",
@@ -1842,6 +1817,12 @@
           "url": "https://emilepi.github.io/files/cv.pdf",
           "name": "Speaker affiliation",
           "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2025–2026",
+          "retrievedAt": "2026-11-22"
         }
       ]
     },

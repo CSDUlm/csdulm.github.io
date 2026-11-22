@@ -70,7 +70,40 @@ function home(lang, c, seminars) {
 }
 function about(lang, c) {
   const t = strings[lang];
-  return `${pageTop(t.aboutEyebrow, t.aboutTitle, t.aboutLead, c.images.about, lang)}<section class="section"><div class="container content-grid"><aside class="side-note"><p class="small-label">${e(t.missionLabel)}</p><a href="#mission">${e(t.missionHeading)}</a><a href="#activities">${e(t.activitiesHeading)}</a><a href="#support">${e(t.supportHeading)}</a></aside><div class="prose"><h2 id="mission">${e(t.missionHeading)}</h2>${c.mission[lang].map((p, i) => `<p${i === 0 ? ' class="large-text"' : ""}>${e(p)}</p>`).join("")}<h2 id="activities">${e(t.activitiesHeading)}</h2><p>${e(t.activitiesBody)}</p><p>${e(t.activitiesBody2)}</p><a class="text-link" href="${route("seminars", lang)}">${e(t.seminarLink)} ${right}</a><h2>${e(t.trainingHeading)}</h2><p>${e(t.trainingBody)}</p><div class="supporters">${ext(c.phdSeminar.legacyUrl, t.phdLink)}${ext("https://csd.ens.psl.eu/?csd-courses", t.coursesLink)}</div><h2 id="support">${e(t.supportHeading)}</h2><div class="supporters">${c.supporters.map((s) => ext(s.url, s.name)).join("")}</div></div></div></section>${mailing(lang, c)}`;
+  const listFormat = new Intl.ListFormat(lang, { type: "conjunction" });
+  const placements = c.schoolPlacements
+    .map(
+      ({ level, year, speakers }) =>
+        `<li><strong>${e(t.schoolPlacementLevels[level])} · ${e(year)}</strong> — ${e(t.schoolPlacementTalks)} ${e(listFormat.format(speakers))}</li>`,
+    )
+    .join("");
+  return `${pageTop(t.aboutEyebrow, t.aboutTitle, t.aboutLead, c.images.about, lang)}
+  <section class="section"><div class="container content-grid">
+    <aside class="side-note">
+      <p class="small-label">${e(t.missionLabel)}</p>
+      <a href="#mission">${e(t.missionHeading)}</a>
+      <a href="#activities">${e(t.activitiesHeading)}</a>
+      <a href="#support">${e(t.supportHeading)}</a>
+    </aside>
+    <div class="prose">
+      <h2 id="mission">${e(t.missionHeading)}</h2>
+      ${c.mission[lang].map((p, i) => `<p${i === 0 ? ' class="large-text"' : ""}>${e(p)}</p>`).join("")}
+      <h2 id="activities">${e(t.activitiesHeading)}</h2>
+      <p>${e(t.activitiesBody)}</p>
+      <p>${e(t.activitiesBody2)}</p>
+      <section aria-labelledby="school-placements" class="school-placements">
+        <h3 id="school-placements">${e(t.schoolPlacementsHeading)}</h3>
+        <p>${e(t.schoolPlacementsBody)}</p>
+        <ul>${placements}</ul>
+      </section>
+      <a class="text-link" href="${route("seminars", lang)}">${e(t.seminarLink)} ${right}</a>
+      <h2>${e(t.trainingHeading)}</h2>
+      <p>${e(t.trainingBody)}</p>
+      <div class="supporters">${ext(c.phdSeminar.legacyUrl, t.phdLink)}${ext("https://csd.ens.psl.eu/?csd-courses", t.coursesLink)}</div>
+      <h2 id="support">${e(t.supportHeading)}</h2>
+      <div class="supporters">${c.supporters.map((s) => ext(s.url, s.name)).join("")}</div>
+    </div>
+  </div></section>${mailing(lang, c)}`;
 }
 function portraitCredit(p, lang) {
   const t = strings[lang],

@@ -79,6 +79,11 @@ export const strings = {
       "The CSD hosts research teams and organises seminars, conferences, and courses for students and researchers. Some events are also open to the public and industry.",
     activitiesBody2:
       "Researchers from ENS, PSL, and PRAIRIE, as well as international visitors, use the centre’s shared spaces for discussions and scientific events.",
+    schoolPlacementsHeading: "School visits and work experience",
+    schoolPlacementsBody:
+      "The CSD organises visits and work experience placements for secondary school students.",
+    schoolPlacementLevels: { "3e": "Grade 9 (3e)", "2de": "Grade 10 (2de)" },
+    schoolPlacementTalks: "Talks by",
     trainingHeading: "Courses and student seminars",
     trainingBody:
       "Alongside its main research seminar, the centre supports student seminars and undergraduate and graduate courses. Past courses have included series by Eric Vanden-Eijnden and Matthew Colbrook in 2022.",
@@ -230,6 +235,11 @@ export const strings = {
       "Le CSD héberge des équipes de recherche et organise des séminaires, des conférences et des formations pour les étudiants et chercheurs. Certains événements sont aussi ouverts au grand public et au monde industriel.",
     activitiesBody2:
       "Les chercheurs de l’ENS, de PSL et de PRAIRIE, ainsi que les visiteurs internationaux, utilisent les espaces partagés du centre pour des discussions et des événements scientifiques.",
+    schoolPlacementsHeading: "Visites scolaires et stages d’observation",
+    schoolPlacementsBody:
+      "Le CSD organise des visites et accueille des élèves de collège et de lycée pour des stages d’observation.",
+    schoolPlacementLevels: { "3e": "Stage de 3e", "2de": "Stage de 2de" },
+    schoolPlacementTalks: "Exposés de",
     trainingHeading: "Cours et séminaires étudiants",
     trainingBody:
       "Outre son séminaire de recherche, le centre soutient les séminaires étudiants et les cours de niveau licence et master. Les cours passés comprennent notamment les séries d’Eric Vanden-Eijnden et de Matthew Colbrook en 2022.",

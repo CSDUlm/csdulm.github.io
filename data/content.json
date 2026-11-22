@@ -17,6 +17,23 @@
       "Le CSD organise des séminaires, des conférences et des formations sur les méthodes des sciences des données et leurs applications pour les étudiants, les chercheurs, le grand public et les partenaires industriels."
     ]
   },
+  "schoolPlacements": [
+    {
+      "level": "3e",
+      "year": 2026,
+      "speakers": ["Antonin de Courcel", "Clement Loup-Forest"]
+    },
+    {
+      "level": "2de",
+      "year": 2026,
+      "speakers": ["Léa Bohbot", "Constant Bourdrez"]
+    },
+    {
+      "level": "3e",
+      "year": 2025,
+      "speakers": ["Christophe Schonle", "Emile Pierret"]
+    }
+  ],
   "location": {
     "address": "45 rue d’Ulm",
     "postalCode": "75005",
@@ -213,7 +230,7 @@
       },
       "portrait": {
         "src": "/assets/images/people/nicolas-schreuder.webp",
-        "sourceUrl": "https://github.com/NicolasSchreuder/nicolasschreuder.github.io/blob/98b8b46b127d77b634f2ecca1e436b7cb6034118/images/pp.png",
+        "sourceUrl": "https://github.com/CSDUlm/csdulm.github.io/pull/1/files",
         "position": "50% 35%"
       }
     },

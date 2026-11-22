@@ -367,6 +367,19 @@ p {
 .prose h2:first-child {
   margin-top: 0;
 }
+.school-placements {
+  margin-block: 28px;
+}
+.school-placements p {
+  margin-bottom: 12px;
+}
+.school-placements ul {
+  margin: 0;
+  padding-inline-start: 1.25em;
+}
+.school-placements li + li {
+  margin-top: 8px;
+}
 .large-text {
   font-family: var(--serif);
   font-size: 1.55rem;

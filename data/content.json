@@ -17,6 +17,9 @@
       "Le CSD organise des séminaires, des conférences et des formations sur les méthodes des sciences des données et leurs applications pour les étudiants, les chercheurs, le grand public et les partenaires industriels."
     ]
   },
+  "colloquium": {
+    "url": "https://data-ens.github.io/seminar/"
+  },
   "schoolPlacements": [
     {
       "level": "3e",

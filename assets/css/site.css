@@ -367,10 +367,10 @@ p {
 .prose h2:first-child {
   margin-top: 0;
 }
-.school-placements {
+.activity-details {
   margin-block: 28px;
 }
-.school-placements p {
+.activity-details p {
   margin-bottom: 12px;
 }
 .school-placements ul {

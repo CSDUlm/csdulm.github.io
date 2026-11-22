@@ -79,6 +79,10 @@ export const strings = {
       "The CSD hosts research teams and organises seminars, conferences, and courses for students and researchers. Some events are also open to the public and industry.",
     activitiesBody2:
       "Researchers from ENS, PSL, and PRAIRIE, as well as international visitors, use the centre’s shared spaces for discussions and scientific events.",
+    colloquiumHeading: "ENS Data Science Colloquium",
+    colloquiumBody:
+      "The CSD organises this series with support from the CFM–ENS Data Science Chair. It brings together researchers in mathematics, computer science, physics, chemistry and neuroscience who work with large or high-dimensional datasets. A buffet open to attendees follows each talk and gives them time to discuss their work.",
+    colloquiumLink: "Colloquium programme, archive and recordings",
     schoolPlacementsHeading: "School visits and work experience",
     schoolPlacementsBody:
       "The CSD organises visits and work experience placements for secondary school students.",
@@ -235,6 +239,10 @@ export const strings = {
       "Le CSD héberge des équipes de recherche et organise des séminaires, des conférences et des formations pour les étudiants et chercheurs. Certains événements sont aussi ouverts au grand public et au monde industriel.",
     activitiesBody2:
       "Les chercheurs de l’ENS, de PSL et de PRAIRIE, ainsi que les visiteurs internationaux, utilisent les espaces partagés du centre pour des discussions et des événements scientifiques.",
+    colloquiumHeading: "Colloquium de sciences des données de l’ENS",
+    colloquiumBody:
+      "Le CSD organise ce cycle d’exposés avec le soutien de la chaire CFM–ENS « Modèles et sciences des données ». Il réunit des chercheurs en mathématiques, informatique, physique, chimie et neurosciences qui travaillent sur des données volumineuses ou de grande dimension. Un buffet ouvert aux participants permet de poursuivre la discussion après chaque exposé.",
+    colloquiumLink: "Programme, archives et vidéos du colloquium",
     schoolPlacementsHeading: "Visites scolaires et stages d’observation",
     schoolPlacementsBody:
       "Le CSD organise des visites et accueille des élèves de collège et de lycée pour des stages d’observation.",

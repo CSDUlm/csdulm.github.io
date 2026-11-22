@@ -91,12 +91,17 @@ function about(lang, c) {
       <h2 id="activities">${e(t.activitiesHeading)}</h2>
       <p>${e(t.activitiesBody)}</p>
       <p>${e(t.activitiesBody2)}</p>
-      <section aria-labelledby="school-placements" class="school-placements">
+      <a class="text-link" href="${route("seminars", lang)}">${e(t.seminarLink)} ${right}</a>
+      <section aria-labelledby="data-science-colloquium" class="activity-details">
+        <h3 id="data-science-colloquium">${e(t.colloquiumHeading)}</h3>
+        <p>${e(t.colloquiumBody)}</p>
+        ${ext(c.colloquium.url, t.colloquiumLink, "text-link")}
+      </section>
+      <section aria-labelledby="school-placements" class="activity-details school-placements">
         <h3 id="school-placements">${e(t.schoolPlacementsHeading)}</h3>
         <p>${e(t.schoolPlacementsBody)}</p>
         <ul>${placements}</ul>
       </section>
-      <a class="text-link" href="${route("seminars", lang)}">${e(t.seminarLink)} ${right}</a>
       <h2>${e(t.trainingHeading)}</h2>
       <p>${e(t.trainingBody)}</p>
       <div class="supporters">${ext(c.phdSeminar.legacyUrl, t.phdLink)}${ext("https://csd.ens.psl.eu/?csd-courses", t.coursesLink)}</div>

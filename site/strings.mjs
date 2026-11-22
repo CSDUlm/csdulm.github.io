@@ -83,6 +83,9 @@ export const strings = {
     colloquiumBody:
       "The CSD organises this series with support from the CFM–ENS Data Science Chair. It brings together researchers in mathematics, computer science, physics, chemistry and neuroscience who work with large or high-dimensional datasets. A buffet open to attendees follows each talk and gives them time to discuss their work.",
     colloquiumLink: "Colloquium programme, archive and recordings",
+    randomLunchHeading: "Monthly random lunch",
+    randomLunchBody:
+      "Each month, the CSD randomly matches participants to meet over lunch.",
     schoolPlacementsHeading: "School visits and work experience",
     schoolPlacementsBody:
       "The CSD organises visits and work experience placements for secondary school students.",
@@ -243,6 +246,9 @@ export const strings = {
     colloquiumBody:
       "Le CSD organise ce cycle d’exposés avec le soutien de la chaire CFM–ENS « Modèles et sciences des données ». Il réunit des chercheurs en mathématiques, informatique, physique, chimie et neurosciences qui travaillent sur des données volumineuses ou de grande dimension. Un buffet ouvert aux participants permet de poursuivre la discussion après chaque exposé.",
     colloquiumLink: "Programme, archives et vidéos du colloquium",
+    randomLunchHeading: "Déjeuner mensuel par tirage au sort",
+    randomLunchBody:
+      "Chaque mois, le CSD organise des rencontres autour d’un déjeuner. Un tirage au sort détermine qui déjeune avec qui.",
     schoolPlacementsHeading: "Visites scolaires et stages d’observation",
     schoolPlacementsBody:
       "Le CSD organise des visites et accueille des élèves de collège et de lycée pour des stages d’observation.",

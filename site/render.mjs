@@ -97,6 +97,10 @@ function about(lang, c) {
         <p>${e(t.colloquiumBody)}</p>
         ${ext(c.colloquium.url, t.colloquiumLink, "text-link")}
       </section>
+      <section aria-labelledby="random-lunch" class="activity-details">
+        <h3 id="random-lunch">${e(t.randomLunchHeading)}</h3>
+        <p>${e(t.randomLunchBody)}</p>
+      </section>
       <section aria-labelledby="school-placements" class="activity-details school-placements">
         <h3 id="school-placements">${e(t.schoolPlacementsHeading)}</h3>
         <p>${e(t.schoolPlacementsBody)}</p>

@@ -1,9 +1,102 @@
 {
   "version": 1,
   "timezone": "Europe/Paris",
-  "retrievedAt": "2026-10-10",
+  "retrievedAt": "2026-11-22",
   "source": "https://csd.ens.psl.eu/?csd-seminar-webpage",
   "seminars": [
+    {
+      "speaker": "Florentin Coeurdoux",
+      "institution": "Capital Fund Management",
+      "title": "-",
+      "titleKnown": false,
+      "date": "2027-01-21T11:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 weekday schedule in the November CSD programme",
+      "roomSource": "CSD default room; not individually confirmed in the November programme",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
+        },
+        {
+          "kind": "website",
+          "url": "https://florentincdx.github.io/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-11-22"
+        }
+      ],
+      "id": "2027-01-21-florentin-coeurdoux",
+      "sourceText": "2027-01-21, seminar, Florentin Coeurdoux"
+    },
+    {
+      "speaker": "Nicolas Mil-Homens Cavaco",
+      "institution": "UCLouvain",
+      "title": "Expressivity of lazy sinusoidal neural networks: A joint kernel-based and frame-theoretic approach",
+      "titleKnown": true,
+      "date": "2027-01-07T11:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": false,
+      "status": "tentative",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "2026–2027 weekday schedule in the November CSD programme",
+      "roomSource": "CSD default room; not individually confirmed in the November programme",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.ens-lyon.fr/PHYSIQUE/seminars/machine-learning-and-signal-processing/mlsp2026_Mil-homens-Cavaco",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-11-22"
+        }
+      ],
+      "id": "2027-01-07-nicolas-mil-homens-cavaco",
+      "sourceText": "2027-01-07, seminar, Nicolas Mil-Homens Cavaco, Expressivity of lazy sinusoidal neural networks: A joint kernel-based and frame-theoretic approach (tentative)"
+    },
+    {
+      "speaker": "Yann Ollivier",
+      "institution": "CNRS / École normale supérieure, Paris",
+      "title": "-",
+      "titleKnown": false,
+      "date": "2026-12-17T13:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": false,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Room W",
+      "roomKnown": false,
+      "timeSource": "Explicit day and time in the November CSD programme",
+      "roomSource": "CSD default room; not individually confirmed in the November programme",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.yann-ollivier.org/rech/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-11-22"
+        }
+      ],
+      "id": "2026-12-17-yann-ollivier",
+      "sourceText": "2026-12-17, seminar, Yann Ollivier"
+    },
     {
       "speaker": "Steven L. Brunton",
       "institution": "University of Washington",
@@ -37,18 +130,18 @@
     {
       "speaker": "Alexander Mathis",
       "institution": "EPFL",
-      "title": "-",
-      "titleKnown": false,
-      "date": "2026-12-03T11:00:00+01:00",
+      "title": "Hierarchy and the body: what do multimodal models understand about behavior?",
+      "titleKnown": true,
+      "date": "2026-12-03T12:00:00+01:00",
       "type": "colloquium",
       "typeKnown": true,
       "status": "scheduled",
       "timeKnown": true,
-      "room": "Room W",
-      "roomKnown": false,
-      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
-      "roomSource": "CSD default room; not individually confirmed in the supplied document",
-      "sourceText": "2026-12-03, colloquium, Alexander Mathis",
+      "room": "Amphi Jean Jaurès, 29 rue d’Ulm",
+      "roomKnown": true,
+      "timeSource": "ENS Department of Mathematics event announcement",
+      "roomSource": "ENS Department of Mathematics event announcement",
+      "sourceText": "2026-12-03, colloquium, Alexander Mathis, Hierarchy and the body: what do multimodal models understand about behavior?",
       "sources": [
         {
           "kind": "document",
@@ -60,6 +153,18 @@
           "url": "https://people.epfl.ch/alexander.mathis?lang=en",
           "name": "Speaker affiliation",
           "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.math.ens.psl.eu/evenement/ens-data-science-colloquium-alexander-mathis-epfl-hierarchy-and-the-body-what-do-multimodal-models-understand-about-behavior/",
+          "name": "Official ENS colloquium announcement",
+          "retrievedAt": "2026-11-22"
         }
       ],
       "id": "2026-12-03-alexander-mathis"
@@ -67,78 +172,96 @@
     {
       "speaker": "Antonin de Courcel",
       "institution": "École normale supérieure, Paris",
-      "title": "Effective models in high dimensional unstable regimes: optimization dynamics at the edge of stability",
-      "titleKnown": true,
-      "date": "2026-11-12T11:00:00+01:00",
+      "title": "-",
+      "titleKnown": false,
+      "date": "2026-12-02T14:00:00+01:00",
       "type": "seminar",
       "typeKnown": false,
-      "status": "tentative",
+      "status": "scheduled",
       "timeKnown": true,
       "room": "Room W",
       "roomKnown": false,
-      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
-      "roomSource": "CSD default room; not individually confirmed in the supplied document",
-      "sourceText": "2026-11-12, seminar, Antonin de Courcel, Effective models in high dimensional unstable regimes: optimization dynamics at the edge of stability (tentative)",
+      "timeSource": "2026–2027 weekday schedule in the November CSD programme",
+      "roomSource": "CSD default room; not individually confirmed in the November programme",
       "sources": [
         {
           "kind": "document",
-          "name": "CSD – Séminaire, GT et colloquium",
-          "academicYear": "2026–2027"
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
         },
         {
           "kind": "website",
           "url": "https://www.ihes.fr/~decourcel/",
           "name": "Speaker affiliation",
-          "retrievedAt": "2026-10-11"
+          "retrievedAt": "2026-11-22"
         }
       ],
-      "id": "2026-11-12-antonin-de-courcel"
+      "id": "2026-12-02-antonin-de-courcel",
+      "sourceText": "2026-12-02, seminar, Antonin de Courcel"
     },
     {
-      "speaker": "Pierre Gentine",
-      "institution": "Columbia University",
-      "title": "-",
-      "titleKnown": false,
-      "date": "2026-11-10T11:00:00+01:00",
-      "type": "colloquium",
-      "typeKnown": true,
+      "speaker": "David Vävinggren; Rudy Skerk",
+      "institution": "Uppsala University; SISSA",
+      "title": "Adversarial training in linear models / Statistical physics of multi layer perceptrons: from optimal learning to gradient descent",
+      "titleKnown": true,
+      "date": "2026-11-26T11:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": false,
       "status": "scheduled",
       "timeKnown": true,
       "room": "Room W",
       "roomKnown": false,
-      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
-      "roomSource": "CSD default room; not individually confirmed in the supplied document",
-      "sourceText": "2026-11-10, colloquium, Pierre Gentine",
+      "timeSource": "2026–2027 weekday schedule in the November CSD programme",
+      "roomSource": "CSD default room; not individually confirmed in the November programme",
       "sources": [
         {
           "kind": "document",
-          "name": "CSD – Séminaire, GT et colloquium",
-          "academicYear": "2026–2027"
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
         },
         {
           "kind": "website",
-          "url": "https://www.engineering.columbia.edu/faculty-staff/directory/pierre-gentine",
-          "name": "Speaker affiliation",
-          "retrievedAt": "2026-10-11"
+          "url": "https://www.uu.se/en/contact-and-organisation/staff?query=N24-2659",
+          "name": "David Vävinggren affiliation",
+          "retrievedAt": "2026-11-22"
+        },
+        {
+          "kind": "website",
+          "url": "https://journals.aps.org/prx/abstract/10.1103/56sb-pdh6",
+          "name": "Rudy Skerk name and affiliation",
+          "retrievedAt": "2026-11-22"
         }
       ],
-      "id": "2026-11-10-pierre-gentine"
+      "id": "2026-11-26-david-vavinggren-rudy-skerk",
+      "talks": [
+        {
+          "speaker": "David Vävinggren",
+          "title": "Adversarial training in linear models"
+        },
+        {
+          "speaker": "Rudy Skerk",
+          "title": "Statistical physics of multi layer perceptrons: from optimal learning to gradient descent"
+        }
+      ],
+      "sourceText": "2026-11-26, seminar, David Vävinggren; Rudy Skerk, Adversarial training in linear models / Statistical physics of multi layer perceptrons: from optimal learning to gradient descent"
     },
     {
       "speaker": "Xiaoming Yuan",
       "institution": "University of Hong Kong",
-      "title": "-",
-      "titleKnown": false,
-      "date": "2026-11-05T11:00:00+01:00",
+      "title": "The Arrow-Hurwicz-Uzawa Method: Historical Perspectives and Current Advances",
+      "titleKnown": true,
+      "date": "2026-11-19T11:00:00+01:00",
       "type": "seminar",
       "typeKnown": true,
       "status": "scheduled",
       "timeKnown": true,
       "room": "Room W",
       "roomKnown": false,
-      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
-      "roomSource": "CSD default room; not individually confirmed in the supplied document",
-      "sourceText": "2026-11-05, seminar, Xiaoming Yuan",
+      "timeSource": "2026–2027 weekday schedule in the November CSD programme",
+      "roomSource": "CSD default room; not individually confirmed in the November programme",
+      "sourceText": "2026-11-19, seminar, Xiaoming Yuan, The Arrow-Hurwicz-Uzawa Method: Historical Perspectives and Current Advances",
       "sources": [
         {
           "kind": "document",
@@ -150,25 +273,109 @@
           "url": "https://hkumath.hku.hk/~xmyuan/",
           "name": "Speaker affiliation",
           "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
         }
       ],
       "id": "2026-11-05-xiaoming-yuan"
     },
     {
-      "speaker": "Marc Lelarge",
-      "institution": "Inria / École normale supérieure, Paris",
-      "title": "-",
-      "titleKnown": false,
-      "date": "2026-10-29T11:00:00+01:00",
-      "type": "colloquium",
-      "typeKnown": true,
+      "speaker": "Antonin de Courcel",
+      "institution": "École normale supérieure, Paris",
+      "title": "Effective models in high dimensional unstable regimes: optimization dynamics at the edge of stability",
+      "titleKnown": true,
+      "date": "2026-11-12T11:00:00+01:00",
+      "type": "seminar",
+      "typeKnown": false,
       "status": "scheduled",
       "timeKnown": true,
       "room": "Room W",
       "roomKnown": false,
       "timeSource": "2026–2027 general weekday schedule in supplied planning document",
       "roomSource": "CSD default room; not individually confirmed in the supplied document",
-      "sourceText": "2026-10-29, colloquium, Marc Lelarge",
+      "sourceText": "2026-11-12, seminar, Antonin de Courcel, Effective models in high dimensional unstable regimes: optimization dynamics at the edge of stability",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.ihes.fr/~decourcel/",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
+        }
+      ],
+      "id": "2026-11-12-antonin-de-courcel"
+    },
+    {
+      "speaker": "Pierre Gentine",
+      "institution": "Columbia University",
+      "title": "Lost in latent land",
+      "titleKnown": true,
+      "date": "2026-11-10T12:00:00+01:00",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Amphi Jean Jaurès, 29 rue d’Ulm",
+      "roomKnown": true,
+      "timeSource": "ENS Department of Mathematics event announcement",
+      "roomSource": "ENS Department of Mathematics event announcement",
+      "sourceText": "2026-11-10, colloquium, Pierre Gentine, Lost in latent land",
+      "sources": [
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium",
+          "academicYear": "2026–2027"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.engineering.columbia.edu/faculty-staff/directory/pierre-gentine",
+          "name": "Speaker affiliation",
+          "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.math.ens.psl.eu/evenement/ens-data-science-colloquium-pierre-gentine-columbia-university-lost-in-latent-land/",
+          "name": "Official ENS colloquium announcement",
+          "retrievedAt": "2026-11-22"
+        }
+      ],
+      "id": "2026-11-10-pierre-gentine"
+    },
+    {
+      "speaker": "Marc Lelarge",
+      "institution": "Inria / École normale supérieure, Paris",
+      "title": "Mathematics as an experimental science",
+      "titleKnown": true,
+      "date": "2026-10-29T12:00:00+01:00",
+      "type": "colloquium",
+      "typeKnown": true,
+      "status": "scheduled",
+      "timeKnown": true,
+      "room": "Amphi Jean Jaurès, 29 rue d’Ulm",
+      "roomKnown": true,
+      "timeSource": "ENS Department of Mathematics event announcement",
+      "roomSource": "ENS Department of Mathematics event announcement",
+      "sourceText": "2026-10-29, colloquium, Marc Lelarge, Mathematics as an experimental science",
       "sources": [
         {
           "kind": "document",
@@ -180,25 +387,37 @@
           "url": "https://www.di.ens.fr/~lelarge/cv_lelarge.pdf",
           "name": "Speaker affiliation",
           "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.math.ens.psl.eu/evenement/ens-data-science-colloquium-mathematics-as-an-experimental-science/",
+          "name": "Official ENS colloquium announcement",
+          "retrievedAt": "2026-11-22"
         }
       ],
       "id": "2026-10-29-marc-lelarge"
     },
     {
-      "speaker": "Jerome Garnier Brun",
+      "speaker": "Jérôme Garnier Brun",
       "institution": "Bocconi University",
-      "title": "-",
-      "titleKnown": false,
+      "title": "From Inference to Generative Diffusion: How Deep Networks Uncover Structure in Hierarchical Data",
+      "titleKnown": true,
       "date": "2026-10-22T11:00:00+02:00",
       "type": "seminar",
-      "typeKnown": false,
+      "typeKnown": true,
       "status": "scheduled",
       "timeKnown": true,
       "room": "Room W",
-      "roomKnown": false,
-      "timeSource": "2026–2027 general weekday schedule in supplied planning document",
-      "roomSource": "CSD default room; not individually confirmed in the supplied document",
-      "sourceText": "2026-10-22, seminar, Jerome Garnier Brun",
+      "roomKnown": true,
+      "timeSource": "ENS Department of Mathematics event announcement",
+      "roomSource": "ENS Department of Mathematics event announcement",
+      "sourceText": "2026-10-22, seminar, Jérôme Garnier Brun, From Inference to Generative Diffusion: How Deep Networks Uncover Structure in Hierarchical Data",
       "sources": [
         {
           "kind": "document",
@@ -210,6 +429,12 @@
           "url": "https://faculty.unibocconi.eu/jeromegarnier-brun/",
           "name": "Speaker affiliation",
           "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "website",
+          "url": "https://www.math.ens.psl.eu/evenement/from-inference-to-generative-diffusion-how-deep-networks-uncover-structure-in-hierarchical-data/",
+          "name": "Official ENS seminar announcement",
+          "retrievedAt": "2026-11-22"
         }
       ],
       "id": "2026-10-22-jerome-garnier-brun"
@@ -217,18 +442,18 @@
     {
       "speaker": "Nicolas Schreuder",
       "institution": "CNRS / École normale supérieure, Paris",
-      "title": "-",
-      "titleKnown": false,
+      "title": "Two-Sample Testing with Sliced Wasserstein",
+      "titleKnown": true,
       "date": "2026-10-15T11:00:00+02:00",
       "type": "seminar",
       "typeKnown": false,
-      "status": "tentative",
+      "status": "scheduled",
       "timeKnown": true,
       "room": "Room W",
       "roomKnown": false,
       "timeSource": "2026–2027 general weekday schedule in supplied planning document",
       "roomSource": "CSD default room; not individually confirmed in the supplied document",
-      "sourceText": "2026-10-15, seminar, Nicolas Schreuder (tentative)",
+      "sourceText": "2026-10-15, seminar, Nicolas Schreuder, Two-Sample Testing with Sliced Wasserstein",
       "sources": [
         {
           "kind": "document",
@@ -240,6 +465,12 @@
           "url": "https://nicolasschreuder.github.io/",
           "name": "Speaker affiliation",
           "retrievedAt": "2026-10-11"
+        },
+        {
+          "kind": "document",
+          "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+          "academicYear": "2026–2027",
+          "retrievedAt": "2026-11-22"
         }
       ],
       "id": "2026-10-15-nicolas-schreuder"
@@ -4197,6 +4428,12 @@
         "2025–2026",
         "2026–2027"
       ]
+    },
+    {
+      "kind": "document",
+      "name": "CSD – Séminaire, GT et colloquium (November programme update)",
+      "academicYear": "2026–2027",
+      "retrievedAt": "2026-11-22"
     }
   ]
 }

@@ -1,8 +1,8 @@
 # PI portraits and research sources
 
-Verified on 10 October 2026; Eddie Aamari, Amaury Hayat and Eric Vanden-Eijnden added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Eddie Aamari, Amaury Hayat and Eric Vanden-Eijnden were subsequently added at the site owner’s request. Email addresses are omitted from the gallery and public data at the owner's request. All 15 portraits below are photographs of the named researcher, verified against official or personal research pages or supplied by the researcher. No generated portraits, stock faces or drawings are used.
+Verified on 10 October 2026; Eddie Aamari, Amaury Hayat and Eric Vanden-Eijnden added and verified on 11 October 2026. The members list adds Julie Delon, Irène Waldspurger, Nicolas Schreuder and Yann Ollivier at the site owner's request. Eddie Aamari, Amaury Hayat and Eric Vanden-Eijnden were subsequently added at the site owner’s request. Email addresses are omitted from the gallery and public data at the owner's request. All 15 portraits below are photographs of the named researcher, verified against official or personal research pages or supplied by a researcher or the site maintainer. No generated portraits, stock faces or drawings are used.
 
-The local assets converted for the gallery are WebP images limited to 600 pixels in either dimension. Nicolas Schreuder supplied his replacement as an 886 × 886 WebP. The gallery applies a CSS crop, links to each photograph's source, and displays named photographer credits where verified.
+The original gallery portraits were converted to WebP at up to 600 pixels per side. Nicolas Schreuder supplied an 886 × 886 WebP. The eight supplied Polaroids were straightened and cropped around the full print, then exported as 576 × 900 WebP images. The gallery shows each full Polaroid frame and links to sources and photographer credits where available.
 
 ## Rights and provenance
 
@@ -10,36 +10,28 @@ Only the Irène Waldspurger portrait has an explicit open license identified in 
 
 | PI | Local asset | Verified portrait source | Photographer / explicit rights |
 | --- | --- | --- | --- |
-| Eddie Aamari | `assets/images/people/eddie-aamari.webp` | [Official La Nuit de l’ENS 2026 speaker profile](https://nuit.ens.psl.eu/intervenants/6a4643d8ea37e2f1c1d972ef) | Photographer and photo-specific reuse license not stated in the profile. |
+| Eddie Aamari | `assets/images/people/eddie-aamari-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
 | Giulio Biroli | `assets/images/people/giulio-biroli.webp` | [ENS Physics faculty profile](https://www.phys.ens.psl.eu/en/annuaire/200/giulio-biroli) | Photographer and photo-specific reuse license not stated in the profile. |
-| Olivier Cappé | `assets/images/people/olivier-cappe.webp` | [Personal ENS page](https://www.di.ens.fr/~cappe/) | Photographer and photo-specific reuse license not stated. |
+| Olivier Cappé | `assets/images/people/olivier-cappe-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
 | Julie Delon | `assets/images/people/julie-delon.webp` | [ENS interview, 24 February 2026](https://www.ens.psl.eu/actualites/je-suis-persuadee-qu-fait-de-la-meilleure-science-lorsqu-ne-vient-pas-tous-du-meme-moule) | **© Julien Campet – Département de mathématiques et applications ENS–PSL**, explicitly stated in the image caption. No open license stated. |
-| Emmanuel Dupoux | `assets/images/people/emmanuel-dupoux.webp` | [ENS Department of Cognitive Studies profile](https://cognition.ens.fr/fr/member/630/emmanuel-dupoux) | Photographer and photo-specific reuse license not stated. |
-| Marylou Gabrié | `assets/images/people/marylou-gabrie.webp` | [ENS interview, 9 July 2025](https://www.ens.psl.eu/en/node/8733) | Photographer and photo-specific reuse license not stated. |
+| Emmanuel Dupoux | `assets/images/people/emmanuel-dupoux-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
+| Marylou Gabrié | `assets/images/people/marylou-gabrie-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
 | Amaury Hayat | `assets/images/people/amaury-hayat.webp` | [Official Hi! PARIS researcher profile](https://hi-paris.fr/core-researchers/amaury-hayat/) | Photographer and photo-specific reuse license not stated. The source site has a general “All rights reserved” notice; no open license is inferred. |
-| Bruno Loureiro | `assets/images/people/bruno-loureiro.webp` | [Photograph published in his personal website repository](https://github.com/brloureiro/brloureiro.github.io/blob/master/assets/img/profile.jpeg) | His personal site has a general © Bruno Loureiro notice; photographer and photo-specific reuse license not stated. |
-| Stéphane Mallat | `assets/images/people/stephane-mallat.webp` | [Personal ENS page](https://www.di.ens.fr/~mallat/mallat.html) | Photographer and photo-specific reuse license not stated. |
-| Kimia Nadjahi | `assets/images/people/kimia-nadjahi.webp` | [ENS interview, 7 February 2025](https://www.ens.psl.eu/actualites/encourager-chacun-se-former-permet-de-repenser-collectivement-nos-societes-l-ere-de-l-ia) | Photographer and photo-specific reuse license not stated. Her separate personal site has an “All rights reserved” notice; it is not the source of this photograph. |
+| Bruno Loureiro | `assets/images/people/bruno-loureiro-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
+| Stéphane Mallat | `assets/images/people/stephane-mallat-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
+| Kimia Nadjahi | `assets/images/people/kimia-nadjahi-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
 | Yann Ollivier | `assets/images/people/yann-ollivier.webp` | [Personal page](https://www.yann-ollivier.org/) | Photographer and photo-specific reuse license not stated for the current 2017 photograph. A commented-out J.-Ph. Jover credit applies to the previous 2012 image in his research page; it is not assigned to this different photo. |
-| Gabriel Peyré | `assets/images/people/gabriel-peyre.webp` | [CNRS Mathematics profile](https://www.insmi.cnrs.fr/fr/personne/gabriel-peyre-0) | **© Mael et Camille Peyré-Guichaoua / DR**, stated in the source file name and corroborated by [CNRS's 2022 mathematics booklet](https://www.insmi.cnrs.fr/sites/institut_insmi/files/download-file/Livret%20Accueil%20Insmi%202022.pdf). No open license stated. |
+| Gabriel Peyré | `assets/images/people/gabriel-peyre-polaroid.webp` | Polaroid supplied by the site maintainer, 23 November 2026 | Photographer and reuse license unspecified. |
 | Nicolas Schreuder | `assets/images/people/nicolas-schreuder.webp` | [Photograph submitted by Nicolas Schreuder in PR #1](https://github.com/CSDUlm/csdulm.github.io/pull/1/files) | Photographer and photo-specific reuse license not stated. |
 | Eric Vanden-Eijnden | `assets/images/people/eric-vanden-eijnden.webp` | [Simons Foundation researcher profile](https://www.simonsfoundation.org/people/eric-vanden-eijnden/) | Photographer and photo-specific reuse license not stated. No open license inferred. |
 | Irène Waldspurger | `assets/images/people/irene-waldspurger.webp` | [Wikimedia Commons file](https://commons.wikimedia.org/wiki/File:Ir%C3%A8ne_Waldspurger_Oberwolfach_2015.jpg), from [MFO photo collection](https://opc.mfo.de/detail?photo_id=20261) | **Katrin Schmid / Mathematisches Forschungsinstitut Oberwolfach, 2015; [CC BY-SA 2.0 Germany](https://creativecommons.org/licenses/by-sa/2.0/de/deed.en)**. The local WebP conversion retains this license. CSS display crop and format conversion are the only changes. |
 
 ## Original image URLs
 
-- Eddie Aamari: the [official ENS event profile](https://nuit.ens.psl.eu/intervenants/6a4643d8ea37e2f1c1d972ef) supplies the public image download URL for resource `uploads/events/6a325c50d96e9be30c5bc998/guests/avatars/medium_IJNXQ8B_Eddie_Aamari.jpg` on `mobicheckin-assets.eventmaker.io`. Its temporary CDN signature is omitted here; use the source page to retrieve the current link. The downloaded original is a 350 × 350-pixel photograph.
 - Giulio Biroli: <https://www.phys.ens.psl.eu/sites/default/files/2023-11/redim_Giulion_Biroli_recent2-2.jpeg>
-- Olivier Cappé: <https://www.di.ens.fr/~cappe/files/p2025-p2020085_4x3_small.jpg>
 - Julie Delon: <https://www.ens.psl.eu/sites/default/files/2026-02/julie_delon_-2_.jpg>
-- Emmanuel Dupoux: <https://cognition.ens.fr/sites/cognition.ens.fr/files/pictures/2021-10/emmanuel_dupoux.png>
-- Marylou Gabrié: <https://www.ens.psl.eu/sites/default/files/2025-06/marylou_gabrie_800.jpg>
 - Amaury Hayat: <https://hi-paris.fr/wp-content/uploads/2026/05/Amaury-Hayat.jpg>
-- Bruno Loureiro: <https://brloureiro.github.io/assets/img/profile.jpeg>
-- Stéphane Mallat: <https://www.di.ens.fr/~mallat/StephaneM.jpg>
-- Kimia Nadjahi: <https://www.ens.psl.eu/sites/default/files/2025-01/kimia-nadjahi_0.jpg>
 - Yann Ollivier: <https://www.yann-ollivier.org/yann_ollivier_2017.jpg>
-- Gabriel Peyré: <https://www.insmi.cnrs.fr/sites/institut_insmi/files/image/Gabriel%20Peyre%CC%81%20%C2%A9%20Mael%20et%20Camille%20PEYRE-GUICHAOUA%3ADR.jpg>
 - Nicolas Schreuder: [WebP submitted in PR #1](https://github.com/CSDUlm/csdulm.github.io/pull/1/files)
 - Eric Vanden-Eijnden: <https://simonsfoundation.imgix.net/wp-content/uploads/2017/09/15185431/vanden-eijnden.jpg>
 - Irène Waldspurger: <https://upload.wikimedia.org/wikipedia/commons/6/66/Ir%C3%A8ne_Waldspurger_Oberwolfach_2015.jpg>

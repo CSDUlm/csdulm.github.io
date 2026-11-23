@@ -573,6 +573,12 @@ p {
   height: 100%;
   object-fit: cover;
 }
+.person-portrait-polaroid {
+  background: var(--paper);
+}
+.person-portrait-polaroid img {
+  object-fit: contain;
+}
 .person-info {
   padding-top: 18px;
 }

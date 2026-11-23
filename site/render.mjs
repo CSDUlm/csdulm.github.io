@@ -123,7 +123,10 @@ function portraitCredit(p, lang) {
 function personCard(p, lang) {
   const t = strings[lang];
   const portrait = p.portrait;
-  return `<article class="person-card"><a class="person-portrait" href="${e(safeURL(p.url))}" aria-label="${e(`${p.name} · ${t.profileLabel}`)}"><img src="${e(portrait.src)}" alt="${e(p.name)}" loading="lazy" decoding="async" width="480" height="600"${portrait.position ? ` style="object-position:${e(portrait.position)}"` : ""}></a><div class="person-info"><h3><a href="${e(safeURL(p.url))}">${e(p.name)}</a></h3>${p.research?.[lang] ? `<p class="person-research">${e(p.research[lang])}</p>` : ""}<div class="person-links">${ext(p.url, t.profileLabel, "", `${t.profileLabel} · ${p.name}`)}</div>${portraitCredit(p, lang)}</div></article>`;
+  const portraitClass = portrait.format === "polaroid"
+    ? "person-portrait person-portrait-polaroid"
+    : "person-portrait";
+  return `<article class="person-card"><a class="${portraitClass}" href="${e(safeURL(p.url))}" aria-label="${e(`${p.name} · ${t.profileLabel}`)}"><img src="${e(portrait.src)}" alt="${e(p.name)}" loading="lazy" decoding="async" width="480" height="600"${portrait.position ? ` style="object-position:${e(portrait.position)}"` : ""}></a><div class="person-info"><h3><a href="${e(safeURL(p.url))}">${e(p.name)}</a></h3>${p.research?.[lang] ? `<p class="person-research">${e(p.research[lang])}</p>` : ""}<div class="person-links">${ext(p.url, t.profileLabel, "", `${t.profileLabel} · ${p.name}`)}</div>${portraitCredit(p, lang)}</div></article>`;
 }
 function teams(lang, c) {
   const t = strings[lang];
